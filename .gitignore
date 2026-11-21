@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.mcp.json
+node_modules/
+dist/
+.netlify/
+.supabase/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local scratch and test output
+scratch/
+test-results/
+playwright-report/

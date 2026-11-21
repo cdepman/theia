@@ -1,0 +1,2856 @@
+{
+  "schemaVersion": 1,
+  "queries": [
+    {
+      "country": "US",
+      "window": "24h",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=24h",
+      "observedAt": "2026-11-21T09:41:39.723940+00:00",
+      "status": "http_error",
+      "httpStatus": 429,
+      "retryAfter": null,
+      "responseExcerpt": "Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset: https://blog.gdeltproject.org/using-the-new-web-ngrams-dataset-to-find-relevant-coverage/. For trend analysis, please see our daily newsletter briefings: https://blog.gdeltproject.org/announcing-our-new-daily-todays-trends-on-capitol-hill-todays-media-trends-newsletter-briefings/.\n\n",
+      "elapsedMs": 10931
+    },
+    {
+      "country": "US",
+      "window": "30d",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=30d",
+      "observedAt": "2026-11-21T09:41:56.658399+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "status": "ok",
+      "recordCount": 250,
+      "domains": [
+        "1059thebrew.iheart.com",
+        "1061fmtalk.iheart.com",
+        "1063thebuzz.com",
+        "49ers.com",
+        "99kisscountry.iheart.com",
+        "ai-online.com",
+        "alaskapublic.org",
+        "am1300thezone.iheart.com",
+        "amren.com",
+        "article.wn.com",
+        "azsnakepit.com",
+        "barrigaverde.net",
+        "batonrougepost.com",
+        "big1047.iheart.com",
+        "bill95.iheart.com",
+        "bnonews.com",
+        "cadillacnews.com",
+        "cbs4local.com",
+        "chattanoogan.com",
+        "chicago.suntimes.com",
+        "cincinnatisun.com",
+        "cinemablend.com",
+        "claremoreprogress.com",
+        "clickorlando.com",
+        "complex.com",
+        "dailybulletin.com",
+        "dailygazette.com",
+        "dailymail.com",
+        "dailypress.net",
+        "davisenterprise.com",
+        "deadline.com",
+        "deperu.com",
+        "diariolibre.com",
+        "elvocero.com",
+        "enstarz.com",
+        "equibase.com",
+        "everydayhealth.com",
+        "fashiontimes.com",
+        "flickeringmyth.com",
+        "foodpoisoningbulletin.com",
+        "freerepublic.com",
+        "goskagit.com",
+        "haitisun.com",
+        "homenewshere.com",
+        "hottalkradio.com",
+        "itemlive.com",
+        "jcpost.com",
+        "kalx.berkeley.edu",
+        "katsfm.com",
+        "kcbx.org",
+        "kcrg.com",
+        "kesq.com",
+        "kfoxtv.com",
+        "knue.com",
+        "kold.com",
+        "kpq.com",
+        "krystal93.com",
+        "ktul.com",
+        "ktvo.com",
+        "ktvz.com",
+        "kval.com",
+        "kvnf.org",
+        "lite987.com",
+        "local21news.com",
+        "mainemirror.com",
+        "maritime-executive.com",
+        "mdjonline.com",
+        "messengernews.net",
+        "mi-reporter.com",
+        "motorward.com",
+        "mynbc5.com",
+        "nbcconnecticut.com",
+        "nbcdfw.com",
+        "nbclosangeles.com",
+        "newschannel9.com",
+        "newsitem.com",
+        "npr.org",
+        "parsippanyfocus.com",
+        "phoenixherald.com",
+        "poncacitynews.com",
+        "powertalk967.iheart.com",
+        "realitytea.com",
+        "reviewingthebrew.com",
+        "rttnews.com",
+        "sandiegosun.com",
+        "signalscv.com",
+        "star1025.com",
+        "sungazette.com",
+        "texarkanagazette.com",
+        "thebrunswicknews.com",
+        "theitem.com",
+        "theticket.com",
+        "townhall.com",
+        "twincitiesnewstalk.iheart.com",
+        "txktoday.com",
+        "univision.com",
+        "vikingsterritory.com",
+        "vtdigger.org",
+        "wadk.com",
+        "wapa.tv",
+        "wbaltv.com",
+        "wbt.com",
+        "wemu.org",
+        "wgy.iheart.com",
+        "wiky.com",
+        "willistonherald.com",
+        "wjcl.com",
+        "wkyt.com",
+        "wkyufm.org",
+        "wmtw.com",
+        "wokv.com",
+        "wolfradio933.iheart.com",
+        "womansworld.com",
+        "wpxi.com",
+        "wsls.com",
+        "wsrw.iheart.com",
+        "wuwf.org",
+        "wwmt.com",
+        "xula.edu",
+        "yardbarker.com"
+      ],
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "sourceCountries": [
+        "United States"
+      ],
+      "articles": [
+        {
+          "url": "https://wgy.iheart.com/content/2026-11-20-jury-convicts-former-uber-driver-in-palisades-fire-case/",
+          "title": "Jury Convicts Former Uber Driver In Palisades Fire Case | News Radio 103 . 1 and 810 WGY",
+          "seendate": "20261121T064500Z",
+          "domain": "wgy.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wjcl.com/article/bunny-in-the-city-startup-savannahs-liftoff-spark-at-service-brewing/74496234",
+          "title": "BUNNY IN THE CITY : Startup Savannah LIFTOFF : SPARK at Service Brewing",
+          "seendate": "20261121T064500Z",
+          "domain": "wjcl.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.mi-reporter.com/2026/11/20/e-bikes-and-e-motos-roll-into-the-spotlight-at-community-forum/",
+          "title": "E - bikes and e - motos roll into the spotlight at community forum",
+          "seendate": "20261121T064500Z",
+          "domain": "mi-reporter.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wjcl.com/article/2027-savannah-music-festival-tickets-now-on-sale-as-lineup-takes-shape/74496060",
+          "title": "2027 Savannah Music Festival tickets now on sale",
+          "seendate": "20261121T064500Z",
+          "domain": "wjcl.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.phoenixherald.com/news/279446651/suns-handle-jazz-to-climb-above-500-for-first-time-this-season",
+          "title": "Suns handle Jazz to climb above . 500 for first time this season",
+          "seendate": "20261121T064500Z",
+          "domain": "phoenixherald.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/arts_living/walts_way/walts-way-stuffing-yourself-main-attraction-on-thanksgiving/article_0f67015a-5361-4d34-b68d-1bbd590a02f7.html",
+          "title": "Walt Way : Stuffing yourself main attraction on Thanksgiving",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.motorward.com/Auditivas-De-Conducci-n-A-rea-Compatible-Con-Audi-metros-303506",
+          "title": "Diadema Audiométrica Diadema Para Pruebas Auditivas De Conducción Aérea , Compatible Con Audiómetros",
+          "seendate": "20261121T064500Z",
+          "domain": "motorward.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.batonrougepost.com/news/279446623/road-to-home-began-unga-president-khalilur-rahman-visits-rohingya-camps-after-historic-icj-genocide-ruling",
+          "title": "  Road to home began : UNGA President Khalilur Rahman visits Rohingya camps after historic ICJ genocide ruling",
+          "seendate": "20261121T064500Z",
+          "domain": "batonrougepost.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://katsfm.com/ixp/295/p/blondie-come-back-home/",
+          "title": "Hear the New Blondie Single That Gave Debbie Harry Chills",
+          "seendate": "20261121T064500Z",
+          "domain": "katsfm.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyt.com/2026/11/21/law-enforcement-reveals-more-details-about-officer-involved-shooting-lexington/",
+          "title": "Law enforcement reveals more details about officer - involved shooting in Lexington",
+          "seendate": "20261121T064500Z",
+          "domain": "wkyt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.claremoreprogress.com/news/spirit-of-giving-unites-four-organizations-to-provide-thanksgiving-dinners-pantry-supplies-for-claremore-veterans/article_b2d96f95-287b-4613-a69c-b78abcb42c85.html",
+          "title": "Spirit of giving unites four organizations to provide Thanksgiving dinners , pantry supplies for Claremore veterans in need",
+          "seendate": "20261121T064500Z",
+          "domain": "claremoreprogress.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/navy-wont-rename-carrier-to-honor-black-war-hero/74496238",
+          "title": "Navy wont rename carrier slated to honor Black war hero",
+          "seendate": "20261121T064500Z",
+          "domain": "wbaltv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.deperu.com/tv/4fdgE1WOnUg.capturan-a-jolin-en-ecuador-importante-noticia-para-peru-shorts.UCgR0st4ZLABi-LQcWNu3wnQ.html",
+          "title": "Video : Capturan a Jolín en Ecuador : importante noticia para Perú Shorts por PBO",
+          "seendate": "20261121T064500Z",
+          "domain": "deperu.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.49ers.com/news/evans-greenlaw-questionable-no-players-ruled-out-vs-vikings-practice-report-minvssf",
+          "title": "Evans , Greenlaw Questionable ; No Players Ruled Out vs . Vikings",
+          "seendate": "20261121T064500Z",
+          "domain": "49ers.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/life/lifestyle-briefs/2026/11/kyl-schedules-childrens-programs-4/",
+          "title": "KYL schedules children programs - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.diariolibre.com/mundo/estados-unidos/2026/11/20/regulacion-de-robots-asesinos-en-debate-en-onu/3727262",
+          "title": "Regulación de robots asesinos en debate en ONU",
+          "seendate": "20261121T064500Z",
+          "domain": "diariolibre.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.womansworld.com/entertainment/books/best-percy-jackson-books-ranked-what-goodreads-readers-fans-think",
+          "title": "Best  Percy Jackson  Books Ranked : What Goodreads Readers & Fans Think",
+          "seendate": "20261121T064500Z",
+          "domain": "womansworld.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://freerepublic.com/tag/*/index?more=4403808",
+          "title": "Latest Articles",
+          "seendate": "20261121T064500Z",
+          "domain": "freerepublic.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wjcl.com/article/navy-wont-rename-carrier-to-honor-black-war-hero/74496238",
+          "title": "Navy wont rename carrier slated to honor Black war hero",
+          "seendate": "20261121T064500Z",
+          "domain": "wjcl.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nhl/articles/rangers_hoping_to_give_matt_rempe_a_fresh_start/s1_14825_44594434",
+          "title": "Rangers Hoping To Give Matt Rempe A Fresh Start",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://katsfm.com/ixp/442/p/cliff-booth-review/",
+          "title": "  Cliff Booth  Review : Twice Upon a Time in Hollywood",
+          "seendate": "20261121T064500Z",
+          "domain": "katsfm.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/ap/national/ap-news-summary-at-12-38-a-m-est/article_a2c6e01f-41a7-54ec-b932-289cc93eeac6.html",
+          "title": "AP News Summary at 12 : 38 a . m . EST",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyt.com/2026/11/21/dogwood-trace-neighbors-say-police-presence-after-deadly-lexington-shooting-was-unusual/",
+          "title": "Dogwood Trace neighbors say police presence after deadly Lexington shooting was unusual",
+          "seendate": "20261121T064500Z",
+          "domain": "wkyt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/news/local-news/2026/11/suspect-in-stabbing-arrested/",
+          "title": "Suspect in stabbing arrested - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.batonrougepost.com/news/279446521/shai-gilgeous-alexander-scores-40-as-thunder-rally-past-pelicans",
+          "title": "Shai Gilgeous - Alexander scores 40 as Thunder rally past Pelicans",
+          "seendate": "20261121T064500Z",
+          "domain": "batonrougepost.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://poncacitynews.com/article/2995-jon-david-wells",
+          "title": "Jon David Wells | Ponca City News",
+          "seendate": "20261121T064500Z",
+          "domain": "poncacitynews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wwmt.com/news/nation-world/hackers-allegedly-breach-usda-system-used-to-pay-farmers-reports-payment-system-us-department-of-agriculture-cybersecurity-cyberthreat-united-states-government",
+          "title": "Hackers allegedly breach USDA system used to pay farmers : reports",
+          "seendate": "20261121T064500Z",
+          "domain": "wwmt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.cadillacnews.com/ap/weather/wi-twin-cities-chanhassen-mn-zone-forecast/article_bcb7074d-e2fb-564a-ad80-3e49465efae7.html",
+          "title": "WI Twin Cities / Chanhassen MN Zone Forecast",
+          "seendate": "20261121T064500Z",
+          "domain": "cadillacnews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/jerry_jones_says_christian_parker_is_handling_demotion_very_well_admits_cowboys_have_been_a_bad_team_this_season/s1_13132_44591833",
+          "title": "Jerry Jones says Christian Parker is handling demotion  very well  ",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.mynbc5.com/article/navy-wont-rename-carrier-to-honor-black-war-hero/74496238",
+          "title": "Navy wont rename carrier slated to honor Black war hero",
+          "seendate": "20261121T064500Z",
+          "domain": "mynbc5.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ktul.com/news/nation-world/unprecedented-trump-announces-us-marine-band-honored-with-its-first-grammy-nomination-united-states-america-military-music-musicians-instruments-performers-performance-president-donald-trump-ufc-dana-white",
+          "title": "  Unprecedented : Trump announces U . S . Marine Band honored with its first Grammy nomination",
+          "seendate": "20261121T064500Z",
+          "domain": "ktul.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.motorward.com/CA-24V-CC-12-A-Modelo-LP1K1201BD-En-Caja-Sin-Marca-Nuevo-759307",
+          "title": "Contactor De CA 24V CC – 12 A , Modelo LP1K1201BD , En Caja , Sin Marca , Nuevo Contactor AC 24V 12A",
+          "seendate": "20261121T064500Z",
+          "domain": "motorward.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.motorward.com/Abiertos-De-6-A-50-Mm-De-Apertura-Acero-253364",
+          "title": "Clips De Herramienta Tipo Terry Abiertos , De 6 A 50 Mm De Apertura , Acero Clips De Herramienta Tipo Abierto",
+          "seendate": "20261121T064500Z",
+          "domain": "motorward.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.goskagit.com/news/education/education-meetings/article_5be8c921-6a33-407b-b457-f508c3ffc91d.html",
+          "title": "Education Meetings",
+          "seendate": "20261121T064500Z",
+          "domain": "goskagit.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/opinion/columnists/forward-thinking-on-not-messing-up/article_eea2e45b-1292-4a02-be2f-f3ad7a88e4e6.html",
+          "title": "Forward Thinking : On not messing up",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/life/features/2026/11/an-empty-nest-and-a-heavy-heart/",
+          "title": "An empty nest and a heavy heart",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://star1025.com/events/mixology-mystery-at-the-museum/",
+          "title": "Mixology : Mystery at the Museum",
+          "seendate": "20261121T064500Z",
+          "domain": "star1025.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/news/national-news-apwire/2026/11/court-prevents-us-army-from-detonating-bomb-making-chemicals-in-iowa/",
+          "title": "Court prevents US Army from detonating bomb - making chemicals in Iowa",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://parsippanyfocus.com/eleventh-hour-rescue-issues-emergency-plea-for-taco-a-happy-dog-struggling-in-his-kennel/",
+          "title": "Eleventh Hour Rescue Issues Emergency Plea for Taco , a Happy Dog Struggling in His Kennel",
+          "seendate": "20261121T064500Z",
+          "domain": "parsippanyfocus.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.enstarz.com/articles/246678/20261120/nikki-glaser-netflix-joke-studios-partnership.htm",
+          "title": "Nikki Glaser Teams Up With Netflix New Comedy Studio",
+          "seendate": "20261121T064500Z",
+          "domain": "enstarz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://article.wn.com/view/2026/11/21/Trump_asked_about_Russia_being_Irans_ally_He_dodges_question/",
+          "title": "Trump asked about Russia being Iran ally . He dodges question , calls Putin a friend",
+          "seendate": "20261121T064500Z",
+          "domain": "article.wn.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.elvocero.com/noticia_rotary/article_6cc8ed54-6c9f-44d9-8f87-493f459a15da.html",
+          "title": "Encuentran culpable de fraude a exempleada del Seguro Social | Actualidad",
+          "seendate": "20261121T064500Z",
+          "domain": "elvocero.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wgy.iheart.com/content/2026-11-21-judge-orders-halt-on-iowa-lead-detonation-plan/",
+          "title": "Judge Orders Halt On Iowa Lead Detonation Plan | News Radio 103 . 1 and 810 WGY",
+          "seendate": "20261121T064500Z",
+          "domain": "wgy.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/opinion/columnists/big-tech-bring-your-own-power/article_68e0c5da-267d-4645-86f4-348d8e0a371c.html",
+          "title": "Big tech , bring your own power",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailygazette.com/leader_herald/the_recorder/news/amsterdam/town-of-amsterdam-bans-kratom-sales/article_b707e757-20e5-4dbd-a5b0-4050c7b494cd.html",
+          "title": "Town of Amsterdam bans kratom sales",
+          "seendate": "20261121T064500Z",
+          "domain": "dailygazette.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.fashiontimes.com/lila-moss-trades-traditional-christmas-dressing-puccis-alterna-holiday-campaign-15409",
+          "title": "Lila Moss Trades Traditional Christmas Dressing for Pucci Alterna - Holiday Campaign",
+          "seendate": "20261121T064500Z",
+          "domain": "fashiontimes.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.deperu.com/calendario/2881/dia-de-la-promocion-de-la-salud-en-el-peru",
+          "title": "21 de Noviembre - Día de la Promoción de la Salud en el Perú",
+          "seendate": "20261121T064500Z",
+          "domain": "deperu.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/11/21/we-need-more-assurance-why-army-could-still-detonate-monday-despite-court-pause/",
+          "title": "  We need more assurance : Why Army could still detonate Monday despite court pause",
+          "seendate": "20261121T064500Z",
+          "domain": "kcrg.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wiky.com/2026/11/20/trump-order-says-contractors-must-notify-white-house-of-congressional-probes/",
+          "title": "Trump order says contractors must notify White House of congressional probes",
+          "seendate": "20261121T064500Z",
+          "domain": "wiky.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ktul.com/news/local/business-owners-describe-lip-service-from-officials-over-road-construction-11-21-2026",
+          "title": "Business owners describe  lip service  from officials over road construction",
+          "seendate": "20261121T064500Z",
+          "domain": "ktul.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/news/local-news/2026/11/opportunities-to-shop-and-get-festive-on-tuesday/",
+          "title": "Opportunities to shop and get festive on Tuesday",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-utsa-vs-uab-nov-21-tv-stream/",
+          "title": "UTSA vs . UAB Nov . 21 : TV , Stream | AM 1300 THE ZONE",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/nfl_jersey_sales_see_missing_stars_in_top_10_a_surprise_san_francisco_49er_at_no_5/s1_13132_44591382",
+          "title": "NFL jersey sales see missing stars in top 10 , surprise at No . 5",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.npr.org/transcripts/nx-s1-5981356",
+          "title": "New York City plans to close Rikers Island jail : NPR",
+          "seendate": "20261121T064500Z",
+          "domain": "npr.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wjcl.com/article/from-savannah-roots-to-americas-highways-get-inside-great-danes-126-year-history/74496151",
+          "title": "From Savannah roots to America highways : Get Inside Great Dane 126 - year history",
+          "seendate": "20261121T064500Z",
+          "domain": "wjcl.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://cbs4local.com/news/nation-world/unprecedented-trump-announces-us-marine-band-honored-with-its-first-grammy-nomination-united-states-america-military-music-musicians-instruments-performers-performance-president-donald-trump-ufc-dana-white",
+          "title": "  Unprecedented : Trump announces U . S . Marine Band honored with its first Grammy nomination",
+          "seendate": "20261121T064500Z",
+          "domain": "cbs4local.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/profiles/allStartsPeople.cfm?eID=2991&typeSource=TE&rbt=TB&year=2026",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-tarleton-state-vs-nicholls-tv-stream-nov-21/",
+          "title": "Tarleton State vs . Nicholls TV & Stream – Nov . 21",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://cbs4local.com/newsletter-daily/historic-kress-building-to-reopen-in-downtown-el-paso-with-new-food-hall-entertainment",
+          "title": "Historic Kress building to reopen in downtown El Paso with new food hall , entertainment",
+          "seendate": "20261121T064500Z",
+          "domain": "cbs4local.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://newschannel9.com/news/local/dryer-fire-contained-at-arcadia-creekside-apartments-several-cats-die-no-injuries",
+          "title": "Dryer fire contained at Arcadia Creekside Apartments : Several cats die , no injuries",
+          "seendate": "20261121T064500Z",
+          "domain": "newschannel9.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://itemlive.com/2026/11/20/state-to-revisit-lynnway-traffic-projections/",
+          "title": "State to revisit Lynnway traffic projections",
+          "seendate": "20261121T064500Z",
+          "domain": "itemlive.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://freerepublic.com/focus/f-bloggers/4403825/posts",
+          "title": "MEGA STRIKE ON BRIDGES : 70 Kh - 101s , 500 Drones Russia Biggest Attack Since 2022",
+          "seendate": "20261121T064500Z",
+          "domain": "freerepublic.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://townhall.com/columnists/paul-teller/2026/11/21/congress-fixed-the-hemp-loophole-now-it-should-leave-that-fix-alone-n2686837",
+          "title": "Congress Fixed the Hemp Loophole . Now It Should Leave That Fix Alone . ",
+          "seendate": "20261121T064500Z",
+          "domain": "townhall.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nascar/articles/dont_hold_your_horses_nascar_heeds_calls_to_increase_horsepower_in_2027/s1_13132_44593366",
+          "title": "NASCAR heeds calls to increase horsepower in 2027",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.npr.org/transcripts/nx-s1-6039337",
+          "title": "Draft of iconic MLK speech goes on public display : NPR",
+          "seendate": "20261121T064500Z",
+          "domain": "npr.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-grand-canyon-vs-smu-tv-stream-nov-21/",
+          "title": "Grand Canyon vs . SMU TV & Stream – Nov . 21",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.mdjonline.com/pets/meet-pet-of-the-day/image_a4a8d0a5-dc56-5606-83ce-7d682d2c3e4b.html",
+          "title": "Meet : Pet of the Day",
+          "seendate": "20261121T064500Z",
+          "domain": "mdjonline.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wmtw.com/article/maine-celtics-rally-for-win-1795231431/74496297",
+          "title": "Maine Celtics rally for win",
+          "seendate": "20261121T064500Z",
+          "domain": "wmtw.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.enstarz.com/articles/246677/20261120/black-bear-bill-hader-they-know-film.htm",
+          "title": "Black Bear to Release Bill Hader Directorial Debut  They Know  Starring Linda Cardellini",
+          "seendate": "20261121T064500Z",
+          "domain": "enstarz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://chicago.suntimes.com/horoscopes/2026/11/21/horoscopes-today-saturday-november-21-2026",
+          "title": "Horoscope for Saturday , November 21 , 2026",
+          "seendate": "20261121T064500Z",
+          "domain": "chicago.suntimes.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ktvz.com/news/top-stories/2026/11/20/time-for-winter-tires-les-schwab-preps-drivers-and-oas-shuttles-for-snow/",
+          "title": "Time for winter tires : Les Schwab preps drivers and OAS shuttles for snow",
+          "seendate": "20261121T064500Z",
+          "domain": "ktvz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.elvocero.com/noticia_rotary/article_ddc2b6b6-5ce9-4de1-9d82-ffdf3871289b.html",
+          "title": "GTA 6 rompe récord con $3 , 790 millones en ventas en un día | Actualidad",
+          "seendate": "20261121T064500Z",
+          "domain": "elvocero.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/opinion/local-columns/2026/11/almanac-for-nov-21-2026/",
+          "title": "Almanac for Nov . 21 , 2026 - Daily Press",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wwmt.com/news/local/food-support-free-meals-pantry-grocery-cheap-affordable-family-eating-kalamazoo-portage-west-michigan",
+          "title": "No bill no questions asked : Portage Beacon Family Kitchen offers pay - what - you - can dining",
+          "seendate": "20261121T064500Z",
+          "domain": "wwmt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.xula.edu/news/2026/11/damon-l-williams-jr-02-named-vice-president-of-university-relations-and-chief-of-staff-at-adler-university.html",
+          "title": "Damon L . Williams Jr . ( 01 ) Named Vice President of University Relations and Chief of Staff at Adler University",
+          "seendate": "20261121T064500Z",
+          "domain": "xula.edu",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/obituaries/2026/11/donald-sells-3/",
+          "title": "DONALD SELLS - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/christmas-markets-around-the-world-2026/74493104",
+          "title": "Explore Christmas markets around the world this holiday season",
+          "seendate": "20261121T064500Z",
+          "domain": "wbaltv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wwmt.com/news/nation-world/unprecedented-trump-announces-us-marine-band-honored-with-its-first-grammy-nomination-united-states-america-military-music-musicians-instruments-performers-performance-president-donald-trump-ufc-dana-white",
+          "title": "  Unprecedented : Trump announces U . S . Marine Band honored with its first Grammy nomination",
+          "seendate": "20261121T064500Z",
+          "domain": "wwmt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.motorward.com/100-Sobres-Acolchados-De-Burbujas-Blancos-Tama-o-M-Oferta-230294",
+          "title": "Sobres De Burbujas Acolchados Pack De 100 Sobres Acolchados De Burbujas Blancos Tamaño M , Oferta : Compra 2 Y Llévate 1 Gratis",
+          "seendate": "20261121T064500Z",
+          "domain": "motorward.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/profiles/Results.cfm?type=People&searchType=O&eID=2406709&rbt=TB",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://freerepublic.com/focus/f-news/4403828/posts",
+          "title": "Woman targeted in racist attack at In - N - Out in Los Angeles speaks out",
+          "seendate": "20261121T064500Z",
+          "domain": "freerepublic.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ktul.com/news/local/business-owners-describe-lip-service-from-officials-over-road-construction",
+          "title": "Business owners describe  lip service  from officials over road construction",
+          "seendate": "20261121T064500Z",
+          "domain": "ktul.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/obituaries/2026/11/laurie-hallsted/",
+          "title": "LAURIE HALLSTED - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://theitem.com/stories/young-crestwood-squad-relishing-spot-atop-3a-in-scbca-preseason-rankings,448969",
+          "title": "Young Crestwood squad relishing spot atop 3A in SCBCA preseason rankings",
+          "seendate": "20261121T064500Z",
+          "domain": "theitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/jermaine_eluemunor_to_those_expecting_jaguars_to_blow_giants_out_were_in_first_place_for_a_reason/s1_13132_44591146",
+          "title": "Eluemunor addresses those expecting Jaguars to blow Giants out",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.deperu.com/tv/5CvNuxqUDQk.envivo-bien-servido.UC_ept7M1UXlCfvcUrK49Ziw.html",
+          "title": "Video : EnVivo BIEN SERVIDO por TV Cosmos",
+          "seendate": "20261121T064500Z",
+          "domain": "deperu.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.motorward.com/Multivuelta-Amphenol-205-102627-1K-Ohm-10-Vueltas-Montaje-En-470909",
+          "title": "Potenciómetro Multivuelta Amphenol 205 - 102627 , 1K Ohm , 10 Vueltas , Montaje En Panel , Precisión ±3 % – Hecho En EE . UU . Potenciómetro 10 Vueltas 1K Ohm",
+          "seendate": "20261121T064500Z",
+          "domain": "motorward.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://txktoday.com/events/arkansas-high-school-powderpuff-game/",
+          "title": "Arkansas High School Powderpuff Game",
+          "seendate": "20261121T064500Z",
+          "domain": "txktoday.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wemu.org/npr-national-news/2026-11-20/tiny-desk-radio-first-aid-kit-snoh-aalegra-robyn",
+          "title": "Tiny Desk Radio : First Aid Kit , Snoh Aalegra , Robyn",
+          "seendate": "20261121T064500Z",
+          "domain": "wemu.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.mainemirror.com/news/279446665/economy-on-brink-of-ruin-congress-pramod-tiwari-slams-modi-govt-after-trump-remarks-on-india-gdp",
+          "title": "  Economy on brink of ruin : Congres Pramod Tiwari slams Modi Govt after Trump remarks on India GDP",
+          "seendate": "20261121T064500Z",
+          "domain": "mainemirror.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.goskagit.com/news/crime/court-report/article_c8a36c45-1e97-49b6-83ff-204b398abac1.html",
+          "title": "Court Report",
+          "seendate": "20261121T064500Z",
+          "domain": "goskagit.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.kcbx.org/npr-top-news/2026-11-20/mlks-handwritten-draft-of-iconic-speech-on-display-for-the-first-time",
+          "title": "MLK handwritten draft of iconic speech on display for the first time",
+          "seendate": "20261121T064500Z",
+          "domain": "kcbx.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://alaskapublic.org/programs/alaska-news-nightly/2026-11-20/alaska-news-nightly-friday-november-20-2026",
+          "title": "Alaska News Nightly : Friday , November 20 , 2026",
+          "seendate": "20261121T064500Z",
+          "domain": "alaskapublic.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://parsippanyfocus.com/weiss-aug-appoints-raul-scheller-as-chief-operating-officer/",
+          "title": "Weiss - Aug Appoints Raul Scheller as Chief Operating Officer",
+          "seendate": "20261121T064500Z",
+          "domain": "parsippanyfocus.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nhl/articles/jets_gm_cheveldayoff_trying_to_offload_veteran_forward/s1_16454_44591965",
+          "title": "Jets GM Cheveldayoff trying to offload veteran forward",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/mlb/articles/si_hwan_roh_could_be_an_interesting_bargain_for_teams_needing_a_third_baseman/s1_13132_44594478",
+          "title": "Si Hwan Roh could be an interesting bargain for teams needing a third baseman",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://cbs4local.com/newsletter-daily/records-some-el-paso-county-sheriffs-staff-earned-as-much-overtime-as-base-pay",
+          "title": "Records : Some El Paso County sheriff staff earned as much overtime as base pay",
+          "seendate": "20261121T064500Z",
+          "domain": "cbs4local.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://townhall.com/news/cameron-arcand/2026/11/20/operation-economic-outcast-is-still-in-full-force-with-this-latest-move-n2686846",
+          "title": "  Operation Economic Outcast  Is Still in Full Force With This Latest Move",
+          "seendate": "20261121T064500Z",
+          "domain": "townhall.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-kavontae-turpin-week-11-preview-vs-the-titans/",
+          "title": "KaVontae Turpin Week 11 Preview vs . the Titans",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyt.com/2026/11/21/crews-scene-possible-house-fire-lexington/",
+          "title": "Crews extinguish Friday night house fire in Lexington",
+          "seendate": "20261121T064500Z",
+          "domain": "wkyt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.sungazette.com/news/top-news/2026/11/plan-expected-to-improve-firefighter-safety-at-old-lycoming-township-volunteer-fire-company/",
+          "title": "Plan expected to improve firefighter safety at Old Lycoming Township Volunteer Fire Company",
+          "seendate": "20261121T064500Z",
+          "domain": "sungazette.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ai-online.com/2026/11/spe-acce-automotive-and-composites-conference-expo-announces-composites-advancing-mobility-on-the-ground-and-in-the-air/",
+          "title": "SPE® ACCE ( AUTOMOTIVE AND COMPOSITES CONFERENCE & EXPO ) ANNOUNCES  COMPOSITES : ADVANCING MOBILITY – ON THE GROUND AND IN THE AIR  ",
+          "seendate": "20261121T064500Z",
+          "domain": "ai-online.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nhl/articles/leafs_jim_hiller_says_job_security_not_something_i_think_about_too_much_following_eighth_straight_loss/s1_16958_44593305",
+          "title": "Leaf Jim Hiller says job security  Not something I think about too much  following eighth - straight loss",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://ktul.com/news/local/man-sentenced-to-50-years-in-prison-after-deadly-north-tulsa-stabbing-11-21-2026",
+          "title": "Man sentenced to 50 years in prison after deadly north Tulsa stabbing",
+          "seendate": "20261121T064500Z",
+          "domain": "ktul.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nba/articles/franz_wagner_delivers_game_winner_magic_beat_nets_to_reach_3_0_in_cup/s1_17045_44594674",
+          "title": "Franz Wagner delivers game - winner , Magic beat Nets to reach 3 - 0 in Cup",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.elvocero.com/noticia_rotary/article_a39e7793-b89e-4956-aa93-00e6e116d951.html",
+          "title": " ¿ Habrá nueva película de Home Alone con Macaulay Culkin ? | Escenario",
+          "seendate": "20261121T064500Z",
+          "domain": "elvocero.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/life/features/2026/11/old-magazine-has-a-musty-odor/",
+          "title": "Old magazine has a musty odor - Daily Press",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://townhall.com/columnists/maggie-mckneely/2026/11/21/brazils-gambling-crisis-is-a-warning-to-america-n2686703",
+          "title": "Brazil Gambling Crisis Is a Warning to America",
+          "seendate": "20261121T064500Z",
+          "domain": "townhall.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://jcpost.com/posts/30435dff-04a8-4f60-a6fe-79c1e641edcb",
+          "title": "Kansas man sold cocaine to DEA agents",
+          "seendate": "20261121T064500Z",
+          "domain": "jcpost.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://thebrunswicknews.com/news/local_news/county-warns-of-scam/article_1348d5ee-b440-4f48-8d54-561c2537bddf.html",
+          "title": "County warns of scam",
+          "seendate": "20261121T064500Z",
+          "domain": "thebrunswicknews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyt.com/2026/11/21/kentucky-wins-big-blue-crush-over-tennessee/",
+          "title": "Kentucky wins  Big Blue Crush  over Tennessee",
+          "seendate": "20261121T064500Z",
+          "domain": "wkyt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/news/community/2026/11/bark-river-harris-national-honor-society-chapter-wins-national-award/",
+          "title": "Bark River - Harris National Honor Society Chapter wins national award",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.sungazette.com/news/top-news/2026/11/2027-lycoming-county-real-estate-taxes-to-remain-at-7-mills/",
+          "title": "2027 Lycoming County real estate taxes to remain at 7 mills - Williamsport Sun - Gazette",
+          "seendate": "20261121T064500Z",
+          "domain": "sungazette.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://freerepublic.com/focus/f-religion/4403826/posts",
+          "title": "AMERICA Prayer Vigil ( November 21 , 2026 ) [ Prayer ] ",
+          "seendate": "20261121T064500Z",
+          "domain": "freerepublic.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.haitisun.com/news/279446501/el-salvador-haitian-forces-launch-joint-anti-gang-military-operation",
+          "title": "El Salvador , Haitian forces launch joint anti - gang military operation",
+          "seendate": "20261121T064500Z",
+          "domain": "haitisun.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/premium/chartEmb.cfm?track=CD&raceDate=11/20/2026&cy=USA&rn=8",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://cbs4local.com/newsletter-daily/el-paso-high-student-and-family-released-from-ice-custody-attorney-confirms",
+          "title": "El Paso high student and her family released from ICE custody , attorney confirms",
+          "seendate": "20261121T064500Z",
+          "domain": "cbs4local.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.chattanoogan.com/2026/11/20/526443/Cleveland-Tops-CSAS-68-23.aspx",
+          "title": "Cleveland Tops CSAS , 68 - 23 - Chattanoogan . com",
+          "seendate": "20261121T064500Z",
+          "domain": "chattanoogan.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nba/articles/report_1_nba_head_coach_is_already_on_the_hot_seat/s1_127_44594131",
+          "title": "Report : 1 NBA head coach is already on the hot seat",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://itemlive.com/2026/11/20/swampscott-boh-vacates-vinnin-nicotine-violation/",
+          "title": "Swampscott BOH vacates Vinnin nicotine violation",
+          "seendate": "20261121T064500Z",
+          "domain": "itemlive.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/news/local-business/2026/11/van-dyke-cover-crops-not-a-fad/",
+          "title": "Van Dyke : Cover crops not a fad - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wapa.tv/noticias/politica/sin-acuerdo-para-restablecer-el-suministro-de-gas-natural-por-parte-de-la-empresa-crowley/article_7e299e75-4b5d-44e2-9ee1-d650401abc96.html",
+          "title": "Sin acuerdo para restablecer el suministro de gas natural por parte de la empresa Crowley",
+          "seendate": "20261121T064500Z",
+          "domain": "wapa.tv",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://thebrunswicknews.com/news/world_news/virginia-reports-state-s-first-measles-death-of-2026-health-officials-urge-vaccination/article_51dd64e7-3ece-5e24-b83f-43d75d03aaca.html",
+          "title": "Virginia reports state first measles death of 2026 ; health officials urge vaccination | World News",
+          "seendate": "20261121T064500Z",
+          "domain": "thebrunswicknews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailybulletin.com/2026/11/20/2-found-dead-a-day-after-woman-was-swept-away-in-creek-amid-heavy-rainfall-in-chino-hills/",
+          "title": "2 found dead a day after woman was swept away in creek amid heavy rainfall in Chino Hills",
+          "seendate": "20261121T064500Z",
+          "domain": "dailybulletin.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://signalscv.com/2026/11/pursuit-exceeds-90-mph-speed/",
+          "title": "Pursuit exceeds 90 mph speed",
+          "seendate": "20261121T064500Z",
+          "domain": "signalscv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/national-international/fbi-investigating-potential-breach-crime-database/3798462/",
+          "title": "FBI investigating potential breach of its crime database",
+          "seendate": "20261121T064500Z",
+          "domain": "nbcconnecticut.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://powertalk967.iheart.com/content/2026-11-21-judge-orders-halt-on-iowa-lead-detonation-plan/",
+          "title": "Judge Orders Halt On Iowa Lead Detonation Plan",
+          "seendate": "20261121T064500Z",
+          "domain": "powertalk967.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wjcl.com/article/impact-day-as-weekend-starts-wet-across-southeast-georgia-lowcountry/74495907",
+          "title": "Savannah : Weekend starts wet , Impact Day",
+          "seendate": "20261121T064500Z",
+          "domain": "wjcl.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://txktoday.com/events/veterans-and-first-responders-free-breakfast-at-elks-lodge-2771/",
+          "title": "Veterans and First Responders free breakfast at Elks Lodge 2771",
+          "seendate": "20261121T064500Z",
+          "domain": "txktoday.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/opinion/editorials/after-midterm-rebuttal-maga-is-doubling-down/article_83539df5-a038-4fa4-bd01-aac91ab869c8.html",
+          "title": "After Midterm rebuttal , MAGA is doubling down",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.mynbc5.com/article/christmas-markets-around-the-world-2026/74493104",
+          "title": "Explore Christmas markets around the world this holiday season",
+          "seendate": "20261121T064500Z",
+          "domain": "mynbc5.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://freerepublic.com/focus/f-chat/4403822/posts",
+          "title": "With Putin in the room , Carney condemns Russia illegal invasion of Ukraine : Speaking at APEC summit , Carney tells Putin what he thinks of Ukraine war",
+          "seendate": "20261121T064500Z",
+          "domain": "freerepublic.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.theticket.com/2026/11/20/no-sophomore-slump-for-cooper-flagg-who-leads-mavs-vs-clippers/",
+          "title": "No sophomore slump for Cooper Flagg , who leads Mavs vs . Clippers",
+          "seendate": "20261121T064500Z",
+          "domain": "theticket.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.phoenixherald.com/news/279443669/myanmar-found-responsible-for-rohingya-genocide-by-icj",
+          "title": "Myanmar found responsible for Rohingya genocide by ICJ",
+          "seendate": "20261121T064500Z",
+          "domain": "phoenixherald.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-utah-vs-tcu-nov-21-tv-stream/",
+          "title": "Utah vs . TCU Nov . 21 : TV , Stream | AM 1300 THE ZONE",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://kpq.com/ixp/1137/p/stores-closed-thanksgiving-2026/",
+          "title": "Stores Closed on Thanksgiving 2026 : Walmart , Target , Costco",
+          "seendate": "20261121T064500Z",
+          "domain": "kpq.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://jcpost.com/posts/6ae4edf6-fd04-47cc-b09d-a365106b7da1",
+          "title": "Chiefs rule out RB Kenneth Walker for Sunday game vs . Cardinals",
+          "seendate": "20261121T064500Z",
+          "domain": "jcpost.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.chattanoogan.com/2026/11/20/526447/Sale-Creek-Shocks-Soddy-Daisy-58-52.aspx",
+          "title": "Sale Creek Shocks Soddy Daisy , 58 - 52 - Chattanoogan . com",
+          "seendate": "20261121T064500Z",
+          "domain": "chattanoogan.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://newschannel9.com/news/nation-world/hackers-allegedly-breach-usda-system-used-to-pay-farmers-reports-payment-system-us-department-of-agriculture-cybersecurity-cyberthreat-united-states-government",
+          "title": "Hackers allegedly breach USDA system used to pay farmers : reports",
+          "seendate": "20261121T064500Z",
+          "domain": "newschannel9.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://cbs4local.com/newsletter-daily/developing-lower-valley-incident-leaves-one-seriously-injured",
+          "title": "Developing : Lower Valley incident leaves one seriously injured",
+          "seendate": "20261121T064500Z",
+          "domain": "cbs4local.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/news/local-news/2026/11/a-legacy-worth-rebuilding-the-stonehouse-restaurant-lounge/",
+          "title": "A legacy worth rebuilding : the Stonehouse Restaurant & Lounge",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://barrigaverde.net/el-jefe-del-pentagono-llama-patio-trasero-a-america-latina/",
+          "title": "El jefe del Pentágono llama  patio trasero  a América Latina",
+          "seendate": "20261121T064500Z",
+          "domain": "barrigaverde.net",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nhl/articles/mark_stone_sets_golden_knights_franchise_points_record/s1_16958_44590165",
+          "title": "Mark Stone sets Golden Knights franchise points record",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/profiles/Results.cfm?type=Horse&refno=11313643&registry=T&rbt=TB",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.cincinnatisun.com/news/279446605/yankees-non-tender-rhp-luis-gil-former-al-rookie-of-the-year",
+          "title": "Yankees non - tender RHP Luis Gil , former AL Rookie of the Year",
+          "seendate": "20261121T064500Z",
+          "domain": "cincinnatisun.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wmtw.com/article/navy-wont-rename-carrier-to-honor-black-war-hero/74496238",
+          "title": "Navy wont rename carrier slated to honor Black war hero",
+          "seendate": "20261121T064500Z",
+          "domain": "wmtw.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://1061fmtalk.iheart.com/content/2026-11-21-judge-orders-halt-on-iowa-lead-detonation-plan/",
+          "title": "Judge Orders Halt On Iowa Lead Detonation Plan",
+          "seendate": "20261121T064500Z",
+          "domain": "1061fmtalk.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.elvocero.com/el-mundo/estados-unidos/otro-ataque-fbi-investiga-nuevo-hackeo-a-base-de-datos-criminales-de-estados-unidos/article_82a536b2-c673-42ca-9ebb-4caa3a471ed3.html",
+          "title": "FBI investiga nuevo hackeo a base de datos criminales | Estados Unidos",
+          "seendate": "20261121T064500Z",
+          "domain": "elvocero.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/11/21/former-tama-county-deputy-pleads-guilty-sexual-abuse-case-involving-minor/",
+          "title": "Former Tama County jailer pleads guilty in sexual abuse case involving minor",
+          "seendate": "20261121T064500Z",
+          "domain": "kcrg.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nba/articles/victor_wembanyamas_strange_new_shot_had_everyone_confused/s1_127_44590074",
+          "title": "Victor Wembanyama strange new shot had everyone confused",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wmtw.com/article/18th-annual-food-round-up-collection-drive-at-kittery-trading-post/74496325",
+          "title": "18th Annual Food Round - Up at Kittery Trading Post",
+          "seendate": "20261121T064500Z",
+          "domain": "wmtw.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.everydayhealth.com/vision-products/hubble-premium-contacts/",
+          "title": "SkyHy By Hubble $3 - Per - Eye Contact Lenses Review",
+          "seendate": "20261121T064500Z",
+          "domain": "everydayhealth.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://newschannel9.com/news/nation-world/court-approves-725b-settlement-with-bayer-over-claims-roundup-weedkiller-caused-cancer",
+          "title": "Court approves $7 . 25B settlement with Bayer over claims Roundup weedkiller caused cancer",
+          "seendate": "20261121T064500Z",
+          "domain": "newschannel9.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://article.wn.com/view/2026/11/21/Trump_jokes_Chief_of_Staff_Stephen_Miller_should_run_for_pre/",
+          "title": "Trump jokes Chief of Staff Stephen Miller should run for president over Vance , Rubio",
+          "seendate": "20261121T064500Z",
+          "domain": "article.wn.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.davisenterprise.com/news/aggie-roundup-ucd-water-polo-beats-air-force-to-advance/article_60c9d64d-a081-4dd0-9a47-c118e1207cc7.html",
+          "title": "Aggie Roundup : UCD water polo beats Air Force to advance",
+          "seendate": "20261121T064500Z",
+          "domain": "davisenterprise.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://txktoday.com/events/ashdown-community-thanksgiving-drive-by-meal/",
+          "title": "Ashdown Community Thanksgiving Drive - By Meal",
+          "seendate": "20261121T064500Z",
+          "domain": "txktoday.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://itemlive.com/2026/11/20/a-forever-home-at-last/",
+          "title": "A forever home at last",
+          "seendate": "20261121T064500Z",
+          "domain": "itemlive.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.enstarz.com/articles/246679/20261121/brad-pitt-cliff-booth-sequel-critics-reviews.htm",
+          "title": "  The Further Mis - Adventures of Cliff Booth  Draws Praise , With Reservations",
+          "seendate": "20261121T064500Z",
+          "domain": "enstarz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.batonrougepost.com/news/279446665/economy-on-brink-of-ruin-congress-pramod-tiwari-slams-modi-govt-after-trump-remarks-on-india-gdp",
+          "title": "  Economy on brink of ruin : Congres Pramod Tiwari slams Modi Govt after Trump remarks on India GDP",
+          "seendate": "20261121T064500Z",
+          "domain": "batonrougepost.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.kold.com/2026/11/21/woman-two-preteens-killed-crash-benson-highway-palo-verde/",
+          "title": "Woman , two preteens killed in crash at Benson Highway , Palo Verde",
+          "seendate": "20261121T064500Z",
+          "domain": "kold.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://kalx.berkeley.edu/kalx-co-announce-edgardo-cambon-at-the-freight/",
+          "title": "KALX Co - Announce : Edgardo Cambón at The Freight – KALX 90 . 7FM Berkeley",
+          "seendate": "20261121T064500Z",
+          "domain": "kalx.berkeley.edu",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailybulletin.com/2026/11/20/robbers-flee-after-smash-and-grab-at-moreno-valley-mall-jewelry-shop/",
+          "title": "Robbers flee after smash - and - grab at Moreno Valley Mall jewelry shop",
+          "seendate": "20261121T064500Z",
+          "domain": "dailybulletin.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.deperu.com/tv/PORd_sbJxQA.radio-nacional-en-vivo-nacional-en-la-noticia-segunda-edicion-hoy-20-de-noviembre-de-2026.UCVW7J-lF26d3G3X8i2zmKow.html",
+          "title": "Video : Radio Nacional EN VIVO :  Nacional en la noticia , segunda edición Hoy 20 de noviembre de 2026 por Radio Nacional",
+          "seendate": "20261121T064500Z",
+          "domain": "deperu.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10635124&registry=T&rbt=TB",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/profiles/Results.cfm?type=Horse&refno=11458532&registry=T&rbt=TB",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/profiles/Results.cfm?type=Horse&refno=11315830&registry=T&rbt=TB",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.sungazette.com/news/health/2026/11/court-approves-7-25b-settlement-with-bayer-over-claims-roundup-weed-killer-caused-cancer/",
+          "title": "Court approves $7 . 25B settlement with Bayer over claims Roundup weed killer caused cancer",
+          "seendate": "20261121T064500Z",
+          "domain": "sungazette.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/baltimore-inner-harbor-redevelopment-mcb-deal/74495921",
+          "title": "Debate grows over Inner Harbor redevelopment plans in Baltimore",
+          "seendate": "20261121T064500Z",
+          "domain": "wbaltv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.mainemirror.com/news/279443669/myanmar-found-responsible-for-rohingya-genocide-by-icj",
+          "title": "Myanmar found responsible for Rohingya genocide by ICJ",
+          "seendate": "20261121T064500Z",
+          "domain": "mainemirror.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://katsfm.com/ixp/1135/p/alaska-airlines-seatac-expansion-2027/",
+          "title": "Alaska Airlines Adds 5 Nonstop Routes From Seattle In 2027",
+          "seendate": "20261121T064500Z",
+          "domain": "katsfm.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.mynbc5.com/article/four-arrested-in-chittenden-county-sexual-assault-investigation-involving-minors/74496058",
+          "title": "Four arrested in Chittenden County sexual assault investigation involving minors",
+          "seendate": "20261121T064500Z",
+          "domain": "mynbc5.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.complex.com/style/a/jaelaniturnerwilliams/jennifer-lopez-186-carat-necklace-jlo-show-premiere",
+          "title": "Jennifer Lopez 186 - Carat Dolce & Gabbana Necklace Had Security Detail",
+          "seendate": "20261121T064500Z",
+          "domain": "complex.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://katsfm.com/ixp/113/p/washington-yakima-weather-driving-conditions-thanksgiving/",
+          "title": "WA Thanksgiving Pass Conditions & Yakima Forecast",
+          "seendate": "20261121T064500Z",
+          "domain": "katsfm.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://foodpoisoningbulletin.com/2026/e-coli-outbreak-at-tufts-university-fresh-at-carmichael-dining-center/",
+          "title": "E . coli Outbreak at Tufts University Fresh at Carmichael Dining Center",
+          "seendate": "20261121T064500Z",
+          "domain": "foodpoisoningbulletin.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://article.wn.com/view/2026/11/21/Make_Europe_Great_Again/",
+          "title": "Make Europe Great Again - Worldnews . com",
+          "seendate": "20261121T064500Z",
+          "domain": "article.wn.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.nbcdfw.com/news/national-international/fbi-investigating-potential-breach-crime-database/4109196/",
+          "title": "FBI investigating potential breach of its crime database",
+          "seendate": "20261121T064500Z",
+          "domain": "nbcdfw.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.deperu.com/calendario/2887/dia-mundial-de-la-pesca",
+          "title": "21 de Noviembre - Día Mundial de la Pesca",
+          "seendate": "20261121T064500Z",
+          "domain": "deperu.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://vikingsterritory.com/2026/news/analysis/4-key-vikings-players-49ers",
+          "title": "4 Key Vikings Players vs . 49ers - Vikings Territory",
+          "seendate": "20261121T064500Z",
+          "domain": "vikingsterritory.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.equibase.com/premium/chartEmb.cfm?track=CD&raceDate=11/20/2026&cy=USA&rn=7",
+          "title": "",
+          "seendate": "20261121T064500Z",
+          "domain": "equibase.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.fashiontimes.com/khys-first-pop-coming-los-angeles-kylie-jenners-latest-fashion-releases-15408",
+          "title": "Khy First Pop - Up Is Coming to Los Angeles With Kylie Jenner Latest Fashion Releases",
+          "seendate": "20261121T064500Z",
+          "domain": "fashiontimes.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.willistonherald.com/news/entertainment-inc-brings-holiday-comedy-to-williston-stage",
+          "title": "Entertainment , Inc ! brings holiday comedy to Williston stage",
+          "seendate": "20261121T064500Z",
+          "domain": "willistonherald.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailypress.net/opinion/editorial/2026/11/carbon-monoxide-poisoning-a-real-danger-in-winter/",
+          "title": "Carbon monoxide poisoning a real danger in winter",
+          "seendate": "20261121T064500Z",
+          "domain": "dailypress.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://am1300thezone.iheart.com/content/2026-11-21-incarnate-word-vs-texas-am-tv-stream-nov-21/",
+          "title": "Incarnate Word vs . Texas A & M TV & Stream – Nov . 21",
+          "seendate": "20261121T064500Z",
+          "domain": "am1300thezone.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nba/articles/scottie_barnes_passes_demar_derozan_on_raptors_all_time_rebounds_list/s1_13132_44594479",
+          "title": "Scottie Barnes passes DeMar DeRozan on Raptor rebounds list",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://townhall.com/author/paul-teller",
+          "title": "Articles by Paul Teller",
+          "seendate": "20261121T064500Z",
+          "domain": "townhall.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://foodpoisoningbulletin.com/2026/sanniu-biscuits-recalled-for-milk-and-shrimp/",
+          "title": "Sanniu Biscuits Recalled For Milk and Shrimp",
+          "seendate": "20261121T064500Z",
+          "domain": "foodpoisoningbulletin.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.newsitem.com/arts_living/science/starwatch-aquila-the-baddest-bird-is-landing-in-shamokin-night-skies/article_54848971-95ad-4da7-a491-7ad4aa259787.html",
+          "title": "Starwatch : Aquila , the  baddest  bird , is landing in Shamokin night skies",
+          "seendate": "20261121T064500Z",
+          "domain": "newsitem.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.messengernews.net/news/news-brief/2026/11/holiday-sanitation-schedule-announced/",
+          "title": "Holiday sanitation schedule announced - Messenger News",
+          "seendate": "20261121T064500Z",
+          "domain": "messengernews.net",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.yardbarker.com/nba/articles/lebron_james_has_his_first_terrible_flop_with_76ers/s1_127_44584642",
+          "title": "LeBron James has his first terrible flop with 76ers",
+          "seendate": "20261121T064500Z",
+          "domain": "yardbarker.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wiky.com/2026/11/20/fbis-criminal-information-database-hacked-cnn-reports/",
+          "title": "FBI criminal information database hacked , CNN reports | 104 . 1 WIKY",
+          "seendate": "20261121T064500Z",
+          "domain": "wiky.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.sandiegosun.com/news/279446371/fresh-off-halting-skid-sabres-look-to-gain-on-panthers",
+          "title": "Fresh off halting skid , Sabres look to gain on Panthers",
+          "seendate": "20261121T003000Z",
+          "domain": "sandiegosun.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://bnonews.com/index.php/2026/11/does-texas-bar-recovery-above-50-percent-fault/",
+          "title": "Does Texas Bar Recovery Above 50 Percent Fault ? ",
+          "seendate": "20261121T003000Z",
+          "domain": "bnonews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.rttnews.com/3716863/gwen-stefani-to-headline-opening-concert-at-new-orange-country-concert-hall-ocvibe.aspx",
+          "title": "Gwen Stefani To Headline Opening Concert At New Orange Country Concert Hall OCVIBE",
+          "seendate": "20261121T003000Z",
+          "domain": "rttnews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://vtdigger.org/2026/11/20/fired-shelburne-police-sergeant-stripped-of-police-certification-for-role-in-deadly-crash/",
+          "title": "Fired Shelburne police sergeant stripped of police certification for role in deadly crash",
+          "seendate": "20261121T003000Z",
+          "domain": "vtdigger.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wsls.com/news/local/2026/11/20/virginia-department-of-health-announces-first-measles-associated-death-in-2026/",
+          "title": "Virginia Department of Health announces first Measles - associated death in 2026",
+          "seendate": "20261121T003000Z",
+          "domain": "wsls.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/local/palisades-arson-trial-jonathan-rinderknecht/3972494/",
+          "title": "Jonathan Rinderknecht convicted of starting Palisades Fire – NBC Los Angeles",
+          "seendate": "20261121T003000Z",
+          "domain": "nbclosangeles.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://homenewshere.com/national/features/article_5f11a369-bce3-5737-af83-fcf07a2aa524.html",
+          "title": "Tres de cada 4 creen que lograr sus metas financieras toma más tiempo hoy",
+          "seendate": "20261121T003000Z",
+          "domain": "homenewshere.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.realitytea.com/2026/11/20/teresa-giudice-family-heartbreak-worse-than-prison-2026/",
+          "title": "Teresa Giudice Says 2026 Was Even Harder Than Prison",
+          "seendate": "20261121T003000Z",
+          "domain": "realitytea.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/fiona-family-mom-bibi-brother-fritz-update-death/3973555/",
+          "title": "Cincinnati Zoo shares update on how Fiona the hippo family is doing – NBC Los Angeles",
+          "seendate": "20261121T003000Z",
+          "domain": "nbclosangeles.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://bnonews.com/index.php/2026/11/indian-man-sentenced-to-nearly-20-years-in-prison-for-plot-to-assassinate-sikh-activist-in-new-york/",
+          "title": "Indian man sentenced to nearly 20 years in prison for plot to assassinate Sikh activist in New York",
+          "seendate": "20261121T003000Z",
+          "domain": "bnonews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.dailymail.com/crime-desk/article-16310163/Russell-Brand-appeal-convictions-sacks-lawyer.html",
+          "title": "Shameless Russell Brand wants to appeal his rape and sexual assault convictions as he begins 10 - year stint behind bars - after sacking lawyer who exploded at journalist outside court",
+          "seendate": "20261121T003000Z",
+          "domain": "dailymail.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/20/abogados-presentan-argumentos-por-sobornos-en-contratos-de-seguridad/3726930",
+          "title": "Abogados presentan argumentos por sobornos en contratos de seguridad",
+          "seendate": "20261121T003000Z",
+          "domain": "diariolibre.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyufm.org/news/2026-11-20/trumps-impact-on-an-ohio-steel-plant",
+          "title": "Trump impact on an Ohio steel plant",
+          "seendate": "20261121T003000Z",
+          "domain": "wkyufm.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wolfradio933.iheart.com/content/2026-11-20-experts-warn-doomscrolling-is-a-growing-global-health-threat/",
+          "title": "Experts Warn Doomscrolling Is A Growing Global Health Threat",
+          "seendate": "20261121T003000Z",
+          "domain": "wolfradio933.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "http://www.sandiegosun.com/news/279446353/reports-gavin-sheets-agrees-to-three-year-11m-deal-with-padres",
+          "title": "Reports : Gavin Sheets agrees to three - year , $11M deal with Padres",
+          "seendate": "20261121T003000Z",
+          "domain": "sandiegosun.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.rttnews.com/3716904/u-s-dollar-ends-roughly-flat-amid-rising-expectations-on-fed-tightening.aspx",
+          "title": "U . S . Dollar Ends Roughly Flat Amid Rising Expectations On Fed Tightening",
+          "seendate": "20261121T003000Z",
+          "domain": "rttnews.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://twincitiesnewstalk.iheart.com/content/2026-11-20-senate-honors-fiona-the-hippo-after-her-passing/",
+          "title": "Senate Honors Fiona The Hippo After Her Passing | Twin Cities News Talk",
+          "seendate": "20261121T003000Z",
+          "domain": "twincitiesnewstalk.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.amren.com/news/2026/11/texas-imam-at-north-austin-mosque-calls-for-enemies-to-be-counted-killed-one-by-one-do-not-leave-a-single-one-of-them/",
+          "title": "Texas Imam at North Austin Mosque Calls for Enemies to Be Counted , Killed One by One  Do Not Leave a Single One of Them  ",
+          "seendate": "20261121T003000Z",
+          "domain": "amren.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wpxi.com/news/local/criminal-charges-withdrawn-against-century-iii-mall-owner/CCXQPV72PFE3BMS4TUGLJY67CI/",
+          "title": "Criminal charges withdrawn against Century III Mall owner",
+          "seendate": "20261121T003000Z",
+          "domain": "wpxi.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wbt.com/1652490/honduran-man-faces-drug-charges-after-21-kilograms-of-fentanyl-seized-in-charlotte/",
+          "title": "Honduran Man Arrested with 21 Kilograms of Fentanyl Seized",
+          "seendate": "20261121T003000Z",
+          "domain": "wbt.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://knue.com/ixp/204/p/hannah-harper-motherhood-family-string-cheese-tour/",
+          "title": "Hannah Harper on Life After  Idol  and Tour : EXCLUSIVE",
+          "seendate": "20261121T003000Z",
+          "domain": "knue.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.clickorlando.com/news/weird-news/2026/11/20/the-most-effective-ambassador-fiona-the-hippos-death-sparks-grief-and-talk-about-famous-animals/",
+          "title": "  The most effective ambassador : Fiona the hippo death sparks grief and talk about famous animals",
+          "seendate": "20261121T003000Z",
+          "domain": "clickorlando.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.kvnf.org/npr-news/2026-11-20/the-latest-from-trumps-press-conference",
+          "title": "The latest from Trump press conference",
+          "seendate": "20261121T003000Z",
+          "domain": "kvnf.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.hottalkradio.com/commentary/2026/11/21",
+          "title": "Hot Talk Radio | News and Information with Commentary and Streaming",
+          "seendate": "20261121T003000Z",
+          "domain": "hottalkradio.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.azsnakepit.com/arizona-diamondbacks-news/99509/diamondbacks-non-tender-andrew-saalfrank-blake-walston",
+          "title": "Diamondbacks non - tender Andrew Saalfrank and Blake Walston",
+          "seendate": "20261121T003000Z",
+          "domain": "azsnakepit.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://deadline.com/2026/11/david-fincher-defends-ai-cliff-booth-criticism-1237230711/",
+          "title": "David Fincher Defends AI Use Amid  Cliff Booth  Criticism",
+          "seendate": "20261121T003000Z",
+          "domain": "deadline.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://maritime-executive.com/article/russian-navy-back-in-the-mediterranean-escorting-a-cargo-flotilla",
+          "title": "Russian Navy Back in the Mediterranean Escorting a Cargo Flotilla",
+          "seendate": "20261121T003000Z",
+          "domain": "maritime-executive.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://krystal93.com/tips-to-get-yourself-ready-for-the-turkey-trot/",
+          "title": "Tips to get yourself ready for the Turkey Trot",
+          "seendate": "20261121T003000Z",
+          "domain": "krystal93.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.flickeringmyth.com/hot-toys-unleashes-monstrous-absolute-batman-bane-sixth-scale-figure/",
+          "title": "Hot Toys unleashes monstrous Absolute Batman Bane sixth scale figure",
+          "seendate": "20261121T003000Z",
+          "domain": "flickeringmyth.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.ktvo.com/news/nation-world/trump-seeks-to-penalize-us-companies-that-build-ai-data-centers-abroad-even-as-they/article_52287a0d-b525-529f-aa7f-614a0bc194d8.html",
+          "title": "Trump seeks to penalize US companies that build AI data centers abroad , even as they face backlash",
+          "seendate": "20261121T003000Z",
+          "domain": "ktvo.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wadk.com/entertainment-news/2ff99d60fd3808ac2742d7e0df8404de",
+          "title": "Entertainment News - 1540 WADK Newport",
+          "seendate": "20261121T003000Z",
+          "domain": "wadk.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://bill95.iheart.com/content/2026-11-20-experts-warn-doomscrolling-is-a-growing-global-health-threat/",
+          "title": "Experts Warn Doomscrolling Is A Growing Global Health Threat",
+          "seendate": "20261121T003000Z",
+          "domain": "bill95.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://bill95.iheart.com/content/2026-11-20-country-singer-greylan-james-opens-up-about-pretty-bad-car-accident-on-the-way-to-60th-cma-awards/",
+          "title": "Country Singer Greylan James Opens Up About  Pretty Bad  Car Accident On The Way To 60th CMA Awards",
+          "seendate": "20261121T003000Z",
+          "domain": "bill95.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://1063thebuzz.com/ixp/366/p/it-dies-today-wrestler-injury/",
+          "title": "Wrestler Breaks Leg at Metalcore Band 25th Anniversary Show",
+          "seendate": "20261121T003000Z",
+          "domain": "1063thebuzz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wsrw.iheart.com/content/2026-11-20-cops-facing-charges-after-stand-your-ground-claim-in-road-rage-killing-falls-apart/",
+          "title": "Cops Facing Charges After  Stand Your Ground  Claim In Road Rage Killing Falls Apart",
+          "seendate": "20261121T003000Z",
+          "domain": "wsrw.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wokv.com/news/business/treasury-secretary/TRQRTZSNFE3OJM6X4KLSGWXTXE/",
+          "title": "Bessent : No added restrictions needed for Nvidia exports to China",
+          "seendate": "20261121T003000Z",
+          "domain": "wokv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://deadline.com/print-article/1237230137/",
+          "title": "Deadline",
+          "seendate": "20261121T003000Z",
+          "domain": "deadline.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.texarkanagazette.com/news/2026/nov/20/trump-administration-use-of-encrypted-messaging/",
+          "title": "Trump administration use of encrypted messaging apps like Signal is scrutinized by House Democrat",
+          "seendate": "20261121T003000Z",
+          "domain": "texarkanagazette.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wsls.com/news/politics/2026/11/20/trump-insists-iran-wont-make-an-acceptable-deal-as-concerns-grow-about-next-steps/",
+          "title": "Trump insists Iran wont make an  acceptable  deal as concerns grow about next steps",
+          "seendate": "20261121T003000Z",
+          "domain": "wsls.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wokv.com/news/local/jacksonville-councilmen-propose-1-year-moratorium-data-centers/3IUDIZXTPVABXPKELP7L7XWN5A/",
+          "title": "Jacksonville councilmen propose 1 - year moratorium on data centers",
+          "seendate": "20261121T003000Z",
+          "domain": "wokv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://1063thebuzz.com/ixp/192/p/texas-tech-19-million-grant/",
+          "title": "Texas Tech Wins Crucial $19 . 1M Grant Amid Shocking NVIDIA Scandal",
+          "seendate": "20261121T003000Z",
+          "domain": "1063thebuzz.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wokv.com/news/business/court-approves-725/IDTKYFMURE4QPNPYYL5OLRP34M/",
+          "title": "Court approves $7 . 25 billion settlement with Bayer for Roundup cancer claims",
+          "seendate": "20261121T003000Z",
+          "domain": "wokv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/20/patana-provoca-taponamiento-en-carretera-hacia-pedernales/3727127",
+          "title": "Patana provoca taponamiento en carretera hacia Pedernales",
+          "seendate": "20261121T003000Z",
+          "domain": "diariolibre.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://wolfradio933.iheart.com/content/2026-11-20-chris-stapleton-says-he-might-get-nervous-if-he-sang-in-front-of-this-music-legend/",
+          "title": "Chris Stapleton Says He Might Get  Nervou If He Sang In Front Of This Music Legend",
+          "seendate": "20261121T003000Z",
+          "domain": "wolfradio933.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wuwf.org/2026-11-20/another-day-of-survival-for-a-family-in-ukraine",
+          "title": "Another day of survival for a family in Ukraine",
+          "seendate": "20261121T003000Z",
+          "domain": "wuwf.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://lite987.com/ixp/81/p/stolen-truck-in-fulton-county/",
+          "title": "Not Exactly a Civic : NYSP Searching for a Stolen Drilling Truck",
+          "seendate": "20261121T003000Z",
+          "domain": "lite987.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://99kisscountry.iheart.com/content/2026-11-20-country-singer-greylan-james-opens-up-about-pretty-bad-car-accident-on-the-way-to-60th-cma-awards/",
+          "title": "Country Singer Greylan James Opens Up About  Pretty Bad  Car Accident On The Way To 60th CMA Awards",
+          "seendate": "20261121T003000Z",
+          "domain": "99kisscountry.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://kfoxtv.com/news/nation-world/supreme-courts-justice-samuel-alito-revered-by-republicans-gop-but-for-how-long-democrats-senate-congress-trump-rrt",
+          "title": "Supreme Court Alito revered by Republicans , but for how long ? ",
+          "seendate": "20261121T003000Z",
+          "domain": "kfoxtv.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.amren.com/news/2026/11/2-oc-sheriffs-members-on-leave-for-possible-violations-in-ice-arrest-at-jail/",
+          "title": "2 OC Sheriff Members on Leave for Possible Violations in ICE Arrest at Jail",
+          "seendate": "20261121T003000Z",
+          "domain": "amren.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/national-international/us-tech-companies-build-international-ai-data-centers-trump-penalty/3973556/",
+          "title": "Trump threatens to penalize U . S . tech companies over AI data centers – NBC Los Angeles",
+          "seendate": "20261121T003000Z",
+          "domain": "nbclosangeles.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://kval.com/news/local/lane-county-to-formally-observe-transgender-day-of-remembrance-each-nov-20-starting-2026",
+          "title": "Lane County to formally observe Transgender Day of Remembrance each Nov . 20 starting 2026",
+          "seendate": "20261121T003000Z",
+          "domain": "kval.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.univision.com/radio/austin-klqb-fm/musica/new-music-picks-french-montana-nicki-nicole-myke-towers-rauw-alejandro-y-mas",
+          "title": "New Music Picks : FRENCH MONTANA , Nicki Nicole , Myke Towers , Rauw Alejandro y más",
+          "seendate": "20261121T003000Z",
+          "domain": "univision.com",
+          "language": "Spanish",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.cinemablend.com/theme-parks/billie-hexed-landed-disney-parks-directors-bigger-ideas",
+          "title": "Billie From Hexed Has Just Landed At Disney Parks , But The Directors Already Have Bigger Ideas",
+          "seendate": "20261121T003000Z",
+          "domain": "cinemablend.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://kesq.com/news/national-world/cnn-national/2026/11/20/former-plastic-surgeon-who-defended-himself-in-capital-murder-case-forfeited-his-right-to-live-judge-says/",
+          "title": "Former plastic surgeon who defended himself in capital murder case  forfeited his right to live , judge says",
+          "seendate": "20261121T003000Z",
+          "domain": "kesq.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://www.wkyufm.org/2026-11-20/going-going-gone-the-tradition-behind-one-ginkgo-tree-at-smith-college",
+          "title": "Going , going , gone : the tradition behind one ginkgo tree at Smith College",
+          "seendate": "20261121T003000Z",
+          "domain": "wkyufm.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://big1047.iheart.com/content/2026-11-20-chris-stapleton-says-he-might-get-nervous-if-he-sang-in-front-of-this-music-legend/",
+          "title": "Chris Stapleton Says He Might Get  Nervou If He Sang In Front Of This Music Legend",
+          "seendate": "20261121T003000Z",
+          "domain": "big1047.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://1059thebrew.iheart.com/content/2026-11-20-experts-warn-doomscrolling-is-a-growing-global-health-threat/",
+          "title": "Experts Warn Doomscrolling Is A Growing Global Health Threat",
+          "seendate": "20261121T003000Z",
+          "domain": "1059thebrew.iheart.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://local21news.com/news/local/2-injured-after-crashing-four-wheeler-into-ditch-in-cumberland-county-dispatch",
+          "title": "2 injured after crashing four - wheeler into ditch in Cumberland County : dispatch",
+          "seendate": "20261121T003000Z",
+          "domain": "local21news.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://reviewingthebrew.com/latest-jake-bauers-red-sox-report-shows-just-how-desperate-boston-was-for-brewers-breakout-slugger-01m7v88xt76r",
+          "title": "Latest Jake Bauers Red Sox report shows just how desperate Boston was for Brewer breakout slugger",
+          "seendate": "20261121T003000Z",
+          "domain": "reviewingthebrew.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://local21news.com/news/local/senator-john-fetterman-hesitant-to-speak-on-reelection-campaign-congress-elections-2028-rrt",
+          "title": "Fetterman hesitant to speak on reelection campaign",
+          "seendate": "20261121T003000Z",
+          "domain": "local21news.com",
+          "language": "English",
+          "sourcecountry": "United States"
+        }
+      ],
+      "elapsedMs": 11567
+    },
+    {
+      "country": "GB",
+      "window": "24h",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=24h",
+      "observedAt": "2026-11-21T09:42:14.235199+00:00",
+      "status": "http_error",
+      "httpStatus": 429,
+      "retryAfter": null,
+      "responseExcerpt": "Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset: https://blog.gdeltproject.org/using-the-new-web-ngrams-dataset-to-find-relevant-coverage/. For trend analysis, please see our daily newsletter briefings: https://blog.gdeltproject.org/announcing-our-new-daily-todays-trends-on-capitol-hill-todays-media-trends-newsletter-briefings/.\n\n",
+      "elapsedMs": 9982
+    },
+    {
+      "country": "GB",
+      "window": "30d",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=30d",
+      "observedAt": "2026-11-21T09:42:30.223449+00:00",
+      "status": "http_error",
+      "httpStatus": 429,
+      "retryAfter": null,
+      "responseExcerpt": "Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset: https://blog.gdeltproject.org/using-the-new-web-ngrams-dataset-to-find-relevant-coverage/. For trend analysis, please see our daily newsletter briefings: https://blog.gdeltproject.org/announcing-our-new-daily-todays-trends-on-capitol-hill-todays-media-trends-newsletter-briefings/.\n\n",
+      "elapsedMs": 8728
+    },
+    {
+      "country": "JP",
+      "window": "24h",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Ajapan&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=24h",
+      "observedAt": "2026-11-21T09:42:44.964924+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "status": "ok",
+      "recordCount": 78,
+      "domains": [
+        "373news.com",
+        "3djuegos.com",
+        "agara.co.jp",
+        "ameblo.jp",
+        "asahi.com",
+        "ascii.jp",
+        "asia.nikkei.com",
+        "engadget.com",
+        "gamerheadlines.com",
+        "iwate-np.co.jp",
+        "japantoday.com",
+        "nikkan-gendai.com",
+        "nintendolife.com",
+        "oita-press.co.jp",
+        "okinawatimes.co.jp",
+        "oricon.co.jp",
+        "sponichi.co.jp",
+        "tokyo-np.co.jp"
+      ],
+      "languages": [
+        "English",
+        "Japanese",
+        "Spanish"
+      ],
+      "sourceCountries": [
+        "Japan"
+      ],
+      "articles": [
+        {
+          "url": "https://ascii.jp/elem/000/004/452/4452208/",
+          "title": "ASCII . jp ： スタバ新作は 「 抹茶ティラミス 」！ マスカルポーネクリーム重なる贅沢フラペ",
+          "seendate": "20261121T064500Z",
+          "domain": "ascii.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://asia.nikkei.com/politics/international-relations/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028",
+          "title": "Countries agree to UN talks aiming to regulate  killer robot by 2028",
+          "seendate": "20261121T064500Z",
+          "domain": "asia.nikkei.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://asia.nikkei.com/business/automobiles/honda-toyota-recall-1.6m-vehicles-over-takata-airbag-rupture-risk",
+          "title": "Honda , Toyota recall 1 . 6m vehicles over Takata airbag rupture risk",
+          "seendate": "20261121T064500Z",
+          "domain": "asia.nikkei.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.oricon.co.jp/news/2494163/",
+          "title": " 『 いちご100 ％』 西野つかさ 、 新規イラスト公開でネットざわつく 「 エグイって 」 ",
+          "seendate": "20261121T064500Z",
+          "domain": "oricon.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.okinawatimes.co.jp/articles/-/1971463",
+          "title": "NAHAマラソン40回記念大会を盛り上げよう 6社が特別協賛金を贈呈 「 最高の思い出になる大会に 」 ",
+          "seendate": "20261121T064500Z",
+          "domain": "okinawatimes.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.oita-press.co.jp/1010000000/2026/11/21/JDC2026112100522",
+          "title": "大分市で 「 環境みらい展 」 海洋プラごみアート作りなどに挑戦 - 大分のニュースなら 大分合同新聞プレミアムオンライン Gate",
+          "seendate": "20261121T064500Z",
+          "domain": "oita-press.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/kyodo/2026/11/21/1659771",
+          "title": "賃貸住宅の家賃 、 全国で上昇続く | 全国のニュース | 岩手日報ONLINE",
+          "seendate": "20261121T064500Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.oricon.co.jp/news/2494464/",
+          "title": "大和田伸也 、 近影にネット騒然 素敵なカップルと出会い3ショット 「 逃げてえぇぇぇぇ ！」 ",
+          "seendate": "20261121T064500Z",
+          "domain": "oricon.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2494282",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261121T064500Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://asia.nikkei.com/spotlight/comment/indonesian-leader-chases-sukarno-s-phantom-with-defiant-posture",
+          "title": "Indonesian leader chases Sukarno phantom with defiant posture",
+          "seendate": "20261121T064500Z",
+          "domain": "asia.nikkei.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.nikkan-gendai.com/articles/view/news/395892",
+          "title": "政府安保広報ザルすぎ制作プロセスで血税3億円がパー … ナオキマンも大炎上 、 公開以降は更新ストップ｜日刊ゲンダイDIGITAL",
+          "seendate": "20261121T064500Z",
+          "domain": "nikkan-gendai.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.nikkan-gendai.com/articles/view/news/395893",
+          "title": "高市×プーチン APECで 「 接触30分 」 ホントの中身 … 首相は成果誇るもロシア側は発信なし｜日刊ゲンダイDIGITAL",
+          "seendate": "20261121T064500Z",
+          "domain": "nikkan-gendai.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.asahi.com/articles/ASVCN3D9MVCNUQIP00HM.html",
+          "title": " 【 写真まとめ 】 愛子さまシンガポール訪問 マーライオン視察 、 帰国へ ： 朝日新聞",
+          "seendate": "20261121T064500Z",
+          "domain": "asahi.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ascii.jp/elem/000/004/453/4453840/",
+          "title": "ASCII . jp ： 焦点工房 ヤフーショッピング 「 2026年ブラックフライデー PayPayポイント 最大23 ％」 開催 ！ ",
+          "seendate": "20261121T064500Z",
+          "domain": "ascii.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715777",
+          "title": "名古屋銘菓 『 ぴよりん 』 が京都に初の  お出かけ  きなこ ＆ 抹茶 ＆ 黒糖が入ったイベント限定ぴよりんも販売 【 2027年1月開催 】： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2493080",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261121T003000Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://373news.com/news/national/oricon/detail/2493080/",
+          "title": " 『 ブラッサム 』 次回あらすじ 昭和58年 、 執筆を終えた珠のもとに 、 秘書の優子が一枚のファンレターを届ける",
+          "seendate": "20261121T003000Z",
+          "domain": "373news.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715790",
+          "title": "神木隆之介×浜辺美波 、『 ゴジラ - 0 . 0 』 で深まった  家族  と二人の信頼 典子の首筋の撮影秘話も ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715789",
+          "title": " 「 早く知りたかった ！」 セリアの  じゃない使い方  でキッチンが劇変 、 便利グッズ5選 ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://gamerheadlines.com/mega-man-dual-override-boat-man-sixth-robot-master/",
+          "title": "Boat Man Joins Mega Man Dual Override Roster",
+          "seendate": "20261121T003000Z",
+          "domain": "gamerheadlines.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715779",
+          "title": " 【 MAMA2026 】 ENHYPEN 、 大賞獲得で涙のハグ ファンに感謝 「 僕たちのことを信じてくれた 」： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715782",
+          "title": " 「 ハリー ・ ポッター スタジオツアー東京 」 禁じられた森が初の雪景色に ろうそくが浮かぶ大広間も 冬の魔法界をレポート ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715772",
+          "title": " 『 ドラえもん 』 藤子 ・ F ・ 不二雄が残した  ひみつ道具メモ  から初アニメ化 大みそかSPで放送 ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715776",
+          "title": " 『 LOST10 』 新たな疑惑が浮上 ネット震える 「 これで本当に黒幕だったら悲しい 」： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715791",
+          "title": " 【 MAMA2026 】 NCT WISH 、 全員金髪に会場どよめき 白衣装の  6人の天使  が舞い降りる ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715775",
+          "title": "上原浩治 、 高校時代は補欠 プロのスカウトに注目されたきっかけ語る 21日放送 『 大阪おっさんぽ 』： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://373news.com/news/national/oricon/detail/2493980/",
+          "title": "58歳 ・ 羽田美智子 、 白髪染め事情 ＆ グレイヘアへの葛藤を告白 「 勇気が出なくて …」 故 ・ 野際陽子さんの言葉には 「 やっとわかるようになった 」 と共感",
+          "seendate": "20261121T003000Z",
+          "domain": "373news.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715784",
+          "title": "58歳 ・ 羽田美智子 、 白髪染め事情 ＆ グレイヘアへの葛藤を告白 「 勇気が出なくて …」 故 ・ 野際陽子さんの言葉には 「 やっとわかるようになった 」 と共感 ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715788",
+          "title": " 『 修学旅行 』 日置 （ 藤本洸大 ）＆ 渡会 （ 簡秀吉 ） ら 、 高校最後の夏休み 息抜きに旅行へ ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.3djuegos.com/tv-series/noticias/guillermo-toro-62-anos-confirma-que-su-peli-star-wars-al-estilo-padrino-tenia-guion-titulo-esculturas-lleva-anos-perdida",
+          "title": "Guillermo del Toro ( 62 años ) confirma que su peli de Star Wars al estilo de El Padrino tenía guion , título y hasta esculturas , pero lleva años perdida",
+          "seendate": "20261121T003000Z",
+          "domain": "3djuegos.com",
+          "language": "Spanish",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715785",
+          "title": "アンガールズ山根 、 11歳長女と自宅のクリスマスツリーを飾り付け 「 素敵です 」「 楽しみだね～ 」： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715787",
+          "title": "榮倉奈々×赤楚衛二 『 あにいもうと 』 第1部完結へ 前回は衝撃のラストで幕 「 最後何が起きた 」： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2494420",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261121T003000Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://373news.com/news/national/detail/2026112101000279/",
+          "title": "トルコでのＣＯＰ３１ 、 会期延長 各国 、「 脱化石 」 削除に強い反発",
+          "seendate": "20261121T003000Z",
+          "domain": "373news.com",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2493980",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261121T003000Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715781",
+          "title": " 【 MAMA2026 】 INI 、 京セラドームで  ホームラン  「 FAVORITE ASIAN GROUP 」 受賞 「 これからも僕たち11人といい思い出を 」： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.3djuegos.com/tv-series/noticias/5-dias-regresa-obra-maestra-ciencia-ficcion-nueva-entrega-sus-ochos-episodios-podras-verlos-dia",
+          "title": "En 5 días regresa una obra maestra de la ciencia ficción con una nueva entrega . Sus ochos episodios podrás verlos el mismo día",
+          "seendate": "20261121T003000Z",
+          "domain": "3djuegos.com",
+          "language": "Spanish",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715778",
+          "title": " 『 ゴールデンラヴィット ！』 総勢80人が集結 超豪華SPに 【 各チームメンバー一覧 】： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://gamerheadlines.com/witch-on-the-holy-night-anime-film-japan-worldwide-release/",
+          "title": "Witch On The Holy Night Anime Film Opens In Japan",
+          "seendate": "20261121T003000Z",
+          "domain": "gamerheadlines.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715783",
+          "title": " 『 ブラッサム 』 次回あらすじ 昭和58年 、 執筆を終えた珠のもとに 、 秘書の優子が一枚のファンレターを届ける ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.agara.co.jp/article/715780",
+          "title": "相場から大幅減額 … 巨大旗竿地の家 、 購入の決め手と独創アイデア明らかに ： 紀伊民報AGARA｜和歌山県のニュースサイト",
+          "seendate": "20261121T003000Z",
+          "domain": "agara.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2494169",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261120T214500Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/",
+          "title": "This GTA 6 Fast Travel Trick Comes At A Price",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323323/gta-plus-benefits-gta-6-is-it-worth-it/",
+          "title": "Here Everything GTA+ Gets You In GTA 6 : Is It Worth $8 A Month ? ",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/battle/news/2026/11/21/kiji/20261121s00021000035000c.html",
+          "title": " 【 ボクシング 】 2階級制覇へ ユーリ阿久井の武器 、 心肺機能が進化 ！ エリートボクサー→マラソン選手並み - スポニチ Sponichi Annex 格闘技",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529724",
+          "title": "推し活に 「＃ 反戦 」 はタブー ？ 趣味を通じて平和を願う声 … SNSで広がる共感と反発 ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323542/change-these-settings-if-you-want-gta-6-to-feel-like-old-gta/",
+          "title": "Change These Settings If You Want GTA 6 To Feel Like Old GTA",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529670",
+          "title": "皇居のお堀から水があふれて橋が冠水 … いったいなぜ ？ 9月 、 約30年ぶりに起きた珍事の裏にお堀管理の苦労 ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/zzoox/entry-12984856610.html",
+          "title": " 【 スタバ 】 モーニングに行ったのにカプセルトイがメインになってしまった | オヤジのスイーツ時々ランニングブログ",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/society/news/2026/11/21/kiji/20261121s00042000050000c.html",
+          "title": "トランプ氏 「 核軍縮困難 」 「 10点中12点 」 の米中ロ首脳会談 成果誇示も異なる立場にじむ - スポニチ Sponichi Annex 社会",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.nintendolife.com/news/2026/11/persona-6-doesnt-have-a-date-yet-but-atlus-says-you-wont-have-to-wait-as-long-for-persona-7",
+          "title": "Persona 6 Doesnt Have A Date Yet , But Atlus Says You Wont Have To Wait As Long For Persona 7",
+          "seendate": "20261120T214500Z",
+          "domain": "nintendolife.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://japantoday.com/category/politics/update2-japan-peru-agree-to-promote-cooperation-on-critical-mineral-supply-chains",
+          "title": "Takaichi meets leaders of Peru , Chile to discuss critical mineral supply chains",
+          "seendate": "20261120T214500Z",
+          "domain": "japantoday.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/society/news/2026/11/21/kiji/20261121s00042000042000c.html",
+          "title": "元陸自候補生側 事件当日 「 1回やってみたかった 」 射撃場で自動小銃を発射 3人死傷 - スポニチ Sponichi Annex 社会",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/ayaofpetitprice-a/entry-12985059819.html",
+          "title": " 【 24時間限定 】 今日の激安品 ！ 衝撃990円の冬コート ！＆ 安藤家の朝ごはん | ぷちあや 「 服オタクの誰にも忖度しないバカ正直レビューブログ ＆ ３度目の結婚で伊豆移住物語 」 ",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529731",
+          "title": "関芳弘文科相 「 おわび 」 はしても辞任は否定 … 政治資金パーティーへの 「 官僚出席 」 5件に増えた ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/11/21/kiji/20261121s00041000045000c.html",
+          "title": "錦織圭さん 子供は 「 今 、 3人います 」 と明かす 元モデルの妻と20年に結婚 - スポニチ Sponichi Annex 芸能",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/society/news/2026/11/21/kiji/20261121s00042000051000c.html",
+          "title": "すしが手頃な値段で !? マグロ大型魚枠25 ％ 拡大 主張通り決着 27年から適用 - スポニチ Sponichi Annex 社会",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/11/21/kiji/20261121s00041000049000c.html",
+          "title": "さんま 「 さすがに 、 ミッキーには負ける 」 と明かすも … ディズニーキャラからも  気付かれた  エピ披露 - スポニチ Sponichi Annex 芸能",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/11/21/kiji/20261121s00041000038000c.html",
+          "title": "早瀬憩 女優人生  第二段階  今後はコメディにも意欲 「 演技の振り幅も広がる 」 - スポニチ Sponichi Annex 芸能",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529710",
+          "title": "横浜市長の 「 家賃 」 が論点に … 月37万円を税金で負担 築100年近い公舎は廃止表明 ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://japantoday.com/category/politics/update1-japan-ex-internal-affairs-minister-hayashi-eyes-future-ldp-leadership-bid",
+          "title": "Ex - internal affairs minister Hayashi eyes future LDP leadership bid",
+          "seendate": "20261120T214500Z",
+          "domain": "japantoday.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/11/21/kiji/20261121s00041000043000c.html",
+          "title": "さんま 自分のことを好きだった ？ 女子テニスの元世界ランク1位選手明かす 錦織圭さん 「 細かいですね 」 - スポニチ Sponichi Annex 芸能",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323606/germany-seems-to-be-serious-about-a-tiktok-europe-takeover/",
+          "title": "Germany Seems To Be Serious About A TikTok Europe Takeover",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/society/news/2026/11/21/kiji/20261121s00042000041000c.html",
+          "title": " 「 訓練 」 で殴り 、 床に叩きつける 逮捕の33歳父親 スマホに死亡女児暴行動画 体には50カ所以上のあざ - スポニチ Sponichi Annex 社会",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp/article/529057",
+          "title": "衆院選 「 統一名簿 」 導入なら何が起きる ？ 政党連合に詳しい後房雄名誉教授が野党に求める 「 意思 」： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp/article/529001",
+          "title": "自衛隊は有事になれば 「 何でもできる 」… 自民議員の新しい法律解釈が巻き起こした 「 恐るべき議論 」 ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529513",
+          "title": "世界各地の朝食 現地語の 「 おはよう 」 とともに 移住連がカレンダーを制作 ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/chuugakujyuken-fire/entry-12984808888.html",
+          "title": "第５回合不合 素点おもんない ！ 涙 | 中受沼のほとりから 〜 兄を追う母 、 妹は放牧中 〜 | 2027中学受験 ・ 小６夏から早稲アカ",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/emma1993/entry-12960952573.html",
+          "title": "我慢は毒 | 元医師妻エマです 。 ",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/",
+          "title": "Signal Now Blocks Screenshots By Default To Stymie AI Agents",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/gamble/news/2026/11/21/kiji/20261120s00004000333000c.html",
+          "title": " 【 戸崎圭太KEITA～LK 】 成長したマリアイリダータ 騎乗が楽しみ - スポニチ Sponichi Annex ギャンブル",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/happiestblog/entry-12984013799.html",
+          "title": " 「 倍もつはずでは …？」 期待を裏切られた日用品 | シンママ珍道中 inカオス ～とにかく笑って生きるべさ～",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529711",
+          "title": "楽天証券 、 管理不備に加えて事後の対応もユーザーの不満をあおる 「 通常ありえない 」 やり方から情報漏えい ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/society/news/2026/11/21/kiji/20261121s00042000048000c.html",
+          "title": "関文科相に辞任論 官僚参加パーティー5件に 減税参院審議への影響懸念 自民幹部 「 早く手を打つべき 」 - スポニチ Sponichi Annex 社会",
+          "seendate": "20261120T214500Z",
+          "domain": "sponichi.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.engadget.com/2323671/gta-6-made-dollar379-billion-in-its-first-day-but-rockstars-workers-still-lack-job-security/",
+          "title": "GTA 6 Made $3 . 79 Billion In Its First Day , But Rockstar Workers Still Lack Job Security",
+          "seendate": "20261120T214500Z",
+          "domain": "engadget.com",
+          "language": "English",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://ameblo.jp/ayaofpetitprice-a/entry-12985074325.html",
+          "title": "おそようです 。 朝から買っちゃったもの 。 | ぷちあや 「 服オタクの誰にも忖度しないバカ正直レビューブログ ＆ ３度目の結婚で伊豆移住物語 」 ",
+          "seendate": "20261120T214500Z",
+          "domain": "ameblo.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp:443/article/529723",
+          "title": " 「 教員になってもいいかな 」 増やせるの ？ 政府の改革案が抱える懸念 「 憲法軽視 」 も指摘され ： 東京新聞デジタル",
+          "seendate": "20261120T214500Z",
+          "domain": "tokyo-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        },
+        {
+          "url": "https://www.iwate-np.co.jp/article/oricon/2494320",
+          "title": "岩手日報ONLINE",
+          "seendate": "20261120T214500Z",
+          "domain": "iwate-np.co.jp",
+          "language": "Japanese",
+          "sourcecountry": "Japan"
+        }
+      ],
+      "elapsedMs": 15341
+    },
+    {
+      "country": "JP",
+      "window": "30d",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Ajapan&mode=ArtList&format=json&maxrecords=250&sort=DateDesc&timespan=30d",
+      "observedAt": "2026-11-21T09:43:06.317289+00:00",
+      "status": "http_error",
+      "httpStatus": 429,
+      "retryAfter": null,
+      "responseExcerpt": "Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset: https://blog.gdeltproject.org/using-the-new-web-ngrams-dataset-to-find-relevant-coverage/. For trend analysis, please see our daily newsletter briefings: https://blog.gdeltproject.org/announcing-our-new-daily-todays-trends-on-capitol-hill-todays-media-trends-newsletter-briefings/.\n\n",
+      "elapsedMs": 8643
+    }
+  ]
+}

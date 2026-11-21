@@ -1,0 +1,871 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "cutoff": "2026-11-21T09:44:12.225681+00:00",
+    "windowStart": "2026-11-20T09:44:12.225681+00:00",
+    "method": "Same-language Unicode NFKC + casefold + punctuation removal + whitespace collapse; exact normalized-title equality; URL dedup per publisher.",
+    "limitation": "One retrieval of feed-listed items published in the preceding 24h, not continuous 24h observation. Missing/invalid/future dates excluded. Groups are candidates, not validated story identities.",
+    "countries": {
+      "US": {
+        "successfulFeeds": 0,
+        "testedFeeds": 0,
+        "publishersWithValidFeeds": 0,
+        "publishersWithItemsInDay": 0,
+        "uniqueArticlesInDay": 0,
+        "naiveExactHeadlineGroups": 0,
+        "groupsWithTwoOrMorePublishers": 0,
+        "articlesInMultiPublisherGroups": 0,
+        "examples": []
+      },
+      "GB": {
+        "successfulFeeds": 1,
+        "testedFeeds": 1,
+        "publishersWithValidFeeds": 1,
+        "publishersWithItemsInDay": 1,
+        "uniqueArticlesInDay": 49,
+        "naiveExactHeadlineGroups": 49,
+        "groupsWithTwoOrMorePublishers": 0,
+        "articlesInMultiPublisherGroups": 0,
+        "examples": []
+      },
+      "JP": {
+        "successfulFeeds": 2,
+        "testedFeeds": 2,
+        "publishersWithValidFeeds": 2,
+        "publishersWithItemsInDay": 2,
+        "uniqueArticlesInDay": 38,
+        "naiveExactHeadlineGroups": 38,
+        "groupsWithTwoOrMorePublishers": 0,
+        "articlesInMultiPublisherGroups": 0,
+        "examples": []
+      }
+    }
+  },
+  "feeds": [
+    {
+      "publisherId": "independent",
+      "country": "GB",
+      "language": "en",
+      "section": "headlines",
+      "requestedUrl": "https://www.independent.co.uk/news/uk/rss",
+      "observedAt": "2026-11-21T09:44:12.225852+00:00",
+      "articles": [
+        {
+          "headline": "John Swinney apologises over Grand Theft Auto AI video",
+          "url": "https://www.independent.co.uk/news/uk/politics/john-swinney-snp-first-minister-grand-theft-auto-boris-johnson-b3088088.html",
+          "publishedAt": "2026-11-21T09:33:16+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "HS2 wasted £170m buying properties for axed route. Now they’re being sold back to the public",
+          "url": "https://www.independent.co.uk/news/uk/home-news/hs2-homes-eastern-leg-sale-b3086373.html",
+          "publishedAt": "2026-11-21T08:53:01+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "UK temperatures plunge to -10C overnight on coldest night of autumn",
+          "url": "https://www.independent.co.uk/news/uk/home-news/uk-temperatures-coldest-night-autumn-weather-b3089082.html",
+          "publishedAt": "2026-11-21T08:49:16+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Police officers sacked for lying about searches for missing women in fatal St Mellons car crash",
+          "url": "https://www.independent.co.uk/news/uk/home-news/st-mellons-crash-police-officers-sacked-missing-women-search-b3089002.html",
+          "publishedAt": "2026-11-20T21:50:14+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Vulnerable victim of sadistic killer was ‘kind, gentle, and full of warmth’, family says",
+          "url": "https://www.independent.co.uk/news/uk/crime/sonia-exelby-dwain-hall-murder-tributes-florida-b3088993.html",
+          "publishedAt": "2026-11-20T21:24:39+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "European leaders condemn Russia’s ‘intentional provocation’ as missile hits Poland",
+          "url": "https://www.independent.co.uk/news/world/europe/russia-missile-poland-ukraine-war-b3088729.html",
+          "publishedAt": "2026-11-20T19:39:37+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Andy Burnham tells Britain’s young people: ‘This EU reset deal is for you’",
+          "url": "https://www.independent.co.uk/news/uk/politics/uk-eu-summit-brexit-andy-burnham-young-people-b3088633.html",
+          "publishedAt": "2026-11-20T18:55:56+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "‘I was sleeping in a park in 2009. Life is just as hard for young people today’",
+          "url": "https://www.independent.co.uk/news/uk/home-news/youth-homelessness-housing-campaign-project-nest-everyyouth-b3087915.html",
+          "publishedAt": "2026-11-20T18:55:55+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Prince Harry opens up on Archie and Lilibet’s new life in Britain after California move",
+          "url": "https://www.independent.co.uk/news/uk/home-news/prince-harry-this-morning-archie-lilibet-uk-school-b3088529.html",
+          "publishedAt": "2026-11-20T18:17:23+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Far-right activist Danny Tommo jailed for slashing migrant boat in English Channel",
+          "url": "https://www.independent.co.uk/news/uk/crime/danny-tommo-jail-migrant-boat-english-channel-b3088741.html",
+          "publishedAt": "2026-11-20T18:08:49+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Florida man jailed for life after murdering British woman he groomed on fetish website",
+          "url": "https://www.independent.co.uk/news/uk/crime/dwain-hall-sonia-exelby-florida-portsmouth-fetish-website-b3088886.html",
+          "publishedAt": "2026-11-20T17:05:56+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Man jailed for 22 years for drowning former Microsoft executive in Thames",
+          "url": "https://www.independent.co.uk/news/uk/crime/murder-thames-nelio-gouveia-jennifer-symonds-b3088907.html",
+          "publishedAt": "2026-11-20T17:59:09+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Former police officer jailed for sending sexual messages to 14-year-old girl",
+          "url": "https://www.independent.co.uk/news/uk/crime/police-northamptonshire-matthew-hunt-court-b3088892.html",
+          "publishedAt": "2026-11-20T17:34:03+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "‘I was sharing a tiny room and desperate for independence. This is what saved me’",
+          "url": "https://www.independent.co.uk/news/uk/home-news/independent-christmas-campaign-project-nest-everyyouth-b3087004.html",
+          "publishedAt": "2026-11-20T17:28:33+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Two men dead after glider crash at UK beauty spot",
+          "url": "https://www.independent.co.uk/news/uk/home-news/glider-crash-loch-leven-kinross-b3088884.html",
+          "publishedAt": "2026-11-20T17:20:53+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "King Charles ‘will pay Burnham’s mansion tax on all his palaces’",
+          "url": "https://www.independent.co.uk/news/uk/home-news/king-charles-mansion-tax-balmoral-sandringham-b3088824.html",
+          "publishedAt": "2026-11-20T17:16:23+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Baby girl to be laid to rest two years after remains discovered in Salford park",
+          "url": "https://www.independent.co.uk/news/uk/home-news/ashtons-field-salford-baby-case-b3088878.html",
+          "publishedAt": "2026-11-20T17:09:46+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "EU return would deliver £112bn boost – double Swiss-style option, study finds",
+          "url": "https://www.independent.co.uk/news/uk/politics/europe-the-way-back/britain-rejoin-eu-swiss-style-deal-brexit-b3088557.html",
+          "publishedAt": "2026-11-20T17:06:21+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "EU’s tongue-in-cheek dinner for Burnham after ‘win-win’ EU deal",
+          "url": "https://www.independent.co.uk/news/uk/politics/andy-burnham-eu-brexit-deal-b3088854.html",
+          "publishedAt": "2026-11-20T16:47:13+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Teacher who had sex with pupil up to 30 times arrested after sentencing no-show",
+          "url": "https://www.independent.co.uk/news/uk/crime/sally-anne-bowen-teacher-pupil-assault-sentencing-arrest-b3088861.html",
+          "publishedAt": "2026-11-20T16:39:54+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Energy bills are set to rise by £443. Here’s all the help on offer this winter",
+          "url": "https://www.independent.co.uk/news/uk/home-news/energy-price-cap-ofgem-help-bills-uk-b3088809.html",
+          "publishedAt": "2026-11-20T16:05:34+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Coroner’s warning after mother-of-five died following BBL procedure",
+          "url": "https://www.independent.co.uk/news/uk/home-news/alice-webb-bbl-death-verdict-b3088800.html",
+          "publishedAt": "2026-11-20T15:51:23+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Stolen orangutan statue finally found by police after garden centre thief jailed",
+          "url": "https://www.independent.co.uk/news/uk/home-news/orangutan-statue-found-garden-centre-thief-derek-lundgren-b3088814.html",
+          "publishedAt": "2026-11-20T15:48:49+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "UK travellers chasing Black Friday holiday deals issued severe warning",
+          "url": "https://www.independent.co.uk/travel/news-and-advice/black-friday-travel-tuesday-holidays-caa-b3088807.html",
+          "publishedAt": "2026-11-20T15:40:55+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Illegal factory that could make more than 200,000 cigarettes a day shut following major HMRC raid",
+          "url": "https://www.independent.co.uk/news/uk/home-news/bourne-lincolnshire-tobacco-factory-bust-hmrc-b3088798.html",
+          "publishedAt": "2026-11-20T15:33:49+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "‘Exceptionally rare’ Titanic survivor’s engagement ring could be yours for £80k",
+          "url": "https://www.independent.co.uk/news/uk/home-news/titanic-lady-duff-gordon-diamond-ring-auction-b3088750.html",
+          "publishedAt": "2026-11-20T14:59:25+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "White supremacist found guilty of plotting to firebomb migrant hotel in Hull",
+          "url": "https://www.independent.co.uk/news/uk/crime/mikka-anderson-migrant-hotel-firebomb-plot-hull-b3088748.html",
+          "publishedAt": "2026-11-20T14:40:12+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Watch: Man dressed in kilt and bonnet takes hammer to Stone of Destiny case",
+          "url": "https://www.independent.co.uk/tv/news/stone-of-destiny-vandalism-perth-video-b3088595.html",
+          "publishedAt": "2026-11-20T14:24:29+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "‘Our daughter died of breast cancer at 17. Her legacy could save others’",
+          "url": "https://www.independent.co.uk/news/uk/home-news/isla-sneddon-breast-cancer-uk-symptoms-b3088706.html",
+          "publishedAt": "2026-11-20T14:18:40+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Pontins owner fined £1m for ceiling collapse that killed grandmother",
+          "url": "https://www.independent.co.uk/news/uk/crime/pontins-brean-sands-wendy-jones-b3088119.html",
+          "publishedAt": "2026-11-20T14:17:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "What is in the UK-EU deal? How it will affect travel, food prices and young people",
+          "url": "https://www.independent.co.uk/news/uk/politics/what-is-the-uk-eu-deal-explained-summit-burnham-brexit-b3088631.html",
+          "publishedAt": "2026-11-20T14:09:18+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Gang posed as bank workers to con dozens of ‘vulnerable’ pensioners out of £600,000",
+          "url": "https://www.independent.co.uk/news/uk/crime/ashan-shaid-fraud-scotland-duncan-currie-b3088665.html",
+          "publishedAt": "2026-11-20T13:11:13+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "‘Lord of Fraud’ avoids jail after being caught with hundreds of indecent images of children",
+          "url": "https://www.independent.co.uk/news/uk/crime/hugh-rodley-indecent-images-lord-of-fraud-b3088686.html",
+          "publishedAt": "2026-11-20T13:07:49+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Prince Harry scolds Alison Hammond for missing calls with his kids: ‘They were so excited’",
+          "url": "https://www.independent.co.uk/arts-entertainment/tv/news/prince-harry-alison-hammond-this-morning-b3088690.html",
+          "publishedAt": "2026-11-20T13:00:36+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "The new scheme that could see young Britons work freely across Europe",
+          "url": "https://www.independent.co.uk/news/uk/politics/eu-youth-mobility-scheme-deal-rules-brexit-age-b3088605.html",
+          "publishedAt": "2026-11-20T12:56:34+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Daughter of Joanne Young calls for law change over ‘third-party consent’",
+          "url": "https://www.independent.co.uk/news/uk/home-news/joanne-young-daughter-consent-law-change-b3088505.html",
+          "publishedAt": "2026-11-20T12:54:09+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Chagos Islanders lose bid to appeal over government’s Mauritius deal",
+          "url": "https://www.independent.co.uk/news/uk/politics/chagos-islands-deal-court-appeal-b3088659.html",
+          "publishedAt": "2026-11-20T12:29:43+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Government’s Be Ready campaign boosts sales as UK shoppers stockpile food",
+          "url": "https://www.independent.co.uk/news/uk/home-news/uk-emergency-stockpiling-grocery-sales-be-ready-b3088654.html",
+          "publishedAt": "2026-11-20T12:18:35+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "New trial gives Met Police facial recognition app to identify suspects",
+          "url": "https://www.independent.co.uk/news/uk/home-news/met-police-facial-recognition-pilot-app-b3088620.html",
+          "publishedAt": "2026-11-20T12:00:44+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Woman drugged and advertised for sex by husband says she was ‘betrayed in the most horrific way’",
+          "url": "https://www.independent.co.uk/news/uk/crime/joanne-young-husband-philip-young-sexual-abuse-men-guilty-b3088033.html",
+          "publishedAt": "2026-11-19T15:16:24+00:00",
+          "hasSummary": true,
+          "inSampleDay": false,
+          "futureDated": false
+        },
+        {
+          "headline": "This summit could be Burnham’s defining Brexit moment. He’ll hope it isn’t",
+          "url": "https://www.independent.co.uk/news/uk/politics/andy-burnham-brexit-deal-eu-uk-reset-b3088484.html",
+          "publishedAt": "2026-11-20T11:50:01+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "British Army needs to retrain almost half of all infantry to use drones, experts warn",
+          "url": "https://www.independent.co.uk/news/uk/home-news/drone-army-british-ukraine-war-russia-b3088083.html",
+          "publishedAt": "2026-11-20T11:44:58+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Police issue renewed appeal for man wanted in Joanne Young rape case following convictions",
+          "url": "https://www.independent.co.uk/news/uk/crime/police-images-man-wanted-joanne-young-rape-case-b3088562.html",
+          "publishedAt": "2026-11-20T11:39:06+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Resident doctors strike across Northern Ireland over pay dispute",
+          "url": "https://www.independent.co.uk/news/uk/home-news/resident-doctors-strike-northern-ireland-pay-b3088602.html",
+          "publishedAt": "2026-11-20T11:26:37+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Liverpool fan found not guilty of racially abusing Antoine Semenyo",
+          "url": "https://www.independent.co.uk/news/uk/crime/semenyo-mark-mogan-liverpool-bournemouth-b3088608.html",
+          "publishedAt": "2026-11-20T11:19:04+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Two accused of RAF Fairford Iran bomb alert deny National Security Act charges",
+          "url": "https://www.independent.co.uk/news/uk/crime/fairford-mohmed-abdulkarim-nouman-essghir-b3088609.html",
+          "publishedAt": "2026-11-20T11:17:18+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Double decker bus-sized T-Rex to go on display in UK for first time",
+          "url": "https://www.independent.co.uk/news/uk/home-news/t-rex-skeleton-trinity-dinosaur-portsmouth-dockyard-b3088590.html",
+          "publishedAt": "2026-11-20T11:00:23+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Oil painting bought for £20 in charity shop set to sell for £20,000",
+          "url": "https://www.independent.co.uk/news/uk/home-news/bracknell-nicholas-chevalier-cape-schanck-victoria-b3088547.html",
+          "publishedAt": "2026-11-20T10:06:22+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "When is it too cold to walk your dog? Here’s how to prepare your pets for winter",
+          "url": "https://www.independent.co.uk/news/uk/home-news/too-cold-walk-dog-weather-uk-winter-b3088516.html",
+          "publishedAt": "2026-11-20T10:05:04+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Britain set for -9C deep freeze as Met Office warns of widespread frost",
+          "url": "https://www.independent.co.uk/weather/arctic-blast-snow-uk-freeze-met-office-polar-vortex-b3088476.html",
+          "publishedAt": "2026-11-20T09:59:46+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Man, 79, sentenced for racially abusing Stansted Airport security staff",
+          "url": "https://www.independent.co.uk/news/uk/home-news/william-ryan-stansted-airport-danbury-b3088522.html",
+          "publishedAt": "2026-11-20T09:42:22+00:00",
+          "hasSummary": true,
+          "inSampleDay": false,
+          "futureDated": false
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://www.independent.co.uk/news/uk/rss",
+      "contentType": "text/xml; charset=utf-8",
+      "contentEncoding": "gzip",
+      "serverDate": "Sat, 21 Nov 2026 09:44:12 GMT",
+      "etag": "W/\"ea5d-O2KOkghoQ3J+Hde+3cPC6Z3jGdY-gzip\"",
+      "lastModified": null,
+      "bytes": 59997,
+      "sha256": "a27d3024b878a114395f70a757a2f05571cb4043fb705831e6bbf2e80a600f93",
+      "feedTitle": "The Independent UK",
+      "copyright": "Copyright 2026, Independent Digital News & Media Ltd",
+      "declaredTtlMinutes": null,
+      "declaredUpdatePeriod": null,
+      "declaredUpdateFrequency": null,
+      "status": "ok",
+      "itemCount": 51,
+      "validArticleCount": 51,
+      "sampleDayCount": 49,
+      "summaryCount": 51,
+      "undatedCount": 0,
+      "futureDatedCount": 0,
+      "oldestPublishedAt": "2026-11-19T15:16:24+00:00",
+      "newestPublishedAt": "2026-11-21T09:33:16+00:00",
+      "medianItemIntervalMinutes": 8.2,
+      "elapsedMs": 169
+    },
+    {
+      "publisherId": "kyodo",
+      "country": "JP",
+      "language": "en",
+      "section": "headlines",
+      "requestedUrl": "https://english.kyodonews.net/list/feed/rss4kyodonews-fzone",
+      "observedAt": "2026-11-21T09:44:12.394993+00:00",
+      "articles": [
+        {
+          "headline": "Over 1,000 in Fukushima Pref. village isolated due to heavy snow",
+          "url": "https://english.kyodonews.net/articles/-/92215",
+          "publishedAt": "2026-11-21T06:05:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Kyodo News Digest: Nov. 21",
+          "url": "https://english.kyodonews.net/articles/-/92188",
+          "publishedAt": "2026-11-21T06:00:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "BREAKING NEWS: Over 1,000 in Fukushima Pref. village isolated due to heavy snow",
+          "url": "https://english.kyodonews.net/articles/-/92214",
+          "publishedAt": "2026-11-21T05:16:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Figure skating: GP Series debutant Shimada leads at Finlandia Trophy",
+          "url": "https://english.kyodonews.net/articles/-/92203",
+          "publishedAt": "2026-11-21T03:17:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Princess Aiko visits Merlion Park on last day of Singapore visit",
+          "url": "https://english.kyodonews.net/articles/-/92201",
+          "publishedAt": "2026-11-21T02:51:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Japan gov't criticized for featuring conspiracy-theory YouTuber in campaign",
+          "url": "https://english.kyodonews.net/articles/-/92197",
+          "publishedAt": "2026-11-21T01:28:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Japan's April quake struck same fault as 2011 aftershock: study",
+          "url": "https://english.kyodonews.net/articles/-/92196",
+          "publishedAt": "2026-11-21T01:24:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "BREAKING NEWS: Japan's April quake struck same fault as 2011 aftershock: study",
+          "url": "https://english.kyodonews.net/articles/-/92191",
+          "publishedAt": "2026-11-21T00:37:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Studio in central Japan hopes to keep culture of inkstone making alive",
+          "url": "https://english.kyodonews.net/articles/-/92187",
+          "publishedAt": "2026-11-20T22:51:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Japan down to last captive sea otter as species remains endangered",
+          "url": "https://english.kyodonews.net/articles/-/92186",
+          "publishedAt": "2026-11-20T22:25:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "BREAKING NEWS: Trump, Xi agreed on human role in military decisions using AI: Bessent",
+          "url": "https://english.kyodonews.net/articles/-/92178",
+          "publishedAt": "2026-11-20T16:12:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Earthquake alert (automated)",
+          "url": "https://english.kyodonews.net/articles/-/92173",
+          "publishedAt": "2026-11-20T12:50:12+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Japan security policy draft to seek \"early\" decision on nuclear subs",
+          "url": "https://english.kyodonews.net/articles/-/92170",
+          "publishedAt": "2026-11-20T12:17:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Japan PM Takaichi to meet U.S.-sanctioned ICC president Akane Tuesday",
+          "url": "https://english.kyodonews.net/articles/-/92165",
+          "publishedAt": "2026-11-20T11:15:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Kyodo News Digest: Nov. 20",
+          "url": "https://english.kyodonews.net/articles/-/92073",
+          "publishedAt": "2026-11-20T11:01:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "U.S. F-35 stealth fighter makes precautionary landing at western Japan airport",
+          "url": "https://english.kyodonews.net/articles/-/92142",
+          "publishedAt": "2026-11-20T10:14:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "BREAKING NEWS: Japan PM Takaichi to meet U.S.-sanctioned ICC chief Akane in Tokyo on Tues.",
+          "url": "https://english.kyodonews.net/articles/-/92162",
+          "publishedAt": "2026-11-20T10:06:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "BREAKING NEWS: Japan, copper-rich Chile confirm deeper supply chain resilience cooperation",
+          "url": "https://english.kyodonews.net/articles/-/92160",
+          "publishedAt": "2026-11-20T09:48:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "Sumo: Yokozuna Onosato beats front runner Wakamotoharu, ties for lead",
+          "url": "https://english.kyodonews.net/articles/-/92157",
+          "publishedAt": "2026-11-20T09:22:00+00:00",
+          "hasSummary": true,
+          "inSampleDay": false,
+          "futureDated": false
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://english.kyodonews.net/list/feed/rss4kyodonews-fzone",
+      "contentType": "text/xml; charset=utf-8",
+      "contentEncoding": null,
+      "serverDate": "Sat, 21 Nov 2026 09:42:40 GMT",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 14993,
+      "sha256": "edfdeebaf07bcef3e6a8722fd1f9e6ec110c713340bea482aea167c71f48608b",
+      "feedTitle": "Japan Wire by Kyodo News",
+      "copyright": "Copyright 2025 Kyodo News All Rights Reserved",
+      "declaredTtlMinutes": null,
+      "declaredUpdatePeriod": null,
+      "declaredUpdateFrequency": null,
+      "status": "ok",
+      "itemCount": 19,
+      "validArticleCount": 19,
+      "sampleDayCount": 18,
+      "summaryCount": 19,
+      "undatedCount": 0,
+      "futureDatedCount": 0,
+      "oldestPublishedAt": "2026-11-20T09:22:00+00:00",
+      "newestPublishedAt": "2026-11-21T06:05:00+00:00",
+      "medianItemIntervalMinutes": 38.6,
+      "elapsedMs": 498
+    },
+    {
+      "publisherId": "mainichi",
+      "country": "JP",
+      "language": "ja",
+      "section": "sports",
+      "requestedUrl": "https://mainichi.jp/rss/etc/mainichi-sports.rss",
+      "observedAt": "2026-11-21T09:44:12.893150+00:00",
+      "articles": [
+        {
+          "headline": "中部大春日丘が名古屋を降して花園へ 全国高校ラグビー・愛知",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/116000c",
+          "publishedAt": "2026-11-21T08:37:56+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "逆転勝ちの京都国際監督「もっとエンジン全開に」 神宮大会",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/091000c",
+          "publishedAt": "2026-11-21T08:46:03+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "ビデオ検証4度、紙一重の攻防 上回った横浜の走塁 神宮大会",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/101000c",
+          "publishedAt": "2026-11-21T08:07:33+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "バスケ男子がW杯予選前に練習公開 「この2戦で出場勝ち取る」",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/077000c",
+          "publishedAt": "2026-11-21T06:56:43+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "全国高校ラグビー、51代表が出そろい 桐蔭学園4連覇なるか",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/028000c",
+          "publishedAt": "2026-11-21T07:47:56+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "聖光学院が磐城を降して花園へ 全国高校ラグビー・福島",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/067000c",
+          "publishedAt": "2026-11-21T06:44:03+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "シーソーゲーム制した横浜・村田監督「綱引きと一緒」 神宮大会",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/062000c",
+          "publishedAt": "2026-11-21T06:29:36+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "逆転負けの仙台育英・須江監督「野球は生き物なので」 神宮大会",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/059000c",
+          "publishedAt": "2026-11-21T06:32:34+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "かつての「スーパー小学生」 仙台育英・小久保が神宮で再現HR",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/057000c",
+          "publishedAt": "2026-11-21T05:38:35+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "鳳凰が都大路出場へ 高校駅伝女子・南九州地区",
+          "url": "https://mainichi.jp/articles/20261121/k00/00m/050/053000c",
+          "publishedAt": "2026-11-21T04:06:15+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "「絶対王者」去ったモーグル男子 堀島行真が新章を開くために…",
+          "url": "https://mainichi.jp/articles/20261119/k00/00m/050/133000c",
+          "publishedAt": "2026-11-20T23:00:13+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "初優勝の京都国際 立役者は右サイドの越沼 秋季高校野球近畿",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/185000c",
+          "publishedAt": "2026-11-20T22:00:11+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "横浜が2年ぶり王座奪還 投打に層の厚さ 高校野球秋季関東",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/190000c",
+          "publishedAt": "2026-11-20T22:00:13+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "みんなの高校野球:仙台育英「アリスナ」 堅い守備の名コンビが攻撃でも主役に成長",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/272000c",
+          "publishedAt": "2026-11-20T22:00:16+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "いま会いたい:「五輪よりも気候対策」 雪崩に遭遇した選手が気づいた優先順位",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/191000c",
+          "publishedAt": "2026-11-20T21:00:15+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "不戦敗のBリーグ茨城「リーグにも課題」 出場判断の統一求める",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/373000c",
+          "publishedAt": "2026-11-20T13:36:29+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "横綱・大の里が貫禄の寄り切り 若元春降し首位に並ぶ 九州場所",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/349000c",
+          "publishedAt": "2026-11-20T12:00:13+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "劣勢しのぎ10勝目 金峰山「体が動いている」 大相撲九州場所",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/333000c",
+          "publishedAt": "2026-11-20T11:47:54+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "試合当日の中止「不戦敗」 Bリーグ茨城会見「茨城だけの責任か」",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/306000c",
+          "publishedAt": "2026-11-20T11:32:10+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        },
+        {
+          "headline": "「幼なじみ」巨人・坂本と田中将ともに減額 プロ野球・契約更改",
+          "url": "https://mainichi.jp/articles/20261120/k00/00m/050/294000c",
+          "publishedAt": "2026-11-20T10:28:32+00:00",
+          "hasSummary": false,
+          "inSampleDay": true,
+          "futureDated": false
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://mainichi.jp/rss/etc/mainichi-sports.rss",
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": null,
+      "serverDate": "Sat, 21 Nov 2026 09:44:13 GMT",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 9643,
+      "sha256": "4a96fd5a626c271ec91780f8e5a49e90f224c3f3282fd84a61f34289e0ef898c",
+      "feedTitle": "毎日新聞 「スポーツ」RSS",
+      "copyright": "The copyright of the materials belongs to the Mainichi Newspapers Co. unless stated otherwise.",
+      "declaredTtlMinutes": null,
+      "declaredUpdatePeriod": null,
+      "declaredUpdateFrequency": null,
+      "status": "ok",
+      "itemCount": 20,
+      "validArticleCount": 20,
+      "sampleDayCount": 20,
+      "summaryCount": 0,
+      "undatedCount": 0,
+      "futureDatedCount": 0,
+      "oldestPublishedAt": "2026-11-20T10:28:32+00:00",
+      "newestPublishedAt": "2026-11-21T08:46:03+00:00",
+      "medianItemIntervalMinutes": 30.4,
+      "elapsedMs": 224
+    }
+  ]
+}

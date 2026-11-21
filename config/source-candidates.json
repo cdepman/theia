@@ -1,0 +1,1419 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Phase 0 candidate registry; not an approved production registry",
+  "publishers": [
+    {
+      "id": "nyt",
+      "country": "US",
+      "name": "The New York Times",
+      "domain": "nytimes.com",
+      "language": "en",
+      "format": "national daily",
+      "ownershipCandidate": "NYT Company",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.nytimes.com/rss",
+      "termsUrl": "https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service",
+      "termsStatus": "personal_rss_conditional",
+      "usageNotes": "Official RSS page permits personal reader/noncommercial blog use with required format and attribution. Keep original headlines and direct links; commercial use needs permission.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+          "section": "technology",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "npr",
+      "country": "US",
+      "name": "NPR",
+      "domain": "npr.org",
+      "language": "en",
+      "format": "public radio",
+      "ownershipCandidate": "NPR",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.npr.org/rss/",
+      "termsUrl": "https://www.npr.org/about-npr/179876898/terms-of-use",
+      "termsStatus": "personal_feed_conditional",
+      "usageNotes": "Official terms contain personal/noncommercial content-feed conditions; feed itself says personal use only. Retain attribution; broader redistribution and model training are not authorized.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.npr.org/1001/rss.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://feeds.npr.org/1014/rss.xml",
+          "section": "politics",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "pbs",
+      "country": "US",
+      "name": "PBS NewsHour",
+      "domain": "pbs.org",
+      "language": "en",
+      "format": "public television",
+      "ownershipCandidate": "WETA/PBS",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.pbs.org/newshour/",
+      "termsUrl": "https://www.pbs.org/about/about-pbs/terms-of-use/",
+      "termsStatus": "review_required",
+      "usageNotes": "General terms describe personal uses and podcast permissions; no distinct headline-cloud authorization established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "cbs",
+      "country": "US",
+      "name": "CBS News",
+      "domain": "cbsnews.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Paramount/Skydance",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.cbsnews.com/rss/",
+      "termsUrl": "https://www.cbsnews.com/news/cbs-news-rss-feeds/",
+      "termsStatus": "review_required",
+      "usageNotes": "Official RSS index confirms feed URLs; index is not the full reuse contract. Activation requires review of applicable terms.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.cbsnews.com/latest/rss/main",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "nbc",
+      "country": "US",
+      "name": "NBC News",
+      "domain": "nbcnews.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Comcast/NBCUniversal",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.nbcnews.com/",
+      "termsUrl": "https://www.nbcuniversal.com/terms",
+      "termsStatus": "review_required",
+      "usageNotes": "General license limits use to personal use in authorized services. Separate permission for a hosted headline aggregator was not established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.nbcnews.com/nbcnews/public/news",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "abc",
+      "country": "US",
+      "name": "ABC News",
+      "domain": "abcnews.go.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Disney",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://abcnews.go.com/",
+      "termsUrl": "https://disneytermsofuse.com/english/",
+      "termsStatus": "review_required",
+      "usageNotes": "Disney terms limit consumer use and distribution; the reviewed terms do not establish an explicit headline-feed reuse grant.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://abcnews.go.com/abcnews/topstories",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "domainAliases": [
+        "abcnews.com"
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "cnn",
+      "country": "US",
+      "name": "CNN",
+      "domain": "cnn.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Warner Bros. Discovery (verify at activation)",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.cnn.com/services/rss/",
+      "termsUrl": "https://www.cnn.com/terms",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://rss.cnn.com/rss/cnn_topstories.rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "fox",
+      "country": "US",
+      "name": "Fox News",
+      "domain": "foxnews.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Fox Corporation",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.foxnews.com/about/rss",
+      "termsUrl": "https://www.foxnews.com/terms-of-use",
+      "termsStatus": "format_conflict",
+      "usageNotes": "RSS terms allow personal/noncommercial use but prohibit modifications and intermediate pages. A detail-panel interaction and selected headline cloud need review before activation.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "wsj",
+      "country": "US",
+      "name": "The Wall Street Journal",
+      "domain": "wsj.com",
+      "language": "en",
+      "format": "business press",
+      "ownershipCandidate": "News Corp/Dow Jones",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.wsj.com/news/rss-news-and-feeds",
+      "termsUrl": "https://www.dowjones.com/terms-of-use/",
+      "termsStatus": "review_required",
+      "usageNotes": "Dow Jones terms restrict use to individual personal/noncommercial purposes and restrict systematic storing/sharing. A lasting research archive is not established as permitted.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "washingtonpost",
+      "country": "US",
+      "name": "The Washington Post",
+      "domain": "washingtonpost.com",
+      "language": "en",
+      "format": "national daily",
+      "ownershipCandidate": "Nash Holdings",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.washingtonpost.com/",
+      "termsUrl": "https://www.washingtonpost.com/terms-of-service/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.washingtonpost.com/rss/world",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "latimes",
+      "country": "US",
+      "name": "Los Angeles Times",
+      "domain": "latimes.com",
+      "language": "en",
+      "format": "regional daily",
+      "ownershipCandidate": "LA Times Communications",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.latimes.com/",
+      "termsUrl": "https://www.latimes.com/terms-of-service",
+      "termsStatus": "review_required",
+      "usageNotes": "Personal online use and limited copies described; no explicit automatic headline archive grant established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.latimes.com/world-nation/rss2.0.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "propublica",
+      "country": "US",
+      "name": "ProPublica",
+      "domain": "propublica.org",
+      "language": "en",
+      "format": "nonprofit investigative",
+      "ownershipCandidate": "ProPublica",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.propublica.org/",
+      "termsUrl": "https://www.propublica.org/steal-our-stories",
+      "termsStatus": "format_conflict",
+      "usageNotes": "Republishing guidance forbids automatic/wholesale republication. Do not treat its permissive individual-story policy as automatic aggregator permission.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.propublica.org/feeds/propublica/main",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "politico",
+      "country": "US",
+      "name": "Politico US",
+      "domain": "politico.com",
+      "language": "en",
+      "format": "political press",
+      "ownershipCandidate": "Axel Springer",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.politico.com/rss",
+      "termsUrl": "https://www.politico.com/terms-of-service",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.politico.com/rss/politicopicks.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "thehill",
+      "country": "US",
+      "name": "The Hill",
+      "domain": "thehill.com",
+      "language": "en",
+      "format": "political press",
+      "ownershipCandidate": "Nexstar",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://thehill.com/",
+      "termsUrl": "https://thehill.com/terms-of-service/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://thehill.com/feed/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "usatoday",
+      "country": "US",
+      "name": "USA Today",
+      "domain": "usatoday.com",
+      "language": "en",
+      "format": "national daily",
+      "ownershipCandidate": "Gannett",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.usatoday.com/",
+      "termsUrl": "https://www.usatoday.com/terms/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://rssfeeds.usatoday.com/usatoday-NewsTopStories",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "bostonglobe",
+      "country": "US",
+      "name": "The Boston Globe",
+      "domain": "bostonglobe.com",
+      "language": "en",
+      "format": "regional daily",
+      "ownershipCandidate": "Boston Globe Media Partners",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.bostonglobe.com/",
+      "termsUrl": "https://www.bostonglobe.com/about/terms-service/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.bostonglobe.com/metro/?outputType=rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "seattletimes",
+      "country": "US",
+      "name": "The Seattle Times",
+      "domain": "seattletimes.com",
+      "language": "en",
+      "format": "regional daily",
+      "ownershipCandidate": "Seattle Times Company",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.seattletimes.com/",
+      "termsUrl": "https://www.seattletimes.com/terms-of-service/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.seattletimes.com/feed/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "texastribune",
+      "country": "US",
+      "name": "The Texas Tribune",
+      "domain": "texastribune.org",
+      "language": "en",
+      "format": "nonprofit regional",
+      "ownershipCandidate": "Texas Tribune",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.texastribune.org/",
+      "termsUrl": "https://www.texastribune.org/republishing-guidelines/",
+      "termsStatus": "review_required",
+      "usageNotes": "Republishing guidelines exist; candidate feed returned HTML. Confirm a current feed and automated-use conditions before activation.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.texastribune.org/feeds/all/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "bbc",
+      "country": "GB",
+      "name": "BBC News",
+      "domain": "bbc.co.uk",
+      "language": "en",
+      "format": "public broadcaster",
+      "ownershipCandidate": "BBC",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.bbc.co.uk/news/10628494",
+      "termsUrl": "https://www.bbc.co.uk/usingthebbc/terms-of-use/#15metadataandrssfeeds",
+      "termsStatus": "format_conflict",
+      "usageNotes": "Feed points to current BBC terms. Official 2022 terms PDF section 15 allows attributed RSS use but restricts altering feeds/extracting metadata; section 8 discusses computer analysis. Current applicability to the cloud/archive needs review; not cleared.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.bbci.co.uk/news/rss.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
+          "section": "politics",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+          "section": "technology",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "guardian",
+      "country": "GB",
+      "name": "The Guardian",
+      "domain": "theguardian.com",
+      "language": "en",
+      "format": "national daily",
+      "ownershipCandidate": "Scott Trust",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.theguardian.com/help/feeds",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "termsStatus": "personal_rss_conditional",
+      "usageNotes": "Official feed help permits personal noncommercial reader use subject to terms. Preserve original attribution/links; no blanket redistribution license.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.theguardian.com/uk/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.theguardian.com/politics/rss",
+          "section": "politics",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.theguardian.com/uk/technology/rss",
+          "section": "technology",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "sky",
+      "country": "GB",
+      "name": "Sky News",
+      "domain": "sky.com",
+      "language": "en",
+      "format": "broadcaster",
+      "ownershipCandidate": "Comcast/Sky",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://news.sky.com/info/rss",
+      "termsUrl": "https://news.sky.com/info/terms-and-conditions",
+      "termsStatus": "reader_only_unresolved",
+      "usageNotes": "Official RSS page documents desktop feed-reader use and section feeds. The tested terms URL was 404; hosted-display rights remain unresolved.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "independent",
+      "country": "GB",
+      "name": "The Independent",
+      "domain": "independent.co.uk",
+      "language": "en",
+      "format": "national digital",
+      "ownershipCandidate": "Independent Digital News & Media",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.independent.co.uk/service/rss-feeds-775086.html",
+      "termsUrl": "https://www.independent.co.uk/service/terms-and-conditions-759573.html",
+      "termsStatus": "personal_rss_conditional",
+      "usageNotes": "Official RSS page limits use to personal/noncommercial purposes and requires a license for republication/other use. Hosted display must remain within that scope.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.independent.co.uk/news/uk/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "telegraph",
+      "country": "GB",
+      "name": "The Telegraph",
+      "domain": "telegraph.co.uk",
+      "language": "en",
+      "format": "national daily",
+      "ownershipCandidate": "Ownership requires current verification",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.telegraph.co.uk/",
+      "termsUrl": "https://www.telegraph.co.uk/about-us/terms-and-conditions/",
+      "termsStatus": "format_conflict",
+      "usageNotes": "Terms section 4.4 excludes software-program development from noncommercial use absent consent. Do not enable under the generic personal-use clause.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.telegraph.co.uk/rss.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "ft",
+      "country": "GB",
+      "name": "Financial Times",
+      "domain": "ft.com",
+      "language": "en",
+      "format": "business press",
+      "ownershipCandidate": "Nikkei",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.ft.com/",
+      "termsUrl": "https://help.ft.com/legal-privacy/terms-and-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.ft.com/rss/home",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "economist",
+      "country": "GB",
+      "name": "The Economist",
+      "domain": "economist.com",
+      "language": "en",
+      "format": "weekly analysis",
+      "ownershipCandidate": "Economist Group",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.economist.com/",
+      "termsUrl": "https://www.economist.com/legal/terms-of-use",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.economist.com/the-world-this-week/rss.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "dailymail",
+      "country": "GB",
+      "name": "Daily Mail",
+      "domain": "dailymail.co.uk",
+      "language": "en",
+      "format": "national tabloid",
+      "ownershipCandidate": "DMGT",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.dailymail.co.uk/home/rss/index.html",
+      "termsUrl": "https://www.dailymail.co.uk/home/terms.html",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.dailymail.co.uk/news/index.rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "mirror",
+      "country": "GB",
+      "name": "Daily Mirror",
+      "domain": "mirror.co.uk",
+      "language": "en",
+      "format": "national tabloid",
+      "ownershipCandidate": "Reach",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.mirror.co.uk/",
+      "termsUrl": "https://www.mirror.co.uk/terms-conditions/",
+      "termsStatus": "review_required",
+      "usageNotes": "Personal/noncommercial viewing terms reviewed; not an affirmative grant for the planned automated archive/display.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.mirror.co.uk/news/?service=rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "metro",
+      "country": "GB",
+      "name": "Metro",
+      "domain": "metro.co.uk",
+      "language": "en",
+      "format": "urban daily",
+      "ownershipCandidate": "DMGT",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://metro.co.uk/",
+      "termsUrl": "https://metro.co.uk/terms/",
+      "termsStatus": "review_required",
+      "usageNotes": "Terms permit personal viewing and occasional nonsystematic printing; automatic archive/display permission not established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://metro.co.uk/news/feed/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "standard",
+      "country": "GB",
+      "name": "The Standard",
+      "domain": "standard.co.uk",
+      "language": "en",
+      "format": "London regional",
+      "ownershipCandidate": "Independent Digital News & Media (2026 feed copyright; ownership not independently verified)",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.standard.co.uk/",
+      "termsUrl": "https://www.standard.co.uk/terms",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.standard.co.uk/news/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "scotsman",
+      "country": "GB",
+      "name": "The Scotsman",
+      "domain": "scotsman.com",
+      "language": "en",
+      "format": "Scottish regional",
+      "ownershipCandidate": "Iconic Media Group (2026 feed copyright; ownership not independently verified)",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.scotsman.com/",
+      "termsUrl": "https://www.scotsman.com/terms-and-conditions",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.scotsman.com/news/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "herald",
+      "country": "GB",
+      "name": "The Herald",
+      "domain": "heraldscotland.com",
+      "language": "en",
+      "format": "Scottish regional",
+      "ownershipCandidate": "Newsquest/Gannett",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.heraldscotland.com/",
+      "termsUrl": "https://www.heraldscotland.com/terms/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.heraldscotland.com/news/rss/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "walesonline",
+      "country": "GB",
+      "name": "WalesOnline",
+      "domain": "walesonline.co.uk",
+      "language": "en",
+      "format": "Welsh regional",
+      "ownershipCandidate": "Reach",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.walesonline.co.uk/",
+      "termsUrl": "https://www.walesonline.co.uk/terms-conditions/",
+      "termsStatus": "review_required",
+      "usageNotes": "Reach personal/noncommercial terms reviewed. Shares corporate ownership with Mirror/MEN; do not label those publishers as independent owners.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.walesonline.co.uk/news/?service=rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "men",
+      "country": "GB",
+      "name": "Manchester Evening News",
+      "domain": "manchestereveningnews.co.uk",
+      "language": "en",
+      "format": "English regional",
+      "ownershipCandidate": "Reach",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.manchestereveningnews.co.uk/",
+      "termsUrl": "https://www.manchestereveningnews.co.uk/terms-conditions/",
+      "termsStatus": "review_required",
+      "usageNotes": "Reach personal/noncommercial terms reviewed. Shares corporate ownership with Mirror/WalesOnline; headline archive rights not established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.manchestereveningnews.co.uk/news/?service=rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "belfasttelegraph",
+      "country": "GB",
+      "name": "Belfast Telegraph",
+      "domain": "belfasttelegraph.co.uk",
+      "language": "en",
+      "format": "Northern Irish regional",
+      "ownershipCandidate": "Mediahuis",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.belfasttelegraph.co.uk/",
+      "termsUrl": "https://www.belfasttelegraph.co.uk/service/terms-and-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.belfasttelegraph.co.uk/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "newscientist",
+      "country": "GB",
+      "name": "New Scientist",
+      "domain": "newscientist.com",
+      "language": "en",
+      "format": "science press",
+      "ownershipCandidate": "DMGT",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.newscientist.com/",
+      "termsUrl": "https://www.newscientist.com/terms/",
+      "termsStatus": "review_required",
+      "usageNotes": "Terms mention personal use and a single-device download of RSS. A hosted research archive is not explicitly approved by that provision.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.newscientist.com/feed/home/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "cityam",
+      "country": "GB",
+      "name": "City A.M.",
+      "domain": "cityam.com",
+      "language": "en",
+      "format": "business press",
+      "ownershipCandidate": "THG (verify at activation)",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.cityam.com/",
+      "termsUrl": "https://www.cityam.com/terms-and-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.cityam.com/feed/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "nhk",
+      "country": "JP",
+      "name": "NHK",
+      "domain": "nhk.or.jp",
+      "language": "ja",
+      "format": "public broadcaster",
+      "ownershipCandidate": "NHK",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.nhk.or.jp/",
+      "termsUrl": "https://www.nhk.or.jp/toppage/rules/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.nhk.or.jp/rss/news/cat4.xml",
+          "section": "politics",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.nhk.or.jp/rss/news/cat5.xml",
+          "section": "business",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "asahi",
+      "country": "JP",
+      "name": "Asahi Shimbun",
+      "domain": "asahi.com",
+      "language": "ja",
+      "format": "national daily",
+      "ownershipCandidate": "Asahi Shimbun Company",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.asahi.com/information/service/rss.html",
+      "termsUrl": "https://www.asahi.com/policy/",
+      "termsStatus": "review_required",
+      "usageNotes": "Feed copyright prohibits reproduction/republication without written permission. Official RSS service page exists; inspect its specific personal-use conditions before activation.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.asahi.com/rss/asahi/politics.rdf",
+          "section": "politics",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://www.asahi.com/rss/asahi/science.rdf",
+          "section": "science",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "mainichi",
+      "country": "JP",
+      "name": "Mainichi Shimbun",
+      "domain": "mainichi.jp",
+      "language": "ja",
+      "format": "national daily",
+      "ownershipCandidate": "Mainichi Newspapers",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://mainichi.jp/rss/",
+      "termsUrl": "https://mainichi.jp/corporate/terms/",
+      "termsStatus": "review_required",
+      "usageNotes": "Official RSS index confirms flash/sports/entertainment/opinion feeds. Copyright remains reserved; unrestricted third-party reproduction not granted.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://mainichi.jp/rss/etc/mainichi-sports.rss",
+          "section": "sports",
+          "urlStatus": "listed on official RSS page; supplemental live probe passed"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "sankei",
+      "country": "JP",
+      "name": "Sankei Shimbun",
+      "domain": "sankei.com",
+      "language": "ja",
+      "format": "national daily",
+      "ownershipCandidate": "Sankei Shimbun/Fujisankei",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.sankei.com/",
+      "termsUrl": "https://www.sankei.com/terms/",
+      "termsStatus": "review_required",
+      "usageNotes": "Terms section 11 limits uses beyond permitted conditions/private copying; no explicit hosted-aggregator grant established.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.sankei.com/arc/outboundfeeds/rss/?outputType=xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "nikkei",
+      "country": "JP",
+      "name": "Nikkei",
+      "domain": "nikkei.com",
+      "language": "ja",
+      "format": "business press",
+      "ownershipCandidate": "Nikkei",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.nikkei.com/",
+      "termsUrl": "https://www.nikkei.com/info/copyright.html",
+      "termsStatus": "review_required",
+      "usageNotes": "Official copyright page restricts redistribution; candidate endpoint is 404. Do not replace with scraping.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.nikkei.com/rss/news/headline.rdf",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "yomiuri",
+      "country": "JP",
+      "name": "Yomiuri Shimbun",
+      "domain": "yomiuri.co.jp",
+      "language": "ja",
+      "format": "national daily",
+      "ownershipCandidate": "Yomiuri Shimbun Holdings",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.yomiuri.co.jp/",
+      "termsUrl": "https://www.yomiuri.co.jp/policy/",
+      "termsStatus": "review_required",
+      "usageNotes": "Official policy disallows reproduction/transmission without consent; candidate endpoint is 404.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.yomiuri.co.jp/rss/news.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "kyodo",
+      "country": "JP",
+      "name": "Kyodo News English",
+      "domain": "kyodonews.net",
+      "language": "en",
+      "format": "wire service",
+      "ownershipCandidate": "Kyodo News",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://english.kyodonews.net/",
+      "termsUrl": "https://english.kyodonews.net/terms-of-use.html",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://english.kyodonews.net/list/feed/rss4kyodonews-fzone",
+          "section": "headlines",
+          "urlStatus": "discovered on official homepage; supplemental live probe passed"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "jiji",
+      "country": "JP",
+      "name": "Jiji Press",
+      "domain": "jiji.com",
+      "language": "ja",
+      "format": "wire service",
+      "ownershipCandidate": "Jiji Press",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.jiji.com/jc/info?p=rss",
+      "termsUrl": "https://www.jiji.com/jc/c?g=info&k=copyright",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.jiji.com/rss/ranking.rdf",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "tokyo",
+      "country": "JP",
+      "name": "Tokyo Shimbun",
+      "domain": "tokyo-np.co.jp",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Chunichi Shimbun",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.tokyo-np.co.jp/",
+      "termsUrl": "https://www.tokyo-np.co.jp/site/policy",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.tokyo-np.co.jp/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "hokkaido",
+      "country": "JP",
+      "name": "Hokkaido Shimbun",
+      "domain": "hokkaido-np.co.jp",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Hokkaido Shimbun Press",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.hokkaido-np.co.jp/",
+      "termsUrl": "https://www.hokkaido-np.co.jp/company/copyright/",
+      "termsStatus": "review_required",
+      "usageNotes": "Official site lists RSS and reserves redistribution rights; tested /rss/ is an HTML page, not a feed.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.hokkaido-np.co.jp/rss/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "kahoku",
+      "country": "JP",
+      "name": "Kahoku Shimpo",
+      "domain": "kahoku.news",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Kahoku Shimpo Publishing",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://kahoku.news/",
+      "termsUrl": "https://kahoku.news/terms/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://kahoku.news/rss/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "chugoku",
+      "country": "JP",
+      "name": "Chugoku Shimbun",
+      "domain": "chugoku-np.co.jp",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Chugoku Shimbun",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.chugoku-np.co.jp/",
+      "termsUrl": "https://www.chugoku-np.co.jp/list/company/terms",
+      "termsStatus": "review_required",
+      "usageNotes": "Official homepage reserves reproduction rights; tested feed path is 404.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.chugoku-np.co.jp/list/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "nishinippon",
+      "country": "JP",
+      "name": "Nishinippon Shimbun",
+      "domain": "nishinippon.co.jp",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Nishinippon Shimbun",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.nishinippon.co.jp/",
+      "termsUrl": "https://www.nishinippon.co.jp/site/policy/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.nishinippon.co.jp/rss/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "okinawa",
+      "country": "JP",
+      "name": "Okinawa Times",
+      "domain": "okinawatimes.co.jp",
+      "language": "ja",
+      "format": "regional daily",
+      "ownershipCandidate": "Okinawa Times",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.okinawatimes.co.jp/",
+      "termsUrl": "https://www.okinawatimes.co.jp/list/info/copyright",
+      "termsStatus": "review_required",
+      "usageNotes": "Official homepage reserves copying/reproduction; a readable feed does not itself establish a license.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.okinawatimes.co.jp/list/feed/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "japantimes",
+      "country": "JP",
+      "name": "The Japan Times",
+      "domain": "japantimes.co.jp",
+      "language": "en",
+      "format": "English national daily",
+      "ownershipCandidate": "News2u Holdings",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.japantimes.co.jp/",
+      "termsUrl": "https://www.japantimes.co.jp/info/terms-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "The tested terms URL redirects to the homepage. A valid feed exists; no RSS reuse grant verified.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.japantimes.co.jp/feed/",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "itmedia",
+      "country": "JP",
+      "name": "ITmedia",
+      "domain": "itmedia.co.jp",
+      "language": "ja",
+      "format": "technology press",
+      "ownershipCandidate": "ITmedia/SoftBank group",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://corp.itmedia.co.jp/media/rss_list/",
+      "termsUrl": "https://corp.itmedia.co.jp/media/rss_condition/",
+      "termsStatus": "format_conflict",
+      "usageNotes": "RSS-specific terms ask for consultation on app integration and restrict removal/extraction, modification, translation, and omitted attribution. Personal RSS-reader permission does not settle this cloud/archival use.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "impress",
+      "country": "JP",
+      "name": "Impress Watch",
+      "domain": "impress.co.jp",
+      "language": "ja",
+      "format": "technology press",
+      "ownershipCandidate": "Impress Holdings",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.watch.impress.co.jp/",
+      "termsUrl": "https://www.impress.co.jp/terms/",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        },
+        {
+          "url": "https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf",
+          "section": "technology",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "toyokeizai",
+      "country": "JP",
+      "name": "Toyo Keizai",
+      "domain": "toyokeizai.net",
+      "language": "ja",
+      "format": "business press",
+      "ownershipCandidate": "Toyo Keizai",
+      "countryAttributionMethod": "curated outlet association; candidate pending activation review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://toyokeizai.net/",
+      "termsUrl": "https://toyokeizai.net/list/info/terms",
+      "termsStatus": "unverified",
+      "usageNotes": "Public feed availability is not a reuse license. Review publisher terms before activation. No production ingestion enabled.",
+      "enabled": false,
+      "feeds": [
+        {
+          "url": "https://toyokeizai.net/list/feed/rss",
+          "section": "headlines",
+          "urlStatus": "candidate address; live probe required"
+        }
+      ],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "ap",
+      "country": "US",
+      "name": "Associated Press",
+      "domain": "apnews.com",
+      "language": "en",
+      "format": "wire service",
+      "ownershipCandidate": "Not verified in this study",
+      "countryAttributionMethod": "candidate outlet association; global wire operations require review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://www.ap.org/content/formats/text/",
+      "termsUrl": "https://www.ap.org/terms-and-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "No open headline RSS endpoint verified. Licensing candidate only; do not scrape or buy access.",
+      "enabled": false,
+      "feeds": [],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "reuters",
+      "country": "GB",
+      "name": "Reuters",
+      "domain": "reuters.com",
+      "language": "en",
+      "format": "wire service",
+      "ownershipCandidate": "Not verified in this study",
+      "countryAttributionMethod": "candidate outlet association; global wire operations require review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://reutersagency.com/",
+      "termsUrl": "https://www.reuters.com/info-pages/terms-of-use/",
+      "termsStatus": "unverified",
+      "usageNotes": "No open headline RSS endpoint verified. Licensing candidate only; do not scrape or buy access.",
+      "enabled": false,
+      "feeds": [],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    },
+    {
+      "id": "pa",
+      "country": "GB",
+      "name": "PA Media",
+      "domain": "pa.media",
+      "language": "en",
+      "format": "wire service",
+      "ownershipCandidate": "Not verified in this study",
+      "countryAttributionMethod": "candidate outlet association; global wire operations require review",
+      "countryAttributionConfidence": null,
+      "sourcePage": "https://pa.media/",
+      "termsUrl": "https://pa.media/terms-conditions/",
+      "termsStatus": "unverified",
+      "usageNotes": "No open headline RSS endpoint verified. Licensing candidate only; do not scrape or buy access.",
+      "enabled": false,
+      "feeds": [],
+      "ownershipStatus": "candidate context; not a verified current ownership register"
+    }
+  ]
+}

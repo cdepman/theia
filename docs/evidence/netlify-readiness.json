@@ -1,0 +1,34 @@
+{
+  "name": "Charlie Depman\u2019s team",
+  "slug": "cdepman",
+  "typeName": "Free",
+  "typeId": "6663100fe4bdd50e81fbaefd",
+  "capabilities": {
+    "credit_features": {
+      "included": false
+    },
+    "background_functions": {
+      "included": true
+    },
+    "credits": null,
+    "build_minutes": {
+      "included": 300,
+      "used": 0
+    },
+    "functions": {
+      "included": 125000,
+      "used": 0
+    },
+    "functions_gb_hour": {
+      "included": 100,
+      "used": 0
+    },
+    "edge_functions": {
+      "included": 1000000,
+      "used": 0
+    },
+    "accumulate_overages": {
+      "included": false
+    }
+  }
+}

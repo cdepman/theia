@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/newsreader/opsz.css';
+@import '@fontsource-variable/newsreader/opsz-italic.css';
+
+/*
+  Palette: a sea chart. Cool water for the ground, buff land for the country outline,
+  chart ink for type, and one cobalt for anything you can act on.
+*/
+:root {
+  --sea: #e4ebee;
+  --sea-deep: #d5e0e5;
+  --land: #f2eedf;
+  --shore: #b9c9d0;
+  --ink: #142238;
+  --ink-soft: #4a5a70;
+  --ink-faint: #7f8da0;
+  --cobalt: #1d46c7;
+  --cobalt-wash: #dbe4fb;
+  --paper: #f8fafb;
+  --alert: #9a3412;
+  --alert-wash: #fbe9dc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sea: #0f1b2d;
+    --sea-deep: #0b1524;
+    --land: #182a42;
+    --shore: #2c4160;
+    --ink: #e6edf3;
+    --ink-soft: #a9b8c9;
+    --ink-faint: #7688a0;
+    --cobalt: #8fb0ff;
+    --cobalt-wash: #1b2f57;
+    --paper: #142238;
+    --alert: #f3b089;
+    --alert-wash: #3a2416;
+  }
+}
+
+@theme inline {
+  --color-sea: var(--sea);
+  --color-sea-deep: var(--sea-deep);
+  --color-land: var(--land);
+  --color-shore: var(--shore);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-cobalt: var(--cobalt);
+  --color-cobalt-wash: var(--cobalt-wash);
+  --color-paper: var(--paper);
+  --color-alert: var(--alert);
+  --color-alert-wash: var(--alert-wash);
+  --font-serif: 'Newsreader Variable', 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'Songti SC', ui-serif, Georgia, serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sea);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+  font-variant-numeric: lining-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.tabular {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Headlines in the cloud. SVG groups act as buttons. */
+.cloud-item {
+  cursor: pointer;
+  outline: none;
+}
+.cloud-item text {
+  fill: var(--ink);
+  transition: fill 120ms ease;
+}
+.cloud-item .focus-ring {
+  fill: none;
+  stroke: none;
+}
+.cloud-item:hover text,
+.cloud-item[data-selected='true'] text {
+  fill: var(--cobalt);
+}
+.cloud-item:focus-visible .focus-ring {
+  stroke: var(--cobalt);
+  stroke-width: 2;
+}
+.cloud[data-has-selection='true'] .cloud-item:not([data-selected='true']):not(:hover):not(:focus-visible) text {
+  fill: var(--ink-faint);
+}
+
+/* The detail panel is the one piece of motion: it answers a click. */
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.detail-enter {
+  animation: sheet-in 200ms ease-out;
+}
+@media (min-width: 768px) {
+  .detail-enter {
+    animation: panel-in 180ms ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-enter {
+    animation: none;
+  }
+  .cloud-item text {
+    transition: none;
+  }
+}
+
+.prose-theia p {
+  max-width: 68ch;
+  margin: 0 0 1em;
+}
+.prose-theia h2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 2.2em 0 0.5em;
+}
+.prose-theia ul {
+  max-width: 68ch;
+  margin: 0 0 1em;
+  padding-left: 1.2em;
+  list-style: disc;
+}
+.prose-theia li {
+  margin-bottom: 0.4em;
+}

@@ -1,0 +1,33 @@
+# Fallback runner. Use this only if Netlify Background Functions are unavailable on the
+# account: it runs the same worker entry point on a schedule. To enable it, uncomment the
+# schedule below and add SUPABASE_URL and SUPABASE_SECRET_KEY as repository secrets.
+name: Worker (fallback runner)
+
+on:
+  # schedule:
+  #   - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: theia-worker
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Dispatcher tick and worker run
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: npx tsx pipeline/jobs/cli.ts run

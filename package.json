@@ -1,0 +1,48 @@
+{
+  "name": "project-theia",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite",
+    "dev:api": "tsx watch --env-file=.env server/dev-server.ts",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "pipeline": "tsx --env-file=.env pipeline/jobs/cli.ts run",
+    "registry:sync": "tsx --env-file=.env pipeline/jobs/cli.ts sync-registry",
+    "status": "tsx --env-file=.env pipeline/jobs/cli.ts status",
+    "check:connection": "tsx --env-file=.env pipeline/jobs/cli.ts check",
+    "outlines": "node scripts/build-outlines.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/newsreader": "5.3.0",
+    "@supabase/supabase-js": "2.119.2",
+    "@tanstack/react-query": "5.108.2",
+    "fast-xml-parser": "5.12.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.17",
+    "@netlify/edge-functions": "4.0.4",
+    "@netlify/functions": "6.1.1",
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/vite": "4.3.5",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "d3-geo": "3.1.2",
+    "tailwindcss": "4.3.5",
+    "topojson-client": "3.1.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.1",
+    "world-atlas": "2.0.2"
+  }
+}

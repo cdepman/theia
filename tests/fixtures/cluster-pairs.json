@@ -1,0 +1,1086 @@
+{
+ "description": "Labeled article pairs for clustering evaluation. Headlines are real feed metadata from the Phase 0 probe (docs/evidence/rss-probe-final.json), sampled across similarity bands from cross-publisher pairs. Labels: same = the two headlines report the same event or development; unsure pairs are excluded from scoring. Labeled by the build agent on 2026-11-21, not by the owner; review before relying on the numbers.",
+ "labeledAt": "2026-11-21",
+ "pairs": [
+  {
+   "language": "en",
+   "publisherA": "cbs",
+   "publisherB": "nbc",
+   "a": "Markets plunge deeper one day after Anthropic's record-breaking IPO",
+   "b": "Stock markets plunge as Nasdaq erases 2026 gains",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "independent",
+   "a": "EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live",
+   "b": "Andy Burnham tells Britain’s young people: ‘This EU reset deal is for you’",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "standard",
+   "a": "What exactly is in the deal between the UK and the EU?",
+   "b": "UK-EU trading deal ‘transformational’ for Northern Ireland, says Secretary of State",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "japantimes",
+   "a": "What Trump addressed during his lengthy White House news conference",
+   "b": "Fresh off China trip, Trump bobs and weaves in freewheeling news conference",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "guardian",
+   "a": "Why Is the Stock Market Down After Anthropic’s Successful IPO?",
+   "b": "Protesters rally against Anthropic in New York and San Francisco after $2tn stock market debut",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "seattletimes",
+   "a": "Takeaways From Trump’s Post-Trip News Conference",
+   "b": "FACT FOCUS: A look at false and misleading claims Trump made at news conference after his Asia trip",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "thehill",
+   "publisherB": "guardian",
+   "a": "Why stock market is tanking despite massive Anthropic IPO",
+   "b": "Protesters rally against Anthropic in New York and San Francisco after $2tn stock market debut",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "metro",
+   "a": "WATCH: Trump says he would love former Nvidia CEO Jensen Huang to 'be given a second chance'",
+   "b": "Disgraced Nvidia boss Jensen Huang told employee he would ‘pee on their brain’",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "cbs",
+   "publisherB": "washingtonpost",
+   "a": "Trump touts Asia trip, meeting with Putin and Xi at news conference",
+   "b": "Trump calls Putin and Xi friends. They have other plans.",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "seattletimes",
+   "a": "Jury in Palisades Fire Trial Finds Man Guilty of Arson in Devastating Blaze",
+   "b": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "bbc",
+   "publisherB": "mirror",
+   "a": "Man convicted of starting Palisades fire in Los Angeles",
+   "b": "Man who was 'mad at everything' found guilty of starting deadly Los Angeles fires",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "sky",
+   "publisherB": "standard",
+   "a": "Cold weather alert extended as temperatures drop to -10C",
+   "b": "UK braced as temperatures could drop to minus 10C in coldest night of autumn",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "cityam",
+   "a": "What exactly is in the deal between the UK and the EU?",
+   "b": "Net zero is an egregiously bad deal for the UK",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "nbc",
+   "publisherB": "bbc",
+   "a": "Trump threatens ‘tremendous’ penalties on companies that build data centers overseas",
+   "b": "Trump threatens ban on US firms building AI data centres overseas",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "independent",
+   "a": "Burnham has agreed EU reset deal with tuition fees issue unresolved, says No 10",
+   "b": "Andy Burnham tells Britain’s young people: ‘This EU reset deal is for you’",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "cbs",
+   "a": "NATO calls Russian missiles landing in Poland a 'grave violation' of airspace",
+   "b": "Russian missiles pummel Ukraine and hit NATO soil in Poland",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "economist",
+   "publisherB": "herald",
+   "a": "Business",
+   "b": "Herald Business LIVE: Today's top stories - November 20",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "guardian",
+   "a": "What Trump addressed during his lengthy White House news conference",
+   "b": "Trump turns White House press conference into a 2028 succession audition",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "standard",
+   "a": "Two men dead after glider crash at UK beauty spot",
+   "b": "Two men killed as glider crashes into loch",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "guardian",
+   "a": "What Is a Stock Market Correction?",
+   "b": "Protesters rally against Anthropic in New York and San Francisco after $2tn stock market debut",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "nbc",
+   "publisherB": "thehill",
+   "a": "Trump gives posthumous pardon to baseball’s Pete Rose, who pleaded guilty to tax evasion",
+   "b": "Trump posthumously pardons Pete Rose",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "thehill",
+   "a": "Fiona the Hippo Died After Eating a Hat. Some Want Justice.",
+   "b": "Fiona the Hippo dies days after ingesting hat, Cincinnati Zoo announces",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "standard",
+   "a": "Woman 'shot as she lay in her bed' by gangland gunman as police appeal for public's help",
+   "b": "Woman shot in bed in targeted attack, police say",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "kyodo",
+   "publisherB": "japantimes",
+   "a": "Figure skating: GP Series debutant Shimada leads at Finlandia Trophy",
+   "b": "Mao Shimada grabs lead at Finlandia Trophy after short program",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "sky",
+   "publisherB": "mirror",
+   "a": "Denmark says it thwarted 'Russian plot' to kill US-Ukrainian rapper",
+   "b": "Denmark accuses Russia of plotting to kill American-Ukrainian rapper before his own concert",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "bbc",
+   "publisherB": "ft",
+   "a": "Trump threatens ban on US firms building AI data centres overseas",
+   "b": "Donald Trump threatens ‘tremendous’ tax on data centres built outside US",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "standard",
+   "a": "Shameless Russell Brand wants to appeal his rape and sexual assault convictions as he begins 10-year stint behind bars - after sacking lawyer who exploded at journalist outside court",
+   "b": "Russell Brand ‘considers appeal against rape conviction and sentence after sacking lawyer’",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "telegraph",
+   "a": "Rights groups urge sanctions after ICJ finds Myanmar guilty of genocide against Rohingya",
+   "b": "Myanmar guilty of genocide, International Court of Justice rules",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "cbs",
+   "publisherB": "seattletimes",
+   "a": "Trump touts Asia trip, meeting with Putin and Xi at news conference",
+   "b": "FACT FOCUS: A look at false and misleading claims Trump made at news conference after his Asia trip",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nbc",
+   "publisherB": "seattletimes",
+   "a": "Trump threatens ‘tremendous’ penalties on companies that build data centers overseas",
+   "b": "Trump threatens to bar U.S. tech firms from building data centers abroad",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "abc",
+   "publisherB": "thehill",
+   "a": "WATCH: Trump calls Putin, Xi his friends after meeting",
+   "b": "Bolton: ‘No substance’ to Trump meeting with Putin, Xi",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "npr",
+   "publisherB": "pbs",
+   "a": "A second judge blocks Trump's arch, saying it's unlikely to succeed in court",
+   "b": "Second federal judge blocks construction of Trump's memorial arch",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "guardian",
+   "a": "‘Did A.I. Break the Internet?’ and Other Things We’ve Worried About This Week",
+   "b": "Will AI break the internet? | Garrison Lovely",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "standard",
+   "a": "Anti-migrant activist Danny Tommo sobs as he's jailed for 15 months for slashing small boat in Channel - as judge brands him a 'publicity seeker'",
+   "b": "Activist Danny Tommo jailed after slashing migrant dinghy with knife",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "abc",
+   "publisherB": "thehill",
+   "a": "WATCH: Grand Theft Auto VI is back and shattering records",
+   "b": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "thehill",
+   "publisherB": "guardian",
+   "a": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
+   "b": "Parents: please don’t buy Grand Theft Auto VI for your child",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "bbc",
+   "publisherB": "standard",
+   "a": "What does the new Brexit deal mean for Northern Ireland?",
+   "b": "UK-EU trading deal ‘transformational’ for Northern Ireland, says Secretary of State",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "metro",
+   "a": "Tributes paid to man in his 40s fatally electrocuted putting up Christmas lights at major London shopping centre",
+   "b": "Man dies after being electrocuted while hanging Christmas tree lights in London shopping centre",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "standard",
+   "publisherB": "scotsman",
+   "a": "Police condemn ‘callous’ trio who defrauded pensioners out of £600,000",
+   "b": "Trio who duped pensioners out of £600,000 jailed for 20 years in total",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "standard",
+   "publisherB": "herald",
+   "a": "No trace of missing crew members on recovered fishing boat",
+   "b": "Missing fishing boat Kilda recovered from sea off Orkney",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "nbc",
+   "a": "Federal jury convicts man of starting deadly 2025 Palisades Fire in Los Angeles",
+   "b": "California man found guilty of starting deadly Palisades Fire",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "wsj",
+   "a": "Rights groups urge sanctions after ICJ finds Myanmar guilty of genocide against Rohingya",
+   "b": "World Court Finds Myanmar Committed Genocide Against Rohingya",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "npr",
+   "publisherB": "nbc",
+   "a": "Trump touts meeting with Xi and Putin but offers little results",
+   "b": "Trump touts historic summit with Xi, Putin",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "bbc",
+   "a": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
+   "b": "Trump threatens ban on US firms building AI data centres overseas",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "standard",
+   "a": "Donald Trump wants Ukraine peace deal by January as he brands Russian missile strike on Poland 'mistake'",
+   "b": "Russian missile strike in Poland ‘utterly unacceptable’, Andy Burnham says",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "sky",
+   "publisherB": "mirror",
+   "a": "NHS warns of 'alarming' rise in hospital admissions for 'silent killer'",
+   "b": "NHS ‘Silent killer’ warning after massive increase in hospital admissions for high blood pressure",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "scotsman",
+   "publisherB": "herald",
+   "a": "Scotland’s weather: Coldest night of autumn so far with temperatures set to dip further",
+   "b": "'Coldest night of autumn' as temperatures plunge across Scotland",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "npr",
+   "publisherB": "cbs",
+   "a": "The latest from Trump's press conference",
+   "b": "What we learned from Trump's first press conference following summit with Xi, Putin",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "standard",
+   "a": "UK temperatures plunge to -10C overnight on coldest night of autumn",
+   "b": "Thursday was coldest night of autumn so far with temperatures set to dip further",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "abc",
+   "a": "Jury in Palisades Fire Trial Finds Man Guilty of Arson in Devastating Blaze",
+   "b": "Man accused of starting blaze that became Palisades Fire found guilty of arson",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "dailymail",
+   "publisherB": "mirror",
+   "a": "Mechanic, 34, killed wife, their three young children and himself in murder-suicide as one of the youngsters was heard screaming: 'Daddy, please don't kill me!'",
+   "b": "Dad said 'sorry buddy' before shooting wife and three young children in murder-suicide",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "wsj",
+   "publisherB": "sky",
+   "a": "Denmark Accuses Russia of Trying to Kill Ukrainian Rapper",
+   "b": "Denmark says it thwarted 'Russian plot' to kill US-Ukrainian rapper",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "metro",
+   "a": "Far-right activist Daniel Thomas jailed for slashing dinghy in Channel",
+   "b": "Danny Tommo jailed after slashing migrant dinghy in Channel",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "mirror",
+   "publisherB": "walesonline",
+   "a": "Robins will keep visiting your garden if you put 1 item in dish this winter",
+   "b": "Robins will enjoy being in your garden this winter if you place 1 item in dish",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "abc",
+   "publisherB": "thehill",
+   "a": "White House replaces national cyber director amid widespread tech outages",
+   "b": "White House lets go of national cyber director, names acting replacement",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "thehill",
+   "a": "What Trump addressed during his lengthy White House news conference",
+   "b": "The Memo: Embattled Trump seeks reset with White House news conference",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "dailymail",
+   "a": "Two men killed after glider crashes into Loch Leven in Scotland",
+   "b": "Bodies of two men are found after Loch Leven glider crash",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "standard",
+   "a": "UK temperatures plunge to -10C overnight on coldest night of autumn",
+   "b": "UK braced as temperatures could drop to minus 10C in coldest night of autumn",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "abc",
+   "publisherB": "guardian",
+   "a": "WATCH: Grand Theft Auto VI is back and shattering records",
+   "b": "Tell us: are you playing Grand Theft Auto VI?",
+   "label": "different"
+  },
+  {
+   "language": "en",
+   "publisherA": "standard",
+   "publisherB": "scotsman",
+   "a": "Two men killed as glider crashes into loch",
+   "b": "Two dead after glider crashes into Loch Leven near Kinross",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nbc",
+   "publisherB": "wsj",
+   "a": "Trump touts historic summit with Xi, Putin",
+   "b": "Trump, Xi, Putin End Historic Summit With Denunciation of Nuclear War",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "thehill",
+   "publisherB": "bbc",
+   "a": "Watchdog says AI smart glasses may violate your privacy",
+   "b": "Dutch watchdog tells people not to buy AI smart glasses",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "standard",
+   "publisherB": "herald",
+   "a": "Man charged after ‘knives and other offensive weapons’ seized at city station",
+   "b": "Man charged after knives seized and controlled explosion at Edinburgh station",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "independent",
+   "a": "Far-right activist Daniel Thomas jailed for slashing dinghy in Channel",
+   "b": "Far-right activist Danny Tommo jailed for slashing migrant boat in English Channel",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "herald",
+   "a": "UK temperatures plunge to -10C overnight on coldest night of autumn",
+   "b": "'Coldest night of autumn' as temperatures plunge across Scotland",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "herald",
+   "a": "Two men killed after glider crashes into Loch Leven in Scotland",
+   "b": "Two men killed after glider crashes into Scottish loch during training flight",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nbc",
+   "publisherB": "mirror",
+   "a": "Man found guilty of starting deadly Palisades Fire in Los Angeles",
+   "b": "Man who was 'mad at everything' found guilty of starting deadly Los Angeles fires",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "seattletimes",
+   "publisherB": "bbc",
+   "a": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+   "b": "Man convicted of starting Palisades fire in Los Angeles",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "metro",
+   "a": "Far-right activist Danny Tommo jailed for slashing migrant boat in English Channel",
+   "b": "Danny Tommo jailed after slashing migrant dinghy in Channel",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "guardian",
+   "publisherB": "metro",
+   "a": "Two men killed after glider crashes into Loch Leven in Scotland",
+   "b": "Two men killed after glider plunges into Scottish loch",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "dailymail",
+   "a": "‘Our daughter died of breast cancer at 17. Her legacy could save others’",
+   "b": "'Isla died of breast cancer at 17... her legacy could help other youngsters'",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "pbs",
+   "publisherB": "cbs",
+   "a": "WATCH: Cascade of tech outages 'separate events' and 'under control,' Trump says",
+   "b": "Trump says recent tech outages are \"all separate events\"",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "sky",
+   "publisherB": "independent",
+   "a": "Man jailed for murder of British woman he groomed on fetish website",
+   "b": "Florida man jailed for life after murdering British woman he groomed on fetish website",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "standard",
+   "a": "Two accused of RAF Fairford Iran bomb alert deny National Security Act charges",
+   "b": "Fairford accused deny National Security Act charges",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "independent",
+   "publisherB": "standard",
+   "a": "Liverpool fan found not guilty of racially abusing Antoine Semenyo",
+   "b": "Liverpool fan found not guilty of racially abusing Antoine Semenyo",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "metro",
+   "publisherB": "standard",
+   "a": "Two men killed after glider plunges into Scottish loch",
+   "b": "Two men killed as glider crashes into loch",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "nyt",
+   "publisherB": "seattletimes",
+   "a": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
+   "b": "Trump threatens to bar U.S. tech firms from building data centers abroad",
+   "label": "same"
+  },
+  {
+   "language": "en",
+   "publisherA": "standard",
+   "publisherB": "herald",
+   "a": "Two men killed as glider crashes into loch",
+   "b": "Two men killed after glider crashes into Scottish loch during training flight",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "sankei",
+   "publisherB": "impress",
+   "a": "M!LK佐野勇斗「つい先程…」 “報告”に祝福の声続々「おめでとう」「本当にすごい」",
+   "b": "本当に？ 日本で最も使われているパスワードは「pass1111」であるとの調査結果【やじうまWatch】",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "mainichi",
+   "a": "北海道「六花亭」に不正アクセス クレカ情報 約8000件流出か",
+   "b": "不適切会計、10年で5億円超 「うみ出し切った」 北海道・美唄",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "itmedia",
+   "publisherB": "impress",
+   "a": "Mac版「Gemini」にユーザーの代わりにアプリを操作する「computer use」機能追加 まず米国で",
+   "b": "Microsoftのタスク管理サービス「Microsoft To Do」、突然のサービス終了発表でユーザー動揺【やじうまWatch】",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "来年度税制改正 東京と地方の偏在是正など論点 自民税制調査会",
+   "b": "インフラ整備「バーターではない」 税の偏在是正めぐり小池知事否定",
+   "label": "unsure"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "toyokeizai",
+   "a": "JT ロシア現地法人“実質的経営権喪失”約1兆3770億円の損失へ",
+   "b": "ロシアの首都を震撼させた\"ドローン\"の凄まじい破壊力…｢ロシア=ウクライナ戦争｣の数年でなぜここまで進化したのか | ライフ | 東洋経済オンライン",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "itmedia",
+   "a": "片山金融相 漏えい可能性の楽天証券に“非常に遺憾”",
+   "b": "楽天証券の大規模漏えい、なぜテスト環境に顧客情報が？ 「本番データでの確認が必要だった」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "sankei",
+   "a": "新築マンション 投機的な取り引き抑制を検討 来年度税制改正",
+   "b": "【MAMA2026】LE SSERAFIM、“宇宙人”がエスコート レッドカーペットを前衛的なファッションショーに",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "jiji",
+   "publisherB": "itmedia",
+   "a": "ＡＩで「リーマン予想」証明か 米アンソロピックの数学者",
+   "b": "楽天証券、アンソロピックIPOで「抽選対象外」の表示不具合 後から「当選」の報告相次ぐ 「想定より申し込み多く」",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "ピーチ・アビエーション 不正アクセス約900万件個人情報漏えい",
+   "b": "湘南美容クリニックなどのSBC、不正アクセスで約162万人の情報漏えい",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "KARTE 不正アクセス 情報漏えいや漏えいおそれ のべ約2200社に",
+   "b": "政府の内部資料流出か、基幹システムに不正アクセス デジタル庁発表",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "jiji",
+   "a": "大崎電気 サイバー攻撃でスマートメーターの生産出荷を停止",
+   "b": "ＦＢＩ犯罪情報網に不正侵入か 農務省もサイバー攻撃被害―米報道",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "itmedia",
+   "publisherB": "impress",
+   "a": "湘南美容クリニックのSBC、162万人分の個人情報流出 パスワードは「暗号化せず保存していた」",
+   "b": "本当に？ 日本で最も使われているパスワードは「pass1111」であるとの調査結果【やじうまWatch】",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "itmedia",
+   "a": "米AI開発「アンソロピック」上場 過去最大規模の約13兆円調達",
+   "b": "楽天証券、アンソロピックIPOで「抽選対象外」の表示不具合 後から「当選」の報告相次ぐ 「想定より申し込み多く」",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "itmedia",
+   "publisherB": "impress",
+   "a": "楽天証券、アンソロピックIPOで「抽選対象外」の表示不具合 後から「当選」の報告相次ぐ 「想定より申し込み多く」",
+   "b": "アンソロピック上場、時価総額1.27兆ドル 「AIによるリスクは避けられる」",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "jiji",
+   "a": "中国 高市首相 出迎え「国際慣例に基づく適切な儀礼上の手配」",
+   "b": "機体とタラップに大きな段差 高市首相出迎え時、「危険」中国に批判も―ＡＰＥＣ",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "sankei",
+   "a": "高市首相 トランプ大統領から米中ロ首脳会談の説明受ける",
+   "b": "日本などは「少しだけ蚊帳の外に置かれた」 トランプ氏、米中露会談で",
+   "label": "unsure"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "藤井総務相 偏在是正“多くの知事から切実意見 議論を注視”",
+   "b": "インフラ整備「バーターではない」 税の偏在是正めぐり小池知事否定",
+   "label": "unsure"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "mainichi",
+   "a": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",
+   "b": "自民・鈴木幹事長、岩手知事選候補者決定遅れを陳謝 地元会合で",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "井林国交相 麻生コンクリートのJIS認証取消に「適切に対応」",
+   "b": "麻生コンクリート 無届けで汚水処理変更、工場外排出 県が立ち入り",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さま、マーライオンと記念撮影 シンガポールでの日程終え帰国へ",
+   "b": "「両国の絆を実感」愛子さまがシンガポールから帰国 感想全文",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "KARTE 不正アクセス 情報漏えいや漏えいおそれ のべ約2200社に",
+   "b": "湘南美容クリニックなどのSBC、不正アクセスで約162万人の情報漏えい",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "jiji",
+   "a": "米AI開発「アンソロピック」上場 過去最大規模の約13兆円調達",
+   "b": "ＡＩで「リーマン予想」証明か 米アンソロピックの数学者",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "DHC 顧客の個人情報1911万件流出 「プレイド」不正アクセスで",
+   "b": "湘南美容クリニックなどのSBC、不正アクセスで約162万人の情報漏えい",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "高市首相 トランプ大統領から米中ロ首脳会談の説明受ける",
+   "b": "高市首相、ペルー・フジモリ大統領と会談 チリ大統領とも会談",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "jiji",
+   "a": "サイバー攻撃対策 日本は各国に比べAI使った検知などに遅れ",
+   "b": "ＦＢＩ犯罪情報網に不正侵入か 農務省もサイバー攻撃被害―米報道",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "米AI開発「アンソロピック」上場 過去最大規模の約13兆円調達",
+   "b": "超難問「リーマン予想」AIと証明か 米アンソロピックの数学者発表",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さま、マーライオンと記念撮影 シンガポールでの日程終え帰国へ",
+   "b": "「友好親善の歩み、受け継ぐ」愛子さまがシンガポールから帰国",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",
+   "b": "自民幹事長「法案成立の阻害要因なくす」関文科相の辞任可能性を示唆",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "高市首相 プーチン大統領と意見交換 習主席とは握手",
+   "b": "高市首相、ペルー・フジモリ大統領と会談 チリ大統領とも会談",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "【写真まとめ】愛子さまシンガポール訪問 マーライオン視察、帰国へ",
+   "b": "「両国の絆を実感」愛子さまがシンガポールから帰国 感想全文",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "住宅街にクマ出没の前橋 けさ目撃 捕獲に向け周辺道路を規制",
+   "b": "クマが住宅街にまた出没 前橋市は道路を封鎖、緊急銃猟を想定",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "米AI開発「アンソロピック」上場 過去最大規模の約13兆円調達",
+   "b": "アンソロピック上場、時価総額1.27兆ドル 「AIによるリスクは避けられる」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "itmedia",
+   "a": "ネットにつながらない携帯電話発売へ 脱ネット需要がねらい",
+   "b": "日本で受け入れられるのか？ ネットにつながらない携帯「INFOBAR ZERO」 KDDIが語った発売の意図",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "関文科相の政治資金パーティーめぐり 与野党折り合わず",
+   "b": "自民・京都が政治資金パーティー再開 裏金問題など経て ノルマ廃止",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "sankei",
+   "a": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",
+   "b": "自民・鈴木幹事長、関文科相交代の可能性を示唆 「法案成立が最重要だ。阻害要因なくす」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "関文科相 政治資金パーティーめぐり 野党から辞任要求相次ぐ",
+   "b": "自民・京都が政治資金パーティー再開 裏金問題など経て ノルマ廃止",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "【写真まとめ】愛子さまシンガポール訪問 マーライオン視察、帰国へ",
+   "b": "「友好親善の歩み、受け継ぐ」愛子さまがシンガポールから帰国",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "KARTE 不正アクセス 情報漏えいや漏えいおそれ のべ約2200社に",
+   "b": "プレイド、「KARTE」不正アクセスの調査結果を公表、2027年1月中旬の段階的な再開を目指す 契約が終了した企業の情報も漏えいの対象に",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さま、シンガポールから帰国 「多くのことを学ぶ貴重な機会」",
+   "b": "「両国の絆を実感」愛子さまがシンガポールから帰国 感想全文",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "jiji",
+   "a": "自民幹事長「法案成立の阻害要因なくす」関文科相の辞任可能性を示唆",
+   "b": "関氏進退、法案最優先で判断 自民幹事長「成立阻害要因なくす」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "米AI開発「アンソロピック」 19日に過去最大規模の上場へ",
+   "b": "アンソロピック上場、時価総額1.27兆ドル 「AIによるリスクは避けられる」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "jiji",
+   "a": "米AI開発「アンソロピック」 19日に過去最大規模の上場へ",
+   "b": "ＡＩで「リーマン予想」証明か 米アンソロピックの数学者",
+   "label": "different"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "sankei",
+   "a": "EV補助金 きょうで申請受け付け終了",
+   "b": "EV購入検討客から落胆の声 業界は支援継続求める 補助金申請受け付け20日で終了",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "impress",
+   "a": "政府ネットワークに不正アクセス 情報漏えい可能性 デジタル庁",
+   "b": "デジタル庁、GSSのファイル共有サービスで会議資料などのファイルが漏えいした可能性を発表",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "ペルー フジモリ大統領 日本からの投資や企業進出を呼びかけ",
+   "b": "高市首相、ペルー・フジモリ大統領と会談 チリ大統領とも会談",
+   "label": "unsure"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さま、シンガポールから帰国 「多くのことを学ぶ貴重な機会」",
+   "b": "「友好親善の歩み、受け継ぐ」愛子さまがシンガポールから帰国",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さまの感想全文 シンガポールから帰国、宮内庁を通して公表",
+   "b": "「友好親善の歩み、受け継ぐ」愛子さまがシンガポールから帰国",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "asahi",
+   "a": "政府ネットワークに不正アクセス 情報漏えい可能性 デジタル庁",
+   "b": "政府の内部資料流出か、基幹システムに不正アクセス デジタル庁発表",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "福間香奈倉敷藤花が12連覇を達成 記者会見で第2子の妊娠を発表",
+   "b": "福間香奈・倉敷藤花が防衛し12連覇 第2子の妊娠を公表",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "itmedia",
+   "publisherB": "impress",
+   "a": "湘南美容クリニックのSBC、162万人分の個人情報流出 パスワードは「暗号化せず保存していた」",
+   "b": "湘南美容クリニックなどのSBC、不正アクセスで約162万人の情報漏えい",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "sankei",
+   "publisherB": "jiji",
+   "a": "中国軍事企業とつながりか フアン前CEOの不倫相手女性 エヌビディア問題で米報道",
+   "b": "渦中女性、中国軍事企業とつながりか エヌビディア前ＣＥＯ不倫問題",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "mainichi",
+   "a": "愛子さまの感想全文 シンガポールから帰国、宮内庁を通して公表",
+   "b": "「両国の絆を実感」愛子さまがシンガポールから帰国 感想全文",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "sankei",
+   "publisherB": "jiji",
+   "a": "吉本ここね首位キープ 藤田かれん、荒木優奈が1打差2位 エリエール・レディースゴルフ",
+   "b": "吉本ここね、首位キープ エリエール女子ゴルフ",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "sankei",
+   "publisherB": "impress",
+   "a": "大阪駅前に〝都市の森〟出現 グラングリーン大阪「うめきたの森」開園",
+   "b": "大阪駅チカに 「うめきたの森」開園 グラングリーンをつなぐ「ひらめきの道」を歩く",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "nhk",
+   "publisherB": "itmedia",
+   "a": "ソフトウエア「nginx」にぜい弱性 “必要な措置を”官房長官",
+   "b": "nginx「緊急」脆弱性、官房長官が「必要な措置」呼び掛け",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "sankei",
+   "a": "自民幹事長「法案成立の阻害要因なくす」関文科相の辞任可能性を示唆",
+   "b": "自民・鈴木幹事長、関文科相交代の可能性を示唆 「法案成立が最重要だ。阻害要因なくす」",
+   "label": "same"
+  },
+  {
+   "language": "ja",
+   "publisherA": "asahi",
+   "publisherB": "jiji",
+   "a": "超難問「リーマン予想」AIと証明か 米アンソロピックの数学者発表",
+   "b": "ＡＩで「リーマン予想」証明か 米アンソロピックの数学者",
+   "label": "same"
+  }
+ ]
+}

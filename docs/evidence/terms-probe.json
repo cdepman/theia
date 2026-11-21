@@ -1,0 +1,1691 @@
+[
+  {
+    "publisherId": "nyt",
+    "pages": [
+      {
+        "requestedUrl": "https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service",
+        "observedAt": "2026-11-21T09:42:44.309341+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://help.nytimes.com/policies/115014893428-Terms-of-Service",
+        "status": "ok",
+        "sha256": "93ad73987ead30774d419753556d4746ab9711e0464d85bba34eeb6af333e6ef",
+        "feedLinks": [],
+        "matchingPassageCount": 6,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.nytimes.com/rss",
+        "observedAt": "2026-11-21T09:42:45.081632+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nytimes.com/rss",
+        "status": "ok",
+        "sha256": "0dbbe043817ef38c209fa8c6af369c497c82daeaf50cf7c1f9e61f7f7e30c566",
+        "feedLinks": [
+          "https://rss.nytimes.com/services/xml/rss/nyt/Africa.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Americas.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/ArtandDesign.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Automobiles.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Baseball.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Books/Review.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/CollegeBasketball.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/CollegeFootball.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Dance.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Dealbook.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/EnergyEnvironment.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Golf.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Hockey.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Jobs.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Lens.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/MostEmailed.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/MostShared.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/MostViewed.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Music.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Obituaries.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/PersonalTech.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/ProBasketball.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/ProFootball.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/RealEstate.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/SmallBusiness.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Soccer.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Space.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Television.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Tennis.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Theater.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Upshot.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Weather.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Weddings.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/Well.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/YourMoney.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/recent.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/sunday-review.xml",
+          "https://rss.nytimes.com/services/xml/rss/nyt/tmagazine.xml",
+          "https://static01.nyt.com/services/xml/rss/termsconditions.html",
+          "https://www.nytimes.com/services/xml/rss/nyt/Travel.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/bret-stephens/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/charles-m-blow/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/david-brooks/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ezra-klein/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/farhad-manjoo/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/frank-bruni/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/gail-collins/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/jamelle-bouie/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/maureen-dowd/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/michelle-goldberg/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/nicholas-kristof/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/paul-krugman/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml",
+          "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/thomas-l-friedman/rss.xml",
+          "https://www.nytimes.com/vi-assets/static-assets/assets/Rss-LtCXIWnt.css",
+          "https://www.nytimes.com/vi-assets/static-assets/chunks/Rss-4e80dc_9.js"
+        ],
+        "matchingPassageCount": 4,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "npr",
+    "pages": [
+      {
+        "requestedUrl": "https://www.npr.org/about-npr/179876898/terms-of-use",
+        "observedAt": "2026-11-21T09:42:44.309675+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.npr.org/about-npr/179876898/terms-of-use",
+        "status": "ok",
+        "sha256": "38a8bd1d5f2684536e1b3b83d487a83b914ba0db5cc2b31aed3248068c653b0a",
+        "feedLinks": [],
+        "matchingPassageCount": 4,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.npr.org/rss/",
+        "observedAt": "2026-11-21T09:42:44.654297+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      }
+    ]
+  },
+  {
+    "publisherId": "pbs",
+    "pages": [
+      {
+        "requestedUrl": "https://www.pbs.org/about/about-pbs/terms-of-use/",
+        "observedAt": "2026-11-21T09:42:44.309816+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.pbs.org/about/about-pbs/terms-of-use/",
+        "status": "ok",
+        "sha256": "5e55fc0e1a0a8abc84e278ed9f978c0142aa7e7d3a3073977c156a929d9a0d47",
+        "feedLinks": [],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.pbs.org/newshour/",
+        "observedAt": "2026-11-21T09:42:45.047729+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.pbs.org/newshour/",
+        "status": "ok",
+        "sha256": "451865999c54cbd1cfd3cb1e2d3937118e8e8a75e6e2c42e31a6e274d03ab4ae",
+        "feedLinks": [
+          "https://www.pbs.org/newshour/feeds/rss/headlines"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "cbs",
+    "pages": [
+      {
+        "requestedUrl": "https://www.cbsnews.com/news/cbs-news-rss-feeds/",
+        "observedAt": "2026-11-21T09:42:44.309919+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cbsnews.com/rss/",
+        "status": "ok",
+        "sha256": "c2865c1e2ce3856594ee9f69dfc720a79b1b98062260c477b25b307520aa6df4",
+        "feedLinks": [
+          "android-app://com.treemolabs.apps.cbsnews/https/www.cbsnews.com/rss/",
+          "https://www.cbsnews.com/app/?ftag=CNM-16-10abd6g&url=https://www.cbsnews.com/rss/",
+          "https://www.cbsnews.com/latest/rss/48-hours",
+          "https://www.cbsnews.com/latest/rss/60-minutes",
+          "https://www.cbsnews.com/latest/rss/cbs-mornings-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-mornings-saturday-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-news-mornings-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-reports-custom",
+          "https://www.cbsnews.com/latest/rss/daily-report-clips",
+          "https://www.cbsnews.com/latest/rss/entertainment",
+          "https://www.cbsnews.com/latest/rss/evening-news",
+          "https://www.cbsnews.com/latest/rss/evening-news-on-the-road",
+          "https://www.cbsnews.com/latest/rss/evening-news/cbs-news-investigates",
+          "https://www.cbsnews.com/latest/rss/eye-on-america-full-episodes",
+          "https://www.cbsnews.com/latest/rss/face-the-nation",
+          "https://www.cbsnews.com/latest/rss/health",
+          "https://www.cbsnews.com/latest/rss/main",
+          "https://www.cbsnews.com/latest/rss/main/",
+          "https://www.cbsnews.com/latest/rss/moneywatch",
+          "https://www.cbsnews.com/latest/rss/politics",
+          "https://www.cbsnews.com/latest/rss/science",
+          "https://www.cbsnews.com/latest/rss/space",
+          "https://www.cbsnews.com/latest/rss/sunday-morning",
+          "https://www.cbsnews.com/latest/rss/technology",
+          "https://www.cbsnews.com/latest/rss/the-dish-full-episodes",
+          "https://www.cbsnews.com/latest/rss/the-takeout-full-episodes",
+          "https://www.cbsnews.com/latest/rss/uplift-full-episodes",
+          "https://www.cbsnews.com/latest/rss/us",
+          "https://www.cbsnews.com/latest/rss/world",
+          "https://www.cbsnews.com/rss/",
+          "ios-app://334256223/https/www.cbsnews.com/rss/"
+        ],
+        "matchingPassageCount": 5,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.cbsnews.com/rss/",
+        "observedAt": "2026-11-21T09:42:44.770371+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cbsnews.com/rss/",
+        "status": "ok",
+        "sha256": "26a3927c7740aa9ecacaf5c9d6532f7898c01e8692253f12815c7f7901a628e8",
+        "feedLinks": [
+          "android-app://com.treemolabs.apps.cbsnews/https/www.cbsnews.com/rss/",
+          "https://www.cbsnews.com/app/?ftag=CNM-16-10abd6g&url=https://www.cbsnews.com/rss/",
+          "https://www.cbsnews.com/latest/rss/48-hours",
+          "https://www.cbsnews.com/latest/rss/60-minutes",
+          "https://www.cbsnews.com/latest/rss/cbs-mornings-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-mornings-saturday-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-news-mornings-clips",
+          "https://www.cbsnews.com/latest/rss/cbs-reports-custom",
+          "https://www.cbsnews.com/latest/rss/daily-report-clips",
+          "https://www.cbsnews.com/latest/rss/entertainment",
+          "https://www.cbsnews.com/latest/rss/evening-news",
+          "https://www.cbsnews.com/latest/rss/evening-news-on-the-road",
+          "https://www.cbsnews.com/latest/rss/evening-news/cbs-news-investigates",
+          "https://www.cbsnews.com/latest/rss/eye-on-america-full-episodes",
+          "https://www.cbsnews.com/latest/rss/face-the-nation",
+          "https://www.cbsnews.com/latest/rss/health",
+          "https://www.cbsnews.com/latest/rss/main",
+          "https://www.cbsnews.com/latest/rss/main/",
+          "https://www.cbsnews.com/latest/rss/moneywatch",
+          "https://www.cbsnews.com/latest/rss/politics",
+          "https://www.cbsnews.com/latest/rss/science",
+          "https://www.cbsnews.com/latest/rss/space",
+          "https://www.cbsnews.com/latest/rss/sunday-morning",
+          "https://www.cbsnews.com/latest/rss/technology",
+          "https://www.cbsnews.com/latest/rss/the-dish-full-episodes",
+          "https://www.cbsnews.com/latest/rss/the-takeout-full-episodes",
+          "https://www.cbsnews.com/latest/rss/uplift-full-episodes",
+          "https://www.cbsnews.com/latest/rss/us",
+          "https://www.cbsnews.com/latest/rss/world",
+          "https://www.cbsnews.com/rss/",
+          "ios-app://334256223/https/www.cbsnews.com/rss/"
+        ],
+        "matchingPassageCount": 5,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "nbc",
+    "pages": [
+      {
+        "requestedUrl": "https://www.nbcuniversal.com/terms",
+        "observedAt": "2026-11-21T09:42:44.310013+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nbcuniversal.com/terms",
+        "status": "ok",
+        "sha256": "446085226ac61e810eddfbc244310b648a08cdc6352cd4aab0a24e752adf097a",
+        "feedLinks": [],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.nbcnews.com/",
+        "observedAt": "2026-11-21T09:42:44.425375+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nbcnews.com/",
+        "status": "ok",
+        "sha256": "61ba2b8004e245846b0c1a74684eb3cddf505bb7305e62cae993211eb83eec6c",
+        "feedLinks": [
+          "https://www.nbcnews.com/profile/feed"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "abc",
+    "pages": [
+      {
+        "requestedUrl": "https://disneytermsofuse.com/english/",
+        "observedAt": "2026-11-21T09:42:44.310116+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://disneytermsofuse.com/english/",
+        "status": "ok",
+        "sha256": "290f41e1d8d3a502290e3c94958a11672e1dcac7ee8dd5ecf61adecf2ffaa6a4",
+        "feedLinks": [
+          "https://disneytermsofuse.com/feed/"
+        ],
+        "matchingPassageCount": 4,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://abcnews.go.com/",
+        "observedAt": "2026-11-21T09:42:44.664924+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://abcnews.com/",
+        "status": "ok",
+        "sha256": "93f36da022babd5c466b1d2e72416a2c075a1ff7cd824605f0e2b07eaf9d7003",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "cnn",
+    "pages": [
+      {
+        "requestedUrl": "https://www.cnn.com/terms",
+        "observedAt": "2026-11-21T09:42:44.700551+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cnn.com/terms",
+        "status": "error",
+        "error": "ValueError: Page exceeds 2 MB research limit"
+      },
+      {
+        "requestedUrl": "https://www.cnn.com/services/rss/",
+        "observedAt": "2026-11-21T09:42:44.915121+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cnn.com/",
+        "status": "error",
+        "error": "ValueError: Page exceeds 2 MB research limit"
+      }
+    ]
+  },
+  {
+    "publisherId": "fox",
+    "pages": [
+      {
+        "requestedUrl": "https://www.foxnews.com/terms-of-use",
+        "observedAt": "2026-11-21T09:42:44.995892+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.foxnews.com/terms-of-use",
+        "status": "ok",
+        "sha256": "cc8199c43dbb1540af92cfc634e00b7528981a96190760f06e1519cccbec3862",
+        "feedLinks": [
+          "https://www.foxnews.com/about/rss",
+          "https://www.foxnews.com/story/foxnews-com-rss-feeds"
+        ],
+        "matchingPassageCount": 6,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.foxnews.com/about/rss",
+        "observedAt": "2026-11-21T09:42:45.348611+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.foxnews.com/story/foxnews-com-rss-feeds",
+        "status": "ok",
+        "sha256": "dcb89f2b79292d8e8e6339ab8e383adf56dc1086fdb93526d9e5ddf7c9d76717",
+        "feedLinks": [
+          "https://moxie.foxnews.com/google-publisher/health.xml",
+          "https://moxie.foxnews.com/google-publisher/latest.xml",
+          "https://moxie.foxnews.com/google-publisher/opinion.xml",
+          "https://moxie.foxnews.com/google-publisher/politics.xml",
+          "https://moxie.foxnews.com/google-publisher/science.xml",
+          "https://moxie.foxnews.com/google-publisher/sports.xml",
+          "https://moxie.foxnews.com/google-publisher/tech.xml",
+          "https://moxie.foxnews.com/google-publisher/travel.xml",
+          "https://moxie.foxnews.com/google-publisher/us.xml",
+          "https://moxie.foxnews.com/google-publisher/world.xml",
+          "https://www.foxnews.com/rss.xml?category=story",
+          "https://www.foxnews.com/story/foxnews-com-rss-feeds",
+          "https://www.foxnews.com/story/foxnews-com-rss-feeds.amp",
+          "https://www.foxnews.com/story/foxnews-com-rss-feeds.print"
+        ],
+        "matchingPassageCount": 10,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "wsj",
+    "pages": [
+      {
+        "requestedUrl": "https://www.dowjones.com/terms-of-use/",
+        "observedAt": "2026-11-21T09:42:45.048280+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.dowjones.com/terms-of-use/",
+        "status": "ok",
+        "sha256": "74344aa859d88460962b7901b98f12e3c8b71b04af80bb33a814838a3fcd1d2a",
+        "feedLinks": [
+          "https://www.dowjones.com/feed/"
+        ],
+        "matchingPassageCount": 3,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.wsj.com/news/rss-news-and-feeds",
+        "observedAt": "2026-11-21T09:42:45.994823+00:00",
+        "status": "http_error",
+        "httpStatus": 401
+      }
+    ]
+  },
+  {
+    "publisherId": "washingtonpost",
+    "pages": [
+      {
+        "requestedUrl": "https://www.washingtonpost.com/terms-of-service/",
+        "observedAt": "2026-11-21T09:42:45.081498+00:00",
+        "status": "error",
+        "error": "timeout: The read operation timed out"
+      },
+      {
+        "requestedUrl": "https://www.washingtonpost.com/",
+        "observedAt": "2026-11-21T09:43:00.178486+00:00",
+        "status": "error",
+        "error": "timeout: The read operation timed out"
+      }
+    ]
+  },
+  {
+    "publisherId": "latimes",
+    "pages": [
+      {
+        "requestedUrl": "https://www.latimes.com/terms-of-service",
+        "observedAt": "2026-11-21T09:42:45.089563+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.latimes.com/terms-of-service",
+        "status": "ok",
+        "sha256": "fb9d613e29afe8825fb300008b345764ce96f85eafe6e9655af0b82c1972819e",
+        "feedLinks": [
+          "https://www.latimes.com/terms-of-service.rss"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.latimes.com/",
+        "observedAt": "2026-11-21T09:42:45.375086+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.latimes.com/",
+        "status": "ok",
+        "sha256": "973639dccaa3862857b5ef8fe5e27963ea07baa2f3d58ec8c58ed1944b36911e",
+        "feedLinks": [
+          "https://www.latimes.com/index.rss"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "propublica",
+    "pages": [
+      {
+        "requestedUrl": "https://www.propublica.org/steal-our-stories",
+        "observedAt": "2026-11-21T09:42:45.512285+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.propublica.org/steal-our-stories",
+        "status": "ok",
+        "sha256": "d398c01cd5ea85ed1c6d0e39ae4ac966f21b019eb2dc68de7b35e9052b5aa8bf",
+        "feedLinks": [],
+        "matchingPassageCount": 3,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.propublica.org/",
+        "observedAt": "2026-11-21T09:42:45.622915+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.propublica.org/",
+        "status": "ok",
+        "sha256": "adf60d5f172a58ad14ff61543f20ca4f00c5f27ab028fcb3bf0b5218eb0693ca",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "politico",
+    "pages": [
+      {
+        "requestedUrl": "https://www.politico.com/terms-of-service",
+        "observedAt": "2026-11-21T09:42:45.519780+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      },
+      {
+        "requestedUrl": "https://www.politico.com/rss",
+        "observedAt": "2026-11-21T09:42:45.565440+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "thehill",
+    "pages": [
+      {
+        "requestedUrl": "https://thehill.com/terms-of-service/",
+        "observedAt": "2026-11-21T09:42:45.562862+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      },
+      {
+        "requestedUrl": "https://thehill.com/",
+        "observedAt": "2026-11-21T09:42:45.647275+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "usatoday",
+    "pages": [
+      {
+        "requestedUrl": "https://www.usatoday.com/terms/",
+        "observedAt": "2026-11-21T09:42:45.613310+00:00",
+        "status": "http_error",
+        "httpStatus": 402
+      },
+      {
+        "requestedUrl": "https://www.usatoday.com/",
+        "observedAt": "2026-11-21T09:42:45.671529+00:00",
+        "status": "http_error",
+        "httpStatus": 402
+      }
+    ]
+  },
+  {
+    "publisherId": "bostonglobe",
+    "pages": [
+      {
+        "requestedUrl": "https://www.bostonglobe.com/about/terms-service/",
+        "observedAt": "2026-11-21T09:42:45.709499+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.bostonglobe.com/",
+        "observedAt": "2026-11-21T09:42:46.499271+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.bostonglobe.com/",
+        "status": "error",
+        "error": "ValueError: Page exceeds 2 MB research limit"
+      }
+    ]
+  },
+  {
+    "publisherId": "seattletimes",
+    "pages": [
+      {
+        "requestedUrl": "https://www.seattletimes.com/terms-of-service/",
+        "observedAt": "2026-11-21T09:42:45.730708+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.seattletimes.com/",
+        "observedAt": "2026-11-21T09:42:45.913339+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.seattletimes.com/",
+        "status": "ok",
+        "sha256": "7aa00042b0435d75c5e8048557f8d686713989257bfd3d8d506844216019d93c",
+        "feedLinks": [
+          "https://www.seattletimes.com/comments/feed/",
+          "https://www.seattletimes.com/feed/",
+          "https://www.seattletimes.com/rss-feeds/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "texastribune",
+    "pages": [
+      {
+        "requestedUrl": "https://www.texastribune.org/republishing-guidelines/",
+        "observedAt": "2026-11-21T09:42:45.753454+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.texastribune.org/republishing-guidelines/",
+        "status": "ok",
+        "sha256": "51de81659d8fceff6aad8979402fbf0193b48e0a9b7c5afa69980b801771a908",
+        "feedLinks": [
+          "https://www.texastribune.org/comments/feed/",
+          "https://www.texastribune.org/feed/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.texastribune.org/",
+        "observedAt": "2026-11-21T09:42:45.830231+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.texastribune.org/",
+        "status": "ok",
+        "sha256": "9f222cada0b33018a524e7b7b32fc7a5f364559495d50160dc734aa3d8c6e7cb",
+        "feedLinks": [
+          "https://www.texastribune.org/comments/feed/",
+          "https://www.texastribune.org/feed/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "bbc",
+    "pages": [
+      {
+        "requestedUrl": "https://www.bbc.co.uk/usingthebbc/terms/",
+        "observedAt": "2026-11-21T09:42:45.818130+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.bbc.co.uk/usingthebbc/terms/",
+        "status": "ok",
+        "sha256": "2288dd4520d475cbfe47cb193394ea66da5d02449f77f17ab5c055c94632c34a",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.bbc.co.uk/news/10628494",
+        "observedAt": "2026-11-21T09:42:46.370474+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.bbc.co.uk/news/10628494",
+        "status": "ok",
+        "sha256": "092134404a0ee64a8981799c4ac405a3dc9f75ab304269296b123965b48464a5",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "guardian",
+    "pages": [
+      {
+        "requestedUrl": "https://www.theguardian.com/help/terms-of-service",
+        "observedAt": "2026-11-21T09:42:45.913844+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.theguardian.com/help/terms-of-service",
+        "status": "ok",
+        "sha256": "abafa75149334206de432030df5d5f623b64bfb73679363ca30e17d52c53aa26",
+        "feedLinks": [],
+        "matchingPassageCount": 5,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.theguardian.com/help/feeds",
+        "observedAt": "2026-11-21T09:42:46.464199+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.theguardian.com/help/feeds",
+        "status": "ok",
+        "sha256": "db613264ef0b89f3766718805122b864f7a67cc9cc1878c204fed87f81bd96e7",
+        "feedLinks": [
+          "mailto:?subject=Stay up to date with guardian.co.uk RSS feeds&body=https://www.theguardian.com/help/feeds?CMP=share_btn_url"
+        ],
+        "matchingPassageCount": 4,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "sky",
+    "pages": [
+      {
+        "requestedUrl": "https://news.sky.com/info/terms-and-conditions",
+        "observedAt": "2026-11-21T09:42:46.090388+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://news.sky.com/info/rss",
+        "observedAt": "2026-11-21T09:42:46.385954+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://news.sky.com/info/rss",
+        "status": "ok",
+        "sha256": "eb8d71a41d4ad15b0e8bd75a9aceeb181ddffb8ba4943c15a0324209f9e84c45",
+        "feedLinks": [
+          "http://feeds.skynews.com/feeds/rss/business.xml",
+          "http://feeds.skynews.com/feeds/rss/entertainment.xml",
+          "http://feeds.skynews.com/feeds/rss/home.xml",
+          "http://feeds.skynews.com/feeds/rss/politics.xml",
+          "http://feeds.skynews.com/feeds/rss/strange.xml",
+          "http://feeds.skynews.com/feeds/rss/technology.xml",
+          "http://feeds.skynews.com/feeds/rss/uk.xml",
+          "http://feeds.skynews.com/feeds/rss/us.xml",
+          "http://feeds.skynews.com/feeds/rss/world.xml",
+          "https://news.sky.com/info/rss"
+        ],
+        "matchingPassageCount": 10,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "independent",
+    "pages": [
+      {
+        "requestedUrl": "https://www.independent.co.uk/service/terms-and-conditions-759573.html",
+        "observedAt": "2026-11-21T09:42:46.090914+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.independent.co.uk/service/rss-feeds-775086.html",
+        "observedAt": "2026-11-21T09:42:46.926449+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.independent.co.uk/service/rss-feeds-775086.html",
+        "status": "ok",
+        "sha256": "1f928900e6feda554ad1ffb76cc0fc9475d471d2f1b12339bd11e5c1e8b7bed8",
+        "feedLinks": [
+          "http://rss.feedsportal.com/c/266/f/3533/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3792/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3795/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3797/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3800/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3834/index.rss",
+          "http://rss.feedsportal.com/c/266/f/3847/index.rss",
+          "http://rss.feedsportal.com/c/266/f/464881/index.rss",
+          "https://www.independent.co.uk/arts-entertainment/architecture/rss",
+          "https://www.independent.co.uk/arts-entertainment/art/rss",
+          "https://www.independent.co.uk/arts-entertainment/classical/rss",
+          "https://www.independent.co.uk/arts-entertainment/comedy/rss",
+          "https://www.independent.co.uk/arts-entertainment/films/rss",
+          "https://www.independent.co.uk/arts-entertainment/interviews/rss",
+          "https://www.independent.co.uk/arts-entertainment/rss",
+          "https://www.independent.co.uk/arts-entertainment/theatre-dance/rss",
+          "https://www.independent.co.uk/arts-entertainment/tv/rss",
+          "https://www.independent.co.uk/environment/climate-change/rss",
+          "https://www.independent.co.uk/environment/green-living/rss",
+          "https://www.independent.co.uk/environment/nature/rss",
+          "https://www.independent.co.uk/environment/rss",
+          "https://www.independent.co.uk/life-style/fashion/rss",
+          "https://www.independent.co.uk/life-style/food-and-drink/rss",
+          "https://www.independent.co.uk/life-style/gadgets-and-tech/rss",
+          "https://www.independent.co.uk/life-style/health-and-wellbeing/rss",
+          "https://www.independent.co.uk/life-style/house-and-home/rss",
+          "https://www.independent.co.uk/life-style/love-sex/rss",
+          "https://www.independent.co.uk/life-style/motoring/rss",
+          "https://www.independent.co.uk/life-style/pets/rss",
+          "https://www.independent.co.uk/life-style/rss",
+          "https://www.independent.co.uk/money/insurance/rss",
+          "https://www.independent.co.uk/money/loans-credit/rss",
+          "https://www.independent.co.uk/money/mortgages/rss",
+          "https://www.independent.co.uk/money/pensions/rss",
+          "https://www.independent.co.uk/money/rss",
+          "https://www.independent.co.uk/money/spend-save/rss",
+          "https://www.independent.co.uk/money/tax/rss",
+          "https://www.independent.co.uk/news/business/rss",
+          "https://www.independent.co.uk/news/education/rss",
+          "https://www.independent.co.uk/news/media/rss",
+          "https://www.independent.co.uk/news/obituaries/rss",
+          "https://www.independent.co.uk/news/people/rss",
+          "https://www.independent.co.uk/news/rss",
+          "https://www.independent.co.uk/news/science/rss",
+          "https://www.independent.co.uk/news/uk/rss",
+          "https://www.independent.co.uk/news/world/rss",
+          "https://www.independent.co.uk/service/rss-feeds-775086.html",
+          "https://www.independent.co.uk/sport/football/rss",
+          "https://www.independent.co.uk/sport/general/athletics/rss",
+          "https://www.independent.co.uk/sport/general/others/rss",
+          "https://www.independent.co.uk/sport/golf/rss",
+          "https://www.independent.co.uk/sport/motor-racing/rss",
+          "https://www.independent.co.uk/sport/racing/rss",
+          "https://www.independent.co.uk/sport/rss",
+          "https://www.independent.co.uk/sport/rugby/rugby-union/rss",
+          "https://www.independent.co.uk/travel/48-hours-in/rss",
+          "https://www.independent.co.uk/travel/africa/rss",
+          "https://www.independent.co.uk/travel/americas/rss",
+          "https://www.independent.co.uk/travel/asia/rss",
+          "https://www.independent.co.uk/travel/ausandpacific/rss",
+          "https://www.independent.co.uk/travel/europe/rss",
+          "https://www.independent.co.uk/travel/middle-east/rss",
+          "https://www.independent.co.uk/travel/news-and-advice/rss",
+          "https://www.independent.co.uk/travel/rss",
+          "https://www.independent.co.uk/travel/skiing/rss",
+          "https://www.independent.co.uk/travel/uk/rss",
+          "https://www.independent.co.uk/voices/?service=rss",
+          "https://www.independent.co.uk/voices/comment/?service=rss",
+          "https://www.independent.co.uk/voices/debate/?service=rss",
+          "https://www.independent.co.uk/voices/editorials/?service=rss",
+          "https://www.independent.co.uk/voices/iv-drip/?service=rss",
+          "https://www.independent.co.uk/voices/our-voices/?service=rss",
+          "https://www.the-independent.com/service/rss-feeds-775086.html"
+        ],
+        "matchingPassageCount": 6,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "telegraph",
+    "pages": [
+      {
+        "requestedUrl": "https://www.telegraph.co.uk/about-us/terms-and-conditions/",
+        "observedAt": "2026-11-21T09:42:46.634546+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.telegraph.co.uk/about-us/terms-and-conditions/",
+        "status": "ok",
+        "sha256": "d9c01095b59bcb6327bf8c4bd75c063a3e076df789faf47b3983c9502698860d",
+        "feedLinks": [],
+        "matchingPassageCount": 4,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.telegraph.co.uk/",
+        "observedAt": "2026-11-21T09:42:47.075480+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.telegraph.co.uk/us/",
+        "status": "ok",
+        "sha256": "e18d1605fdf5ba212e352366465782a14d9aeecaf9915451c252470d1ad6ae68",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "ft",
+    "pages": [
+      {
+        "requestedUrl": "https://help.ft.com/legal-privacy/terms-and-conditions/",
+        "observedAt": "2026-11-21T09:42:46.702958+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://help.ft.com/legal-privacy/terms-and-conditions/",
+        "status": "ok",
+        "sha256": "8924de10233cdb5e2ee61c77997ed889462416dff89ca7c9b8a19572ad48890c",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.ft.com/",
+        "observedAt": "2026-11-21T09:42:46.968914+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "economist",
+    "pages": [
+      {
+        "requestedUrl": "https://www.economist.com/legal/terms-of-use",
+        "observedAt": "2026-11-21T09:42:46.777886+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      },
+      {
+        "requestedUrl": "https://www.economist.com/",
+        "observedAt": "2026-11-21T09:42:46.839712+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "dailymail",
+    "pages": [
+      {
+        "requestedUrl": "https://www.dailymail.co.uk/home/terms.html",
+        "observedAt": "2026-11-21T09:42:46.880016+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.dailymail.co.uk/home/rss/index.html",
+        "observedAt": "2026-11-21T09:42:47.267189+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.dailymail.com/home/index.html",
+        "status": "ok",
+        "sha256": "f692e7db51b3c98141c2ee429adf81530bee8712a8b51bf308c9e618990d7667",
+        "feedLinks": [
+          "https://www.dailymail.com/articles.rss",
+          "https://www.dailymail.com/home/index.rss",
+          "https://www.dailymail.com/home/rssMenu.html",
+          "https://www.dailymail.com/xml/opensearch.xml"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "mirror",
+    "pages": [
+      {
+        "requestedUrl": "https://www.mirror.co.uk/terms-conditions/",
+        "observedAt": "2026-11-21T09:42:46.977988+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.mirror.co.uk/terms-conditions/",
+        "status": "ok",
+        "sha256": "23a644423f86d96a5eb94192ba468c237cbfda5f8a57c44a518c683399c3ad0b",
+        "feedLinks": [
+          "https://www.mirror.co.uk/opensearch.xml",
+          "https://www.mirror.co.uk/terms-conditions/rss.xml"
+        ],
+        "matchingPassageCount": 3,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.mirror.co.uk/",
+        "observedAt": "2026-11-21T09:42:47.471718+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.mirror.co.uk/",
+        "status": "ok",
+        "sha256": "3eae3d6421fc13c9232acb9bc0e48c2ada3511a871810d5b9438b93701ccc06d",
+        "feedLinks": [
+          "https://www.mirror.co.uk/opensearch.xml",
+          "https://www.mirror.co.uk/rss.xml"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "metro",
+    "pages": [
+      {
+        "requestedUrl": "https://metro.co.uk/terms/",
+        "observedAt": "2026-11-21T09:42:47.020441+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://metro.co.uk/terms/",
+        "status": "ok",
+        "sha256": "f97245261430ad78f47cffe27194eabe530c241fb1bdc1256495cbd0fad9632a",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://metro.co.uk/",
+        "observedAt": "2026-11-21T09:42:48.126245+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://metro.co.uk/",
+        "status": "ok",
+        "sha256": "4568e5efb8b0ce081cf34077ef19bdb9afd8ab00d27f0be12e4636123587673a",
+        "feedLinks": [
+          "https://metro.co.uk/entertainment/feed/",
+          "https://metro.co.uk/feed/",
+          "https://metro.co.uk/lifestyle/feed/",
+          "https://metro.co.uk/news/feed/",
+          "https://metro.co.uk/tv-soaps/feed/"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "standard",
+    "pages": [
+      {
+        "requestedUrl": "https://www.standard.co.uk/terms",
+        "observedAt": "2026-11-21T09:42:47.228684+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.standard.co.uk/terms",
+        "status": "ok",
+        "sha256": "3b1e83f681e4182b6fa2cbdd88de3e4138cdff364970fd3b37397bb6322c9a24",
+        "feedLinks": [
+          "https://www.standard.co.uk/terms/rss"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.standard.co.uk/",
+        "observedAt": "2026-11-21T09:42:47.335766+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.standard.co.uk/",
+        "status": "ok",
+        "sha256": "10ca44d2d068e156af82a5e8f62f3faf9e68fcedf769d344b626f67849b0f0ef",
+        "feedLinks": [
+          "https://www.standard.co.uk/rss"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "scotsman",
+    "pages": [
+      {
+        "requestedUrl": "https://www.scotsman.com/terms-and-conditions",
+        "observedAt": "2026-11-21T09:42:47.457989+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      },
+      {
+        "requestedUrl": "https://www.scotsman.com/",
+        "observedAt": "2026-11-21T09:42:47.502109+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "herald",
+    "pages": [
+      {
+        "requestedUrl": "https://www.heraldscotland.com/terms/",
+        "observedAt": "2026-11-21T09:42:47.548042+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.heraldscotland.com/",
+        "observedAt": "2026-11-21T09:42:47.966872+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.heraldscotland.com/",
+        "status": "ok",
+        "sha256": "19b899da4952cfb32e6f18fc0cc36bbe3c995ba4dc5a9b43fd70f457bb6f55a8",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "walesonline",
+    "pages": [
+      {
+        "requestedUrl": "https://www.walesonline.co.uk/terms-conditions/",
+        "observedAt": "2026-11-21T09:42:47.843532+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.walesonline.co.uk/terms-conditions/",
+        "status": "ok",
+        "sha256": "193cac631a1e82982975604c947248d02f4499b3e38207c6c588b0e4314bc03b",
+        "feedLinks": [
+          "https://www.walesonline.co.uk/opensearch.xml",
+          "https://www.walesonline.co.uk/rss-feeds/",
+          "https://www.walesonline.co.uk/terms-conditions/rss.xml"
+        ],
+        "matchingPassageCount": 6,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.walesonline.co.uk/",
+        "observedAt": "2026-11-21T09:42:48.481414+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.walesonline.co.uk/",
+        "status": "ok",
+        "sha256": "785a1539f5b7faff37f84a725c0db3e7dcf388b64e6918b6054353e68edb64ff",
+        "feedLinks": [
+          "https://www.walesonline.co.uk/opensearch.xml",
+          "https://www.walesonline.co.uk/rss-feeds/",
+          "https://www.walesonline.co.uk/rss.xml"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "men",
+    "pages": [
+      {
+        "requestedUrl": "https://www.manchestereveningnews.co.uk/terms-conditions/",
+        "observedAt": "2026-11-21T09:42:47.937564+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.manchestereveningnews.co.uk/terms-conditions/",
+        "status": "ok",
+        "sha256": "4e00e2df0e542272a099d07909eb12d1a906b02e0bf0e4a09119e67caf2f7582",
+        "feedLinks": [
+          "https://www.manchestereveningnews.co.uk/opensearch.xml",
+          "https://www.manchestereveningnews.co.uk/rss-feeds/",
+          "https://www.manchestereveningnews.co.uk/terms-conditions/rss.xml"
+        ],
+        "matchingPassageCount": 6,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.manchestereveningnews.co.uk/",
+        "observedAt": "2026-11-21T09:42:48.211410+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.manchestereveningnews.co.uk/",
+        "status": "ok",
+        "sha256": "11a002292bbafc5a9e41306137be478ec05c37b884282162377bcfd4609b82dc",
+        "feedLinks": [
+          "https://www.manchestereveningnews.co.uk/opensearch.xml",
+          "https://www.manchestereveningnews.co.uk/rss-feeds/",
+          "https://www.manchestereveningnews.co.uk/rss.xml"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "belfasttelegraph",
+    "pages": [
+      {
+        "requestedUrl": "https://www.belfasttelegraph.co.uk/service/terms-and-conditions/",
+        "observedAt": "2026-11-21T09:42:48.576311+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      },
+      {
+        "requestedUrl": "https://www.belfasttelegraph.co.uk/",
+        "observedAt": "2026-11-21T09:42:48.616499+00:00",
+        "status": "http_error",
+        "httpStatus": 403
+      }
+    ]
+  },
+  {
+    "publisherId": "newscientist",
+    "pages": [
+      {
+        "requestedUrl": "https://www.newscientist.com/terms/",
+        "observedAt": "2026-11-21T09:42:48.655064+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.newscientist.com/terms/",
+        "status": "ok",
+        "sha256": "74052681cfa6e8815761344d609d5885c7d962af21544ac009bd15ed4e44e289",
+        "feedLinks": [
+          "https://www.newscientist.com/rss-feeds/"
+        ],
+        "matchingPassageCount": 8,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.newscientist.com/",
+        "observedAt": "2026-11-21T09:42:49.885137+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.newscientist.com/",
+        "status": "ok",
+        "sha256": "84f805f695bd1666fcb80259bca901370b982b84844551709727820c7befed86",
+        "feedLinks": [
+          "https://www.newscientist.com/rss-feeds/"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "cityam",
+    "pages": [
+      {
+        "requestedUrl": "https://www.cityam.com/terms-and-conditions/",
+        "observedAt": "2026-11-21T09:42:49.193424+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cityam.com/terms-and-conditions/",
+        "status": "ok",
+        "sha256": "414974e4748e51914fd4e1f3a539b65f6945e0d22ca5b56eeef1e50999348b8b",
+        "feedLinks": [
+          "https://www.cityam.com/feed/"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.cityam.com/",
+        "observedAt": "2026-11-21T09:42:50.414341+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cityam.com/",
+        "status": "ok",
+        "sha256": "87dc648b8e6e10895c63b6c8045ca2e3a020cb4cede2316ecbf304e495c7f1d3",
+        "feedLinks": [
+          "https://www.cityam.com/feed/"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "nhk",
+    "pages": [
+      {
+        "requestedUrl": "https://www.nhk.or.jp/toppage/rules/",
+        "observedAt": "2026-11-21T09:42:49.214500+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.nhk.or.jp/",
+        "observedAt": "2026-11-21T09:42:49.602074+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhk.or.jp/",
+        "status": "ok",
+        "sha256": "bf3302d950e73561c7587a966969480406c371c14544796d832348de244eaa38",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "asahi",
+    "pages": [
+      {
+        "requestedUrl": "https://www.asahi.com/policy/",
+        "observedAt": "2026-11-21T09:42:49.266127+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.asahi.com/policy/",
+        "status": "ok",
+        "sha256": "130de660ab9529233091433ab68adea2f59509462fb01e7534f010770264da13",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.asahi.com/information/service/",
+        "observedAt": "2026-11-21T09:42:59.894330+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.asahi.com/information/service/",
+        "status": "ok",
+        "sha256": "6873be4f1577413cadf0b4e1d6bf7a784738402cbb3d953953669156e9b06285",
+        "feedLinks": [
+          "https://www.asahi.com/information/service/rss.html"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "mainichi",
+    "pages": [
+      {
+        "requestedUrl": "https://mainichi.jp/corporate/terms/",
+        "observedAt": "2026-11-21T09:42:49.691027+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://mainichi.jp/corporate/",
+        "status": "ok",
+        "sha256": "6ba550a0e417baeeb1e2a8446d446e39ff3f031ad957d717fb8e4dfba7cd9f2b",
+        "feedLinks": [
+          "https://mainichi.jp/rss/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://mainichi.jp/rss/",
+        "observedAt": "2026-11-21T09:42:51.271660+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://mainichi.jp/rss/",
+        "status": "ok",
+        "sha256": "e8f39b8f82f065f51c0e8e46ea7852033ff9a7b0cf3db1ae93f71f9349a953c3",
+        "feedLinks": [
+          "https://mainichi.jp/rss/",
+          "https://mainichi.jp/rss/etc/mainichi-enta.rss",
+          "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+          "https://mainichi.jp/rss/etc/mainichi-sports.rss",
+          "https://mainichi.jp/rss/etc/opinion.rss",
+          "https://mainichi.jp/signup/accounts/free/login/?ru=https%3A%2F%2Fmainichi.jp%2Frss%2F"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "sankei",
+    "pages": [
+      {
+        "requestedUrl": "https://www.sankei.com/terms/",
+        "observedAt": "2026-11-21T09:42:49.880737+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.sankei.com/terms/",
+        "status": "ok",
+        "sha256": "645d68cee71e4ecd67adc3465b160402f589d4b96887b53e2595d090c17f6428",
+        "feedLinks": [],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.sankei.com/",
+        "observedAt": "2026-11-21T09:42:50.469548+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.sankei.com/",
+        "status": "ok",
+        "sha256": "3562771e939fb969f73c5cd671428590384b545f53d2ad7267c2589f18f74863",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "nikkei",
+    "pages": [
+      {
+        "requestedUrl": "https://www.nikkei.com/info/copyright.html",
+        "observedAt": "2026-11-21T09:42:50.628031+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nikkei.com/info/copyright.html",
+        "status": "ok",
+        "sha256": "9a46fdd7a41eec4e56a3215c2b8a0c5cb71f5b949c6bb5f9967ff2dc858687d2",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.nikkei.com/",
+        "observedAt": "2026-11-21T09:42:51.073199+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nikkei.com/",
+        "status": "ok",
+        "sha256": "b338ff2cce4aa5b79ca41199f78a6215bb45e56450a08c205caeed448a8eed78",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "yomiuri",
+    "pages": [
+      {
+        "requestedUrl": "https://www.yomiuri.co.jp/policy/",
+        "observedAt": "2026-11-21T09:42:51.249418+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.yomiuri.co.jp/policy/",
+        "status": "ok",
+        "sha256": "75b4991a63b09abe24c7a9c340ee2f9e14d6a544e9296c4b992d8908d5728d05",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.yomiuri.co.jp/",
+        "observedAt": "2026-11-21T09:42:51.461732+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.yomiuri.co.jp/",
+        "status": "ok",
+        "sha256": "fa615037f61b841286919b63dbc2967b21a7d2e68034363ba0dbaa933b48338c",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "kyodo",
+    "pages": [
+      {
+        "requestedUrl": "https://english.kyodonews.net/terms-of-use.html",
+        "observedAt": "2026-11-21T09:42:51.332295+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://english.kyodonews.net/",
+        "observedAt": "2026-11-21T09:42:51.835095+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://english.kyodonews.net/",
+        "status": "ok",
+        "sha256": "dd033b0ead5d002fb33de280879623b5e1896f6575861261b5c1e525b3fbd241",
+        "feedLinks": [
+          "https://english.kyodonews.net/list/feed/rss4kyodonews-fzone"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "jiji",
+    "pages": [
+      {
+        "requestedUrl": "https://www.jiji.com/jc/c?g=info&k=copyright",
+        "observedAt": "2026-11-21T09:42:51.512485+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.jiji.com/",
+        "observedAt": "2026-11-21T09:42:51.752116+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.jiji.com/",
+        "status": "ok",
+        "sha256": "0db6c7a8ceb897c2e37bf40434a605f3b310a650d12f4788f86fca431aa54080",
+        "feedLinks": [
+          "https://www.jiji.com/jc/info?p=rss",
+          "https://www.jiji.com/rss/ranking.rdf"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "tokyo",
+    "pages": [
+      {
+        "requestedUrl": "https://www.tokyo-np.co.jp/site/policy",
+        "observedAt": "2026-11-21T09:42:51.651112+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.tokyo-np.co.jp/",
+        "observedAt": "2026-11-21T09:42:52.266296+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tokyo-np.co.jp/",
+        "status": "ok",
+        "sha256": "e29080b49cc4bd8bfad3b952b063419c9d7ee7ba64e5e04db8f5b568fc678e2c",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "hokkaido",
+    "pages": [
+      {
+        "requestedUrl": "https://www.hokkaido-np.co.jp/company/copyright/",
+        "observedAt": "2026-11-21T09:42:51.717998+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.hokkaido-np.co.jp/",
+        "observedAt": "2026-11-21T09:42:52.158701+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.hokkaido-np.co.jp/",
+        "status": "ok",
+        "sha256": "ac34957b9934b38c9679e69d409dd42dea1d48fc9e924d05500a6c70b37e2d9a",
+        "feedLinks": [
+          "https://www.hokkaido-np.co.jp/rss/"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "kahoku",
+    "pages": [
+      {
+        "requestedUrl": "https://kahoku.news/terms/",
+        "observedAt": "2026-11-21T09:42:51.962167+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://kahoku.news/",
+        "observedAt": "2026-11-21T09:42:52.259690+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://kahoku.news/",
+        "status": "ok",
+        "sha256": "7c3c272b771f5814cfbb5ae834742e1b7b69e59d419253fc8c0a0df507ab125d",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "chugoku",
+    "pages": [
+      {
+        "requestedUrl": "https://www.chugoku-np.co.jp/list/company/terms",
+        "observedAt": "2026-11-21T09:42:52.831122+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.chugoku-np.co.jp/",
+        "observedAt": "2026-11-21T09:42:53.714754+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chugoku-np.co.jp/",
+        "status": "ok",
+        "sha256": "200794a73ff1cbe4c3b29c81b3e8d4ac87ad43811e47801fd823514feadba6d2",
+        "feedLinks": [],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "nishinippon",
+    "pages": [
+      {
+        "requestedUrl": "https://www.nishinippon.co.jp/site/policy/",
+        "observedAt": "2026-11-21T09:42:52.980286+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.nishinippon.co.jp/",
+        "observedAt": "2026-11-21T09:42:53.545539+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nishinippon.co.jp/",
+        "status": "ok",
+        "sha256": "f2b27dc8f680bddbd7e3e7d0b695ca134681c1f846e94731d2ee272d9b11b2c7",
+        "feedLinks": [],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "okinawa",
+    "pages": [
+      {
+        "requestedUrl": "https://www.okinawatimes.co.jp/list/info/copyright",
+        "observedAt": "2026-11-21T09:42:53.195269+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.okinawatimes.co.jp/",
+        "observedAt": "2026-11-21T09:42:53.829210+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.okinawatimes.co.jp/",
+        "status": "ok",
+        "sha256": "9f29216036bdbd59891664d2291cfc01d4ee6f6d082e8a3e55800eeb6b80f752",
+        "feedLinks": [
+          "https://www.okinawatimes.co.jp/list/feed/rss"
+        ],
+        "matchingPassageCount": 2,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "japantimes",
+    "pages": [
+      {
+        "requestedUrl": "https://www.japantimes.co.jp/info/terms-conditions/",
+        "observedAt": "2026-11-21T09:42:54.280146+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.japantimes.co.jp/",
+        "status": "ok",
+        "sha256": "f7e1972fb7930719a405b67e66be0e033bd8766080073d481ba43524bdb6837a",
+        "feedLinks": [
+          "https://www.japantimes.co.jp/feed/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.japantimes.co.jp/",
+        "observedAt": "2026-11-21T09:42:54.685037+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.japantimes.co.jp/",
+        "status": "ok",
+        "sha256": "f7e1972fb7930719a405b67e66be0e033bd8766080073d481ba43524bdb6837a",
+        "feedLinks": [
+          "https://www.japantimes.co.jp/feed/"
+        ],
+        "matchingPassageCount": 1,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "itmedia",
+    "pages": [
+      {
+        "requestedUrl": "https://corp.itmedia.co.jp/media/image/",
+        "observedAt": "2026-11-21T09:42:54.411500+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://corp.itmedia.co.jp/media/image/",
+        "status": "ok",
+        "sha256": "67be6f486a8a977ef89df07df37e1b6a5bf3a1dcb1fd3ce76b6026c9c3317634",
+        "feedLinks": [
+          "https://corp.itmedia.co.jp/media/rss_condition/",
+          "https://corp.itmedia.co.jp/media/rss_list/"
+        ],
+        "matchingPassageCount": 9,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      },
+      {
+        "requestedUrl": "https://www.itmedia.co.jp/rss/",
+        "observedAt": "2026-11-21T09:42:55.191883+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      }
+    ]
+  },
+  {
+    "publisherId": "impress",
+    "pages": [
+      {
+        "requestedUrl": "https://www.impress.co.jp/terms/",
+        "observedAt": "2026-11-21T09:42:54.779696+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://www.watch.impress.co.jp/",
+        "observedAt": "2026-11-21T09:42:55.291435+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.watch.impress.co.jp/",
+        "status": "ok",
+        "sha256": "3dbc9efedebf288cf0e8f054ef41099a69772019af8a0baf945f9bf2946df4df",
+        "feedLinks": [
+          "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  },
+  {
+    "publisherId": "toyokeizai",
+    "pages": [
+      {
+        "requestedUrl": "https://toyokeizai.net/list/info/terms",
+        "observedAt": "2026-11-21T09:42:54.942833+00:00",
+        "status": "http_error",
+        "httpStatus": 404
+      },
+      {
+        "requestedUrl": "https://toyokeizai.net/",
+        "observedAt": "2026-11-21T09:42:55.531241+00:00",
+        "httpStatus": 200,
+        "finalUrl": "https://toyokeizai.net/",
+        "status": "ok",
+        "sha256": "7fd6b97aaf869f33c84b9a98ed33f170eafcdfa0fa9e15b0b42f55db31a63a6c",
+        "feedLinks": [
+          "https://toyokeizai.net/list/feed/rss"
+        ],
+        "matchingPassageCount": 0,
+        "note": "Terms reviewed from the original page; no copyrighted terms text retained.",
+        "matchingPassageCountIsLowerBound": true
+      }
+    ]
+  }
+]

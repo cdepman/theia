@@ -1,0 +1,15 @@
+{
+  "checkedDate": "2026-11-21",
+  "projectRef": "ezcdosyfaugtemuboxmh",
+  "configuredMcpProjectMatchesEnv": true,
+  "secretKeyDataApiHttpStatus": 401,
+  "publishableKeyDataApiHttpStatus": 401,
+  "connectedMcpGetProjectResult": "permission denied",
+  "schemaWritesPerformed": false,
+  "credentialValuesRetained": false,
+  "lastRetriedAt": "2026-11-21T10:15:50.123Z",
+  "envSavedAt": "2026-11-21T10:14:35.345Z",
+  "secretKeyFormat": "unrecognized; neither modern secret prefix nor legacy JWT",
+  "publishableKeyFormat": "modern publishable",
+  "shellOverridesDetected": false
+}

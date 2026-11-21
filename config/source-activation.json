@@ -1,0 +1,19 @@
+{
+  "comment": "Which candidate publishers are polled. The owner controls this file; run `npm run registry:sync` after editing. The four enabled here publish RSS terms that allow personal, non-commercial reader use (see docs/source-registry.md). Every other candidate stays recorded but disabled until its terms are reviewed. Feeds listed under excludedFeeds failed the Phase 0 live probe.",
+  "enabledPublishers": ["nyt", "npr", "guardian", "independent"],
+  "cadenceSeconds": 10800,
+  "excludedFeeds": [
+    { "url": "https://rss.cnn.com/rss/cnn_topstories.rss", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.politico.com/rss/politicopicks.xml", "reason": "probe failed 2026-11-21" },
+    { "url": "https://rssfeeds.usatoday.com/usatoday-NewsTopStories", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.texastribune.org/feeds/all/", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.belfasttelegraph.co.uk/rss", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.nikkei.com/rss/news/headline.rdf", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.yomiuri.co.jp/rss/news.xml", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.tokyo-np.co.jp/rss", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.hokkaido-np.co.jp/rss/", "reason": "probe failed 2026-11-21" },
+    { "url": "https://kahoku.news/rss/", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.chugoku-np.co.jp/list/rss", "reason": "probe failed 2026-11-21" },
+    { "url": "https://www.nishinippon.co.jp/rss/", "reason": "probe failed 2026-11-21" }
+  ]
+}
