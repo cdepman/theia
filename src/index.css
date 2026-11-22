@@ -166,3 +166,31 @@ body {
 .prose-theia li {
   margin-bottom: 0.4em;
 }
+
+/* The count pill beside each cloud entry. Quiet by design: the words carry the entry. */
+.cloud-badge rect {
+  fill: var(--paper);
+  stroke: var(--shore);
+  stroke-width: 1;
+}
+.cloud-badge text {
+  fill: var(--ink-soft);
+  font-weight: 560;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+/* Source marks to the left of an entry: where else it is showing up. Smaller and fainter than the words. */
+.cloud-mark {
+  color: var(--ink-soft);
+  overflow: visible;
+  transition: color 120ms ease;
+}
+.cloud-item:hover .cloud-mark,
+.cloud-item[data-selected='true'] .cloud-mark {
+  color: var(--cobalt);
+}
+.cloud[data-has-selection='true'] .cloud-item:not([data-selected='true']):not(:hover):not(:focus-visible) .cloud-mark {
+  color: var(--ink-faint);
+}
+.cloud-item[data-selected='true'] .cloud-badge rect {
+  stroke: var(--cobalt);
+}

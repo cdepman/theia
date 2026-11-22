@@ -16,6 +16,10 @@
     "registry:sync": "tsx --env-file=.env pipeline/jobs/cli.ts sync-registry",
     "status": "tsx --env-file=.env pipeline/jobs/cli.ts status",
     "check:connection": "tsx --env-file=.env pipeline/jobs/cli.ts check",
+    "group:trial": "node --import tsx --env-file=.env pipeline/jobs/group-trial.ts",
+    "group:compare": "node --import tsx pipeline/jobs/group-compare.ts",
+    "group:review": "node --import tsx --env-file=.env pipeline/jobs/group-review.ts",
+    "signals:probe": "node --import tsx pipeline/jobs/signals-probe.ts",
     "outlines": "node scripts/build-outlines.mjs"
   },
   "dependencies": {

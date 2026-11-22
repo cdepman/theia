@@ -6,9 +6,12 @@ import { fetchFeed, type FetchLike } from '../providers/rss/fetch';
 import { parseFeed } from '../providers/rss/parse';
 import { signatureDf } from '../thread/signature';
 import { buildSignatures, planThreads, type ThreadCandidate, type ThreadingStory } from '../thread/thread';
+import { pollSignals, type SignalSummary } from './signals';
 
 export interface WorkerOptions {
   fetchImpl?: FetchLike;
+  /** Environment used for provider credentials. Defaults to process.env. */
+  env?: Record<string, string | undefined>;
   /** Fixed clock for tests. In production every database call uses the database's own now(). */
   now?: () => Date;
   budgetMs?: number;
@@ -31,6 +34,7 @@ export interface WorkerSummary {
   countriesRefreshed: string[];
   budgetExhausted: boolean;
   durationMs: number;
+  signals: SignalSummary;
 }
 
 interface CommitResult {
@@ -162,6 +166,7 @@ export async function runWorker(db: Db, opts: WorkerOptions = {}): Promise<Worke
   const summary: WorkerSummary = {
     claimed: 0, succeeded: 0, unchanged: 0, failed: 0, inserted: 0,
     languagesClustered: [], countriesRefreshed: [], budgetExhausted: false, durationMs: 0,
+    signals: { claimed: 0, succeeded: 0, failed: 0, items: 0, skippedOrigins: [] },
   };
   const languages = new Set<string>();
   const countries = new Set<string>(opts.staleCountries ?? []);
@@ -230,6 +235,17 @@ export async function runWorker(db: Db, opts: WorkerOptions = {}): Promise<Worke
     }
     const r = await db.rpc<{ skipped: boolean }>('theia_refresh_country', args);
     if (!r.skipped) summary.countriesRefreshed.push(country);
+  }
+
+  // Attention signals are independent of the press pipeline: a failure here never
+  // blocks clustering or views, and they are read live, so nothing needs refreshing.
+  try {
+    summary.signals = await pollSignals(db, {
+      fetchImpl: opts.fetchImpl, now: opts.now, env: opts.env, log,
+      deadlineMs: Math.max(budgetMs - (Date.now() - started), 0),
+    });
+  } catch (e) {
+    log('signal polling failed', { error: (e as Error).message });
   }
 
   summary.durationMs = Date.now() - started;

@@ -1,0 +1,390 @@
+{
+  "recordedAt": "2026-11-22T09:32:00.168Z",
+  "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+  "headlines": 1087,
+  "reviewVersion": "event-review-v1",
+  "review": {
+    "source": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json",
+    "baseCost": {
+      "calculatedCostUsd": 0.05011920000000001,
+      "knownCostUsd": 0.05011920000000001,
+      "breakdownUsd": {
+        "input": 0.000005699999999999999,
+        "cachedInput": 0,
+        "cacheWrite": 0.022024,
+        "output": 0.0280895
+      },
+      "attempts": 19,
+      "successful": 19,
+      "failed": 0,
+      "unfinished": 0,
+      "unknownCostAttempts": 0,
+      "usage": {
+        "openai:gpt-6-luna": {
+          "input": 176249,
+          "output": 56179,
+          "cachedInput": 0,
+          "cacheWriteInput": 176192,
+          "reasoningOutput": 10272,
+          "reasoningReportedCalls": 19,
+          "calls": 19,
+          "estimatedCostUsd": 0.05011920000000001
+        }
+      }
+    },
+    "addedCost": {
+      "calculatedCostUsd": 0.0122617,
+      "knownCostUsd": 0.0122617,
+      "breakdownUsd": {
+        "input": 0.009074200000000001,
+        "cachedInput": 0,
+        "cacheWrite": 0,
+        "output": 0.0031875
+      },
+      "attempts": 1,
+      "successful": 1,
+      "failed": 0,
+      "unfinished": 0,
+      "unknownCostAttempts": 0,
+      "usage": {
+        "anthropic:claude-haiku-5-5": {
+          "input": 90742,
+          "output": 6375,
+          "cachedInput": 0,
+          "cacheWriteInput": 0,
+          "reasoningOutput": 0,
+          "reasoningReportedCalls": 0,
+          "calls": 1,
+          "estimatedCostUsd": 0.0122617
+        }
+      }
+    },
+    "seconds": 29.198,
+    "corrections": 5,
+    "changedArticles": 48,
+    "proposalFile": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json.proposal-ca9dd039-fd1f-46cb-adc1-698229540a3e.json"
+  },
+  "successfulConfigurations": {
+    "claude": {
+      "path": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "anthropic",
+          "model": "claude-haiku-5-5"
+        },
+        "review": null,
+        "reasoningEffort": null
+      },
+      "seconds": 764.969,
+      "events": 708,
+      "cost": {
+        "calculatedCostUsd": 0.13789939999999998,
+        "knownCostUsd": 0.13789939999999998,
+        "breakdownUsd": {
+          "input": 0.0317119,
+          "cachedInput": 0,
+          "cacheWrite": 0,
+          "output": 0.1061875
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "anthropic:claude-haiku-5-5": {
+            "input": 317119,
+            "output": 212375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 19,
+            "estimatedCostUsd": 0.13789939999999998
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 12,
+        "diffTotal": 11,
+        "diffHit": 10,
+        "unavailable": 0,
+        "misses": [
+          "   merged: Eddie Barnes: If an EU return is simply a nostalgia trip for m  ==  People in Wales overwhelmingly think Brexit has been a failure",
+          "   split:  Burnham agrees youth migration for 100,000 EU citizens to Brit  <>  Henry Zeffman: Burnham's first taste of EU deal-making unlikel",
+          "   split:  Andy, António and Ursula: the joyful EU throuple break Nigel’s  <>  What the new UK-EU deal could mean for future post-Brexit rela",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 22,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 9,
+        "diffTotal": 3,
+        "diffHit": 1,
+        "unavailable": 66,
+        "misses": [
+          "   merged: WATCH: Grand Theft Auto VI is back and shattering records  ==  Burchett says you’re a ‘bad parent’ if you let your child play",
+          "   merged: Burchett says you’re a ‘bad parent’ if you let your child play  ==  Parents: please don’t buy Grand Theft Auto VI for your child"
+        ]
+      },
+      "eventsWithPlaces": 260
+    },
+    "openai": {
+      "path": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "openai",
+          "model": "gpt-6-luna"
+        },
+        "review": null,
+        "reasoningEffort": "low"
+      },
+      "seconds": 398.922,
+      "events": 711,
+      "cost": {
+        "calculatedCostUsd": 0.05011920000000001,
+        "knownCostUsd": 0.05011920000000001,
+        "breakdownUsd": {
+          "input": 0.000005699999999999999,
+          "cachedInput": 0,
+          "cacheWrite": 0.022024,
+          "output": 0.0280895
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "openai:gpt-6-luna": {
+            "input": 176249,
+            "output": 56179,
+            "cachedInput": 0,
+            "cacheWriteInput": 176192,
+            "reasoningOutput": 10272,
+            "reasoningReportedCalls": 19,
+            "calls": 19,
+            "estimatedCostUsd": 0.05011920000000001
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 9,
+        "diffTotal": 11,
+        "diffHit": 7,
+        "unavailable": 0,
+        "misses": [
+          "   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas execution took over an hour as staff struggled to find v",
+          "   split:  Government borrowing rose higher than expected before Budget  <>  Surging taxes could not stop record debt interest and Labour's",
+          "   split:  Trump on reported FBI hack: ‘I always like to put things in a   <>  FBI's national crime database targeted in hack, Trump says",
+          "   split:  What does the new Brexit deal mean for Northern Ireland?  <>  EU wants ‘closest possible relationship’ with UK after agreein",
+          "   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas says an execution went as planned. A witness says scream",
+          "   merged: The week around the world in 20 pictures  ==  Clarifications and Corrections",
+          "   merged: ‘National scandal’: residents in England rally against surge i  ==  Poll opens in village independence referendum vote over asylum",
+          "   merged: The Volkswagen camper is back! But the £66,000 electric ID.Buz  ==  Watch: Start talks to rejoin EU now, says ex-minister",
+          "   merged: First minister 'gobsmacked' by Burnham's devolution calls reje  ==  Burnham's Brexit betrayal: Naive PM walks into EU trap that wi",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 16,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 7,
+        "diffTotal": 3,
+        "diffHit": 3,
+        "unavailable": 66,
+        "misses": [
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  Myanmar guilty of genocide, International Court of Justice rul",
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  World Court Finds Myanmar Committed Genocide Against Rohingya"
+        ]
+      },
+      "eventsWithPlaces": 435
+    },
+    "hybrid": {
+      "path": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "openai",
+          "model": "gpt-6-luna"
+        },
+        "review": null,
+        "reasoningEffort": "low",
+        "postReview": {
+          "version": "event-review-v1",
+          "sourceSha256": "3ab472a0a12d52de589b04587e7ac6e9939589689555afaf2b62ca89dd22414e",
+          "model": {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5"
+          },
+          "maxTokens": 32000,
+          "effort": "low"
+        }
+      },
+      "seconds": 428.12,
+      "events": 725,
+      "cost": {
+        "calculatedCostUsd": 0.06238090000000001,
+        "knownCostUsd": 0.06238090000000001,
+        "breakdownUsd": {
+          "input": 0.009079900000000002,
+          "cachedInput": 0,
+          "cacheWrite": 0.022024,
+          "output": 0.031277
+        },
+        "attempts": 20,
+        "successful": 20,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "openai:gpt-6-luna": {
+            "input": 176249,
+            "output": 56179,
+            "cachedInput": 0,
+            "cacheWriteInput": 176192,
+            "reasoningOutput": 10272,
+            "reasoningReportedCalls": 19,
+            "calls": 19,
+            "estimatedCostUsd": 0.05011920000000001
+          },
+          "anthropic:claude-haiku-5-5": {
+            "input": 90742,
+            "output": 6375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 1,
+            "estimatedCostUsd": 0.0122617
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 11,
+        "diffTotal": 11,
+        "diffHit": 9,
+        "unavailable": 0,
+        "misses": [
+          "   split:  Government borrowing rose higher than expected before Budget  <>  Surging taxes could not stop record debt interest and Labour's",
+          "   split:  Trump on reported FBI hack: ‘I always like to put things in a   <>  FBI's national crime database targeted in hack, Trump says",
+          "   split:  What does the new Brexit deal mean for Northern Ireland?  <>  EU wants ‘closest possible relationship’ with UK after agreein",
+          "   merged: The week around the world in 20 pictures  ==  Clarifications and Corrections",
+          "   merged: ‘National scandal’: residents in England rally against surge i  ==  Poll opens in village independence referendum vote over asylum",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 20,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 7,
+        "diffTotal": 3,
+        "diffHit": 3,
+        "unavailable": 66,
+        "misses": [
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  Myanmar guilty of genocide, International Court of Justice rul",
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  World Court Finds Myanmar Committed Genocide Against Rohingya"
+        ]
+      },
+      "eventsWithPlaces": 430
+    }
+  },
+  "evaluation": {
+    "fixture": "tests/fixtures/review-pairs-2026-11-22.json",
+    "sampled": 32,
+    "scored": 26,
+    "ambiguousExcluded": 6,
+    "correctedPairIds": [
+      9,
+      16,
+      20,
+      23
+    ],
+    "regressedPairIds": [],
+    "caveat": "Agent-labeled exploratory sample, deliberately stratified by initial-model agreement/disagreement. Labels fixed before viewing the hybrid output, not sent to the reviewer. Not a representative production accuracy estimate."
+  },
+  "setupFailures": {
+    "ledger": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-212d5cf4af985470.json.calls.jsonl",
+    "cost": {
+      "calculatedCostUsd": null,
+      "knownCostUsd": 0.0250742,
+      "breakdownUsd": {
+        "input": 0.009074200000000001,
+        "cachedInput": 0,
+        "cacheWrite": 0,
+        "output": 0.016
+      },
+      "attempts": 2,
+      "successful": 0,
+      "failed": 2,
+      "unfinished": 0,
+      "unknownCostAttempts": 1,
+      "usage": {
+        "anthropic:claude-haiku-5-5": {
+          "input": 90742,
+          "output": 32000,
+          "cachedInput": 0,
+          "cacheWriteInput": 0,
+          "reasoningOutput": 0,
+          "reasoningReportedCalls": 0,
+          "calls": 1,
+          "estimatedCostUsd": 0.0250742
+        }
+      }
+    },
+    "notes": [
+      "HTTP 400 from an unsupported minimum constraint; removed from API schema and retained in local validation. No usage returned, so its cost remains unknown.",
+      "Default-effort review reached 32,000 output tokens and failed before producing a usable answer. Reported usage cost $0.0250742. Low effort subsequently succeeded."
+    ]
+  },
+  "findings": [
+    "Hybrid improved the exploratory audit from 16/26 to 20/26, fixing four scored errors and regressing none in this sample; Claude alone scored 22/26.",
+    "The successful review produced five corrections affecting 48 headlines, while preserving all 1,087 article assignments exactly once.",
+    "Review corrected the 11-article mixed packaging event, separated unrelated DOJ/FDA/cyber-watchdog items from cyber-director coverage, and reunited Texas-execution coverage.",
+    "Review missed the Burchett-to-Boebert label error, the Palisades split, and Myanmar verdict/reaction splits. It returned empty places for its rewritten groups, so location coverage decreased.",
+    "The successful hybrid configuration cost $0.0623809 and took 428.120 seconds, compared with Claude alone $0.1378994 / 764.969 seconds. Setup failures are recorded separately and excluded from these reusable configuration totals.",
+    "Recommendation: useful lower-cost improvement over Luna alone, but it did not beat Claude alone in this sample; keep experiment results separate from production until broader owner-reviewed evaluation."
+  ],
+  "checks": {
+    "unitIntegration": {
+      "passed": 195,
+      "files": 19
+    },
+    "browser": {
+      "passed": 23,
+      "skipped": 3
+    },
+    "build": "passed",
+    "typecheck": "passed"
+  }
+}

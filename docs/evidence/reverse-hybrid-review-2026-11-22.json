@@ -1,0 +1,901 @@
+{
+  "recordedAt": "2026-11-22T09:55:22.661Z",
+  "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+  "headlines": 1087,
+  "reviewVersion": "event-review-v1",
+  "configurations": {
+    "claude": {
+      "path": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "anthropic",
+          "model": "claude-haiku-5-5"
+        },
+        "review": null,
+        "reasoningEffort": null
+      },
+      "seconds": 764.969,
+      "events": 708,
+      "cost": {
+        "calculatedCostUsd": 0.13789939999999998,
+        "knownCostUsd": 0.13789939999999998,
+        "breakdownUsd": {
+          "input": 0.0317119,
+          "cachedInput": 0,
+          "cacheWrite": 0,
+          "output": 0.1061875
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "anthropic:claude-haiku-5-5": {
+            "input": 317119,
+            "output": 212375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 19,
+            "estimatedCostUsd": 0.13789939999999998
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 12,
+        "diffTotal": 11,
+        "diffHit": 10,
+        "unavailable": 0,
+        "misses": [
+          "   merged: Eddie Barnes: If an EU return is simply a nostalgia trip for m  ==  People in Wales overwhelmingly think Brexit has been a failure",
+          "   split:  Burnham agrees youth migration for 100,000 EU citizens to Brit  <>  Henry Zeffman: Burnham's first taste of EU deal-making unlikel",
+          "   split:  Andy, António and Ursula: the joyful EU throuple break Nigel’s  <>  What the new UK-EU deal could mean for future post-Brexit rela",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 22,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 9,
+        "diffTotal": 3,
+        "diffHit": 1,
+        "unavailable": 66,
+        "misses": [
+          "   merged: WATCH: Grand Theft Auto VI is back and shattering records  ==  Burchett says you’re a ‘bad parent’ if you let your child play",
+          "   merged: Burchett says you’re a ‘bad parent’ if you let your child play  ==  Parents: please don’t buy Grand Theft Auto VI for your child"
+        ]
+      },
+      "eventsWithPlaces": 260
+    },
+    "openai": {
+      "path": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "openai",
+          "model": "gpt-6-luna"
+        },
+        "review": null,
+        "reasoningEffort": "low"
+      },
+      "seconds": 398.922,
+      "events": 711,
+      "cost": {
+        "calculatedCostUsd": 0.05011920000000001,
+        "knownCostUsd": 0.05011920000000001,
+        "breakdownUsd": {
+          "input": 0.000005699999999999999,
+          "cachedInput": 0,
+          "cacheWrite": 0.022024,
+          "output": 0.0280895
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "openai:gpt-6-luna": {
+            "input": 176249,
+            "output": 56179,
+            "cachedInput": 0,
+            "cacheWriteInput": 176192,
+            "reasoningOutput": 10272,
+            "reasoningReportedCalls": 19,
+            "calls": 19,
+            "estimatedCostUsd": 0.05011920000000001
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 9,
+        "diffTotal": 11,
+        "diffHit": 7,
+        "unavailable": 0,
+        "misses": [
+          "   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas execution took over an hour as staff struggled to find v",
+          "   split:  Government borrowing rose higher than expected before Budget  <>  Surging taxes could not stop record debt interest and Labour's",
+          "   split:  Trump on reported FBI hack: ‘I always like to put things in a   <>  FBI's national crime database targeted in hack, Trump says",
+          "   split:  What does the new Brexit deal mean for Northern Ireland?  <>  EU wants ‘closest possible relationship’ with UK after agreein",
+          "   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas says an execution went as planned. A witness says scream",
+          "   merged: The week around the world in 20 pictures  ==  Clarifications and Corrections",
+          "   merged: ‘National scandal’: residents in England rally against surge i  ==  Poll opens in village independence referendum vote over asylum",
+          "   merged: The Volkswagen camper is back! But the £66,000 electric ID.Buz  ==  Watch: Start talks to rejoin EU now, says ex-minister",
+          "   merged: First minister 'gobsmacked' by Burnham's devolution calls reje  ==  Burnham's Brexit betrayal: Naive PM walks into EU trap that wi",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 16,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 7,
+        "diffTotal": 3,
+        "diffHit": 3,
+        "unavailable": 66,
+        "misses": [
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  Myanmar guilty of genocide, International Court of Justice rul",
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  World Court Finds Myanmar Committed Genocide Against Rohingya"
+        ]
+      },
+      "eventsWithPlaces": 435
+    },
+    "hybrid": {
+      "path": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "openai",
+          "model": "gpt-6-luna"
+        },
+        "review": null,
+        "reasoningEffort": "low",
+        "postReview": {
+          "version": "event-review-v1",
+          "sourceSha256": "3ab472a0a12d52de589b04587e7ac6e9939589689555afaf2b62ca89dd22414e",
+          "model": {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5"
+          },
+          "maxTokens": 32000,
+          "effort": "low"
+        }
+      },
+      "seconds": 428.12,
+      "events": 725,
+      "cost": {
+        "calculatedCostUsd": 0.06238090000000001,
+        "knownCostUsd": 0.06238090000000001,
+        "breakdownUsd": {
+          "input": 0.009079900000000002,
+          "cachedInput": 0,
+          "cacheWrite": 0.022024,
+          "output": 0.031277
+        },
+        "attempts": 20,
+        "successful": 20,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "openai:gpt-6-luna": {
+            "input": 176249,
+            "output": 56179,
+            "cachedInput": 0,
+            "cacheWriteInput": 176192,
+            "reasoningOutput": 10272,
+            "reasoningReportedCalls": 19,
+            "calls": 19,
+            "estimatedCostUsd": 0.05011920000000001
+          },
+          "anthropic:claude-haiku-5-5": {
+            "input": 90742,
+            "output": 6375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 1,
+            "estimatedCostUsd": 0.0122617
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 11,
+        "diffTotal": 11,
+        "diffHit": 9,
+        "unavailable": 0,
+        "misses": [
+          "   split:  Government borrowing rose higher than expected before Budget  <>  Surging taxes could not stop record debt interest and Labour's",
+          "   split:  Trump on reported FBI hack: ‘I always like to put things in a   <>  FBI's national crime database targeted in hack, Trump says",
+          "   split:  What does the new Brexit deal mean for Northern Ireland?  <>  EU wants ‘closest possible relationship’ with UK after agreein",
+          "   merged: The week around the world in 20 pictures  ==  Clarifications and Corrections",
+          "   merged: ‘National scandal’: residents in England rally against surge i  ==  Poll opens in village independence referendum vote over asylum",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 20,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 7,
+        "diffTotal": 3,
+        "diffHit": 3,
+        "unavailable": 66,
+        "misses": [
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  Myanmar guilty of genocide, International Court of Justice rul",
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  World Court Finds Myanmar Committed Genocide Against Rohingya"
+        ]
+      },
+      "eventsWithPlaces": 430
+    },
+    "reverse": {
+      "path": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-9cc66500dbfe3b8d.json",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "anthropic",
+          "model": "claude-haiku-5-5"
+        },
+        "review": null,
+        "reasoningEffort": null,
+        "postReview": {
+          "version": "event-review-v1",
+          "sourceSha256": "4300b2f70eefc57611406fdc864051a961f624b38617e221aaaaa0f2d9d8792d",
+          "model": {
+            "provider": "openai",
+            "model": "gpt-6-luna"
+          },
+          "maxTokens": 32000,
+          "effort": "low"
+        }
+      },
+      "seconds": 777.386,
+      "secondsIncludingRejectedApiAttempt": 790.245,
+      "events": 709,
+      "cost": {
+        "calculatedCostUsd": 0.14594287999999997,
+        "knownCostUsd": 0.14594287999999997,
+        "breakdownUsd": {
+          "input": 0.031712500000000005,
+          "cachedInput": 0.00050688,
+          "cacheWrite": 0.006336,
+          "output": 0.10738750000000001
+        },
+        "attempts": 21,
+        "successful": 21,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "anthropic:claude-haiku-5-5": {
+            "input": 317119,
+            "output": 212375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 19,
+            "estimatedCostUsd": 0.13789939999999998
+          },
+          "openai:gpt-6-luna": {
+            "input": 101382,
+            "output": 2400,
+            "cachedInput": 50688,
+            "cacheWriteInput": 50688,
+            "reasoningOutput": 1683,
+            "reasoningReportedCalls": 2,
+            "calls": 2,
+            "estimatedCostUsd": 0.008043479999999999
+          }
+        }
+      },
+      "audit": {
+        "sameTotal": 15,
+        "sameHit": 12,
+        "diffTotal": 11,
+        "diffHit": 10,
+        "unavailable": 0,
+        "misses": [
+          "   merged: Eddie Barnes: If an EU return is simply a nostalgia trip for m  ==  People in Wales overwhelmingly think Brexit has been a failure",
+          "   split:  Burnham agrees youth migration for 100,000 EU citizens to Brit  <>  Henry Zeffman: Burnham's first taste of EU deal-making unlikel",
+          "   split:  Andy, António and Ursula: the joyful EU throuple break Nigel’s  <>  What the new UK-EU deal could mean for future post-Brexit rela",
+          "   split:  Washington governor decries ‘out-of-control’ ICE at Seattle ai  <>  Wash. officials condemn ICE after 2 arrested boarding flight a"
+        ],
+        "correct": 22,
+        "total": 26
+      },
+      "originalPairs": {
+        "sameTotal": 9,
+        "sameHit": 9,
+        "diffTotal": 3,
+        "diffHit": 1,
+        "unavailable": 66,
+        "misses": [
+          "   merged: WATCH: Grand Theft Auto VI is back and shattering records  ==  Burchett says you’re a ‘bad parent’ if you let your child play",
+          "   merged: Burchett says you’re a ‘bad parent’ if you let your child play  ==  Parents: please don’t buy Grand Theft Auto VI for your child"
+        ],
+        "correct": 10,
+        "total": 12
+      },
+      "eventsWithPlaces": 259
+    }
+  },
+  "review": {
+    "source": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json",
+    "baseCost": {
+      "calculatedCostUsd": 0.13789939999999998,
+      "knownCostUsd": 0.13789939999999998,
+      "breakdownUsd": {
+        "input": 0.0317119,
+        "cachedInput": 0,
+        "cacheWrite": 0,
+        "output": 0.1061875
+      },
+      "attempts": 19,
+      "successful": 19,
+      "failed": 0,
+      "unfinished": 0,
+      "unknownCostAttempts": 0,
+      "usage": {
+        "anthropic:claude-haiku-5-5": {
+          "input": 317119,
+          "output": 212375,
+          "cachedInput": 0,
+          "cacheWriteInput": 0,
+          "reasoningOutput": 0,
+          "reasoningReportedCalls": 0,
+          "calls": 19,
+          "estimatedCostUsd": 0.13789939999999998
+        }
+      }
+    },
+    "addedCost": {
+      "calculatedCostUsd": 0.008043479999999999,
+      "knownCostUsd": 0.008043479999999999,
+      "breakdownUsd": {
+        "input": 6.000000000000001e-7,
+        "cachedInput": 0.00050688,
+        "cacheWrite": 0.006336,
+        "output": 0.0012000000000000001
+      },
+      "attempts": 2,
+      "successful": 2,
+      "failed": 0,
+      "unfinished": 0,
+      "unknownCostAttempts": 0,
+      "usage": {
+        "openai:gpt-6-luna": {
+          "input": 101382,
+          "output": 2400,
+          "cachedInput": 50688,
+          "cacheWriteInput": 50688,
+          "reasoningOutput": 1683,
+          "reasoningReportedCalls": 2,
+          "calls": 2,
+          "estimatedCostUsd": 0.008043479999999999
+        }
+      }
+    },
+    "seconds": 12.417,
+    "corrections": 1,
+    "changedArticles": 8,
+    "proposalFile": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-9cc66500dbfe3b8d.json.proposal-dd713675-4ef9-4133-9cda-c00d7ae53232.json",
+    "allAttemptsApiSeconds": 25.276000000000003,
+    "semanticValidation": {
+      "accepted": 1,
+      "rejected": 1,
+      "note": "Both API calls completed successfully. The first returned a semantically invalid article partition and was rejected locally; all its proposed edits were discarded."
+    },
+    "attempts": [
+      {
+        "sessionId": "d877ff79-ad89-4d68-87bd-91b29ae3aa7b",
+        "seconds": 12.864,
+        "usage": {
+          "provider": "openai",
+          "model": "openai:gpt-6-luna",
+          "responseModel": "gpt-6-luna",
+          "serviceTier": "default",
+          "inputTokens": 50691,
+          "outputTokens": 1307,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 50688,
+          "cacheWriteShortInputTokens": 50688,
+          "cacheWriteLongInputTokens": 0,
+          "reasoningOutputTokens": 781
+        },
+        "cost": {
+          "checkedAt": "2026-11-22",
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "usd": 0.006989799999999999,
+          "breakdown": {
+            "input": 3.0000000000000004e-7,
+            "cachedInput": 0,
+            "cacheWrite": 0.006336,
+            "output": 0.0006535
+          },
+          "ratesPerMillion": {
+            "input": 0.1,
+            "output": 0.5,
+            "cachedInput": 0.01,
+            "cacheWriteShort": 0.125,
+            "cacheWriteLong": 0.25
+          }
+        },
+        "reviewOutcome": "rejected",
+        "error": "Review correction 4: article is not in an affected event"
+      },
+      {
+        "sessionId": "dd713675-4ef9-4133-9cda-c00d7ae53232",
+        "seconds": 12.412,
+        "usage": {
+          "provider": "openai",
+          "model": "openai:gpt-6-luna",
+          "responseModel": "gpt-6-luna",
+          "serviceTier": "default",
+          "inputTokens": 50691,
+          "outputTokens": 1093,
+          "cachedInputTokens": 50688,
+          "cacheWriteInputTokens": 0,
+          "cacheWriteShortInputTokens": 0,
+          "cacheWriteLongInputTokens": 0,
+          "reasoningOutputTokens": 902
+        },
+        "cost": {
+          "checkedAt": "2026-11-22",
+          "source": "https://developers.openai.com/api/docs/pricing",
+          "usd": 0.00105368,
+          "breakdown": {
+            "input": 3.0000000000000004e-7,
+            "cachedInput": 0.00050688,
+            "cacheWrite": 0,
+            "output": 0.0005465
+          },
+          "ratesPerMillion": {
+            "input": 0.1,
+            "output": 0.5,
+            "cachedInput": 0.01,
+            "cacheWriteShort": 0.125,
+            "cacheWriteLong": 0.25
+          }
+        },
+        "reviewOutcome": "accepted",
+        "error": null
+      }
+    ],
+    "rejectedProposal": {
+      "path": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-9cc66500dbfe3b8d.json.proposal-d877ff79-ad89-4d68-87bd-91b29ae3aa7b.json",
+      "proposal": {
+        "changes": [
+          {
+            "events": [
+              17
+            ],
+            "reason": "The Brand-video demand is a specific event; the broad Five Great Reads roundup is not coverage of that event.",
+            "groups": [
+              {
+                "label": "PM urges removal of Brand video",
+                "subjectLabel": "Russell Brand video row",
+                "category": "politics",
+                "sure": true,
+                "articles": [
+                  23
+                ],
+                "places": []
+              },
+              {
+                "label": "Five Great Reads roundup",
+                "subjectLabel": "Guardian weekly reads",
+                "category": "entertainment",
+                "sure": true,
+                "articles": [
+                  309
+                ],
+                "places": []
+              }
+            ]
+          },
+          {
+            "events": [
+              35
+            ],
+            "reason": "The UK fridge operation and the article about food security and trade security are separate matters.",
+            "groups": [
+              {
+                "label": "UK fridges secured from hackers",
+                "subjectLabel": "UK fridge hacking operation",
+                "category": "technology",
+                "sure": true,
+                "articles": [
+                  60
+                ],
+                "places": [
+                  {
+                    "name": "United Kingdom",
+                    "kind": "country",
+                    "country": "GB"
+                  }
+                ]
+              },
+              {
+                "label": "Smart fridge security commentary",
+                "subjectLabel": "Food and trade security",
+                "category": "other",
+                "sure": true,
+                "articles": [
+                  167
+                ],
+                "places": []
+              }
+            ]
+          },
+          {
+            "events": [
+              207,
+              289
+            ],
+            "reason": "The Senate resolution and Fiona’s death are separate events; the caretakers-and-fans article covers her death, not the resolution.",
+            "groups": [
+              {
+                "label": "Senate resolution honors Fiona",
+                "subjectLabel": "Fiona the hippo resolution",
+                "category": "politics",
+                "sure": true,
+                "articles": [
+                  288
+                ],
+                "places": []
+              },
+              {
+                "label": "Fiona the hippo’s death",
+                "subjectLabel": "Fiona the hippo death",
+                "category": "other",
+                "sure": true,
+                "articles": [
+                  343,
+                  406,
+                  503,
+                  982
+                ],
+                "places": [
+                  {
+                    "name": "Cincinnati",
+                    "kind": "city",
+                    "country": "US"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "events": [
+              208
+            ],
+            "reason": "The Medicare-for-More article is unrelated to investors’ views of China stocks.",
+            "groups": [
+              {
+                "label": "Investors reconsider China stocks",
+                "subjectLabel": "Investors and China stocks",
+                "category": "business",
+                "sure": true,
+                "articles": [
+                  459
+                ],
+                "places": []
+              },
+              {
+                "label": "Democrats’ Medicare-for-More proposal",
+                "subjectLabel": "Democrats’ healthcare proposal",
+                "category": "politics",
+                "sure": true,
+                "articles": [
+                  459
+                ],
+                "places": []
+              }
+            ]
+          },
+          {
+            "events": [
+              238
+            ],
+            "reason": "The headlines describe USDA and FBI cyberattacks, not the separate technology-outage story named as the subject.",
+            "groups": [
+              {
+                "label": "USDA and FBI cyberattacks",
+                "subjectLabel": "USDA and FBI cyberattacks",
+                "category": "technology",
+                "sure": true,
+                "articles": [
+                  347,
+                  807
+                ],
+                "places": [
+                  {
+                    "name": "United States",
+                    "kind": "country",
+                    "country": "US"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "acceptedProposal": {
+      "changes": [
+        {
+          "events": [
+            82,
+            83
+          ],
+          "reason": "Article 605 concerns Trump’s White House briefing, not the Rubio–Vance GOP race, and fits the news-conference coverage. Article 588 is about Vance and Iran, not the GOP race.",
+          "groups": [
+            {
+              "label": "Trump news conference",
+              "subjectLabel": "Trump news conference",
+              "category": "politics",
+              "sure": true,
+              "articles": [
+                115,
+                315,
+                327,
+                348,
+                605
+              ],
+              "places": [
+                {
+                  "name": "Washington",
+                  "kind": "city",
+                  "country": "US"
+                }
+              ]
+            },
+            {
+              "label": "Rubio and Vance GOP race",
+              "subjectLabel": "GOP race",
+              "category": "politics",
+              "sure": true,
+              "articles": [
+                116,
+                776
+              ],
+              "places": []
+            },
+            {
+              "label": "Vance on Iran war",
+              "subjectLabel": "Vance on Iran war",
+              "category": "politics",
+              "sure": true,
+              "articles": [
+                588
+              ],
+              "places": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "fixture": "tests/fixtures/review-pairs-2026-11-22.json",
+    "sampled": 32,
+    "scored": 26,
+    "ambiguousExcluded": 6,
+    "correctedPairIds": [],
+    "regressedPairIds": [],
+    "caveat": "Agent-labeled exploratory sample, deliberately stratified by initial-model agreement/disagreement. Labels fixed before viewing the hybrid output, not sent to the reviewer. Not a representative production accuracy estimate.",
+    "note": "The existing pair labels were left unchanged. No audit labels were sent to the reviewer. The accepted correction affects eight headlines outside the fixed audit comparisons."
+  },
+  "changedHeadlines": [
+    {
+      "index": 115,
+      "publisher": "thehill",
+      "headline": "The Memo: Embattled Trump seeks reset with White House news conference",
+      "before": "Trump White House news conference reset",
+      "after": "Trump news conference",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": [
+        {
+          "name": "Washington",
+          "kind": "city",
+          "country": "US"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "publisher": "thehill",
+      "headline": "Rubio gains buzz while Vance’s fortunes falter in GOP race",
+      "before": "Rubio and Vance GOP race",
+      "after": "Rubio and Vance GOP race",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": []
+    },
+    {
+      "index": 315,
+      "publisher": "npr",
+      "headline": "The latest from Trump's press conference",
+      "before": "Trump White House news conference reset",
+      "after": "Trump news conference",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": [
+        {
+          "name": "Washington",
+          "kind": "city",
+          "country": "US"
+        }
+      ]
+    },
+    {
+      "index": 327,
+      "publisher": "thehill",
+      "headline": "5 takeaways from Trump’s Friday news conference",
+      "before": "Trump White House news conference reset",
+      "after": "Trump news conference",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": [
+        {
+          "name": "Washington",
+          "kind": "city",
+          "country": "US"
+        }
+      ]
+    },
+    {
+      "index": 348,
+      "publisher": "pbs",
+      "headline": "What Trump addressed during his lengthy White House news conference",
+      "before": "Trump White House news conference reset",
+      "after": "Trump news conference",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": [
+        {
+          "name": "Washington",
+          "kind": "city",
+          "country": "US"
+        }
+      ]
+    },
+    {
+      "index": 588,
+      "publisher": "thehill",
+      "headline": "Why is Mike ‘Finish the Job in Iran’ Pence attacking ‘America First’ JP Vance?",
+      "before": "Rubio and Vance GOP race",
+      "after": "Vance on Iran war",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": []
+    },
+    {
+      "index": 605,
+      "publisher": "pbs",
+      "headline": "Trump auditions potential successors as Rubio and Vance join him for White House briefing",
+      "before": "Rubio and Vance GOP race",
+      "after": "Trump news conference",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": [
+        {
+          "name": "Washington",
+          "kind": "city",
+          "country": "US"
+        }
+      ]
+    },
+    {
+      "index": 776,
+      "publisher": "japantimes",
+      "headline": "Republicans’ midterm defeat corners JD Vance as 2028 field widens",
+      "before": "Rubio and Vance GOP race",
+      "after": "Rubio and Vance GOP race",
+      "placesBefore": [
+        {
+          "name": "United States",
+          "kind": "country",
+          "country": "US"
+        }
+      ],
+      "placesAfter": []
+    }
+  ],
+  "findings": [
+    "Claude followed by OpenAI tied Claude alone at 22/26 on the fixed audit, with no scored fixes or regressions; the original subset also remained 10/12.",
+    "The accepted proposal moved White House briefing coverage into the news-conference event and split a Pence/Vance/Iran commentary out of the GOP-race event. These are plausible corrections by headline inspection, not independently labeled quality gains.",
+    "The first proposal referenced an unrelated event and duplicated article 459. Validation rejected the whole proposal; Claude input and its saved results were unchanged.",
+    "Both OpenAI review attempts cost $0.00804348 from reported usage. Combined with the saved Claude run, total is $0.14594288. This is calculated usage cost, not an invoice.",
+    "The accepted retry alone cost $0.00105368 with 50,688 cached input tokens; this warm-cache price should not be used as a fresh-run estimate.",
+    "Events with places fell from 260 to 259, and three rewritten headlines lost their location list. Pair scores do not measure names, labels, or location quality.",
+    "Review API time for both attempts was 25.276 seconds. Saved durationMs and the raw comparison output include only the accepted review invocation; the all-attempt time is recorded explicitly here.",
+    "The forward hybrid cost excludes its separately recorded setup failures; see hybrid-review-2026-11-22.json. The reverse total includes both same-configuration attempts.",
+    "No evidence in this small sample that the reverse review improves on Claude alone. Keep Claude as the quality baseline; OpenAI then Claude remains the cheaper experimental tradeoff, without changing production defaults."
+  ],
+  "checks": {
+    "unitIntegration": {
+      "passed": 195,
+      "files": 19
+    },
+    "build": "passed",
+    "typecheck": "passed",
+    "sourceHash": "unchanged",
+    "allArticleAssignments": "1087 unique, same order",
+    "rejectedProposal": "atomic rejection reproduced",
+    "acceptedProposal": "deterministic application reproduced"
+  }
+}

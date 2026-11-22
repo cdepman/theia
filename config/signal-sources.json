@@ -1,0 +1,84 @@
+{
+  "comment": "Every origin an entry can come from, and how its entries are treated. The owner controls this file; run `npm run registry:sync` after editing. kind: press | search | social | reference | community | aggregator. weight multiplies an entry's score. displayOrder positions the origin. visible hides it by default without stopping collection. enabled starts or stops collection. viewCountries lists the country views a source appears in. x_trends and x_news need X_BEARER_TOKEN and cost money per request.",
+  "origins": [
+    { "key": "press", "name": "Monitored press", "kind": "press", "lane": "press", "weight": 1, "displayOrder": 0, "visible": true, "attribution": "Publisher RSS feeds" },
+    {
+      "key": "google_trending_now", "name": "Google Trending Now", "kind": "search", "enabled": true, "weight": 1, "displayOrder": 10, "visible": true,
+      "attribution": "Google Trends", "termsUrl": "https://policies.google.com/terms", "cadenceSeconds": 10800,
+      "scopes": [
+        { "scope": "US", "country": "US", "language": "en", "viewCountries": ["US"], "params": { "geo": "US" } },
+        { "scope": "GB", "country": "GB", "language": "en", "viewCountries": ["GB"], "params": { "geo": "GB" } },
+        { "scope": "JP", "country": "JP", "language": "ja", "viewCountries": ["JP"], "params": { "geo": "JP" } }
+      ]
+    },
+    {
+      "key": "x_trends", "name": "X trends", "kind": "social", "enabled": true, "weight": 1, "displayOrder": 20, "visible": true,
+      "attribution": "X", "termsUrl": "https://developer.x.com/en/developer-terms/agreement-and-policy", "cadenceSeconds": 10800,
+      "scopes": [
+        { "scope": "US", "country": "US", "language": "en", "viewCountries": ["US"], "params": { "woeid": 23424977, "maxTrends": 20 } },
+        { "scope": "GB", "country": "GB", "language": "en", "viewCountries": ["GB"], "params": { "woeid": 23424975, "maxTrends": 20 } },
+        { "scope": "JP", "country": "JP", "language": "ja", "viewCountries": ["JP"], "params": { "woeid": 23424856, "maxTrends": 20 } },
+        { "scope": "global", "viewCountries": ["US", "GB", "JP"], "params": { "woeid": 1, "maxTrends": 20 } }
+      ]
+    },
+    {
+      "key": "x_news", "name": "X news stories", "kind": "social", "enabled": true, "weight": 1, "displayOrder": 30, "visible": true,
+      "attribution": "X; summaries written by Grok", "termsUrl": "https://developer.x.com/en/developer-terms/agreement-and-policy", "cadenceSeconds": 43200,
+      "scopes": [
+        { "scope": "US", "country": "US", "language": "en", "viewCountries": ["US"], "params": { "seedSource": "x_trends:US", "seedLimit": 3, "maxResults": 3, "maxAgeHours": 24 } },
+        { "scope": "GB", "country": "GB", "language": "en", "viewCountries": ["GB"], "params": { "seedSource": "x_trends:GB", "seedLimit": 3, "maxResults": 3, "maxAgeHours": 24 } },
+        { "scope": "JP", "country": "JP", "language": "ja", "viewCountries": ["JP"], "params": { "seedSource": "x_trends:JP", "seedLimit": 3, "maxResults": 3, "maxAgeHours": 24 } }
+      ]
+    },
+    {
+      "key": "wikipedia_pageviews", "name": "Wikipedia most viewed", "kind": "reference", "enabled": true, "weight": 1, "displayOrder": 40, "visible": true,
+      "attribution": "Wikimedia pageview data", "termsUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use", "cadenceSeconds": 21600,
+      "scopes": [
+        { "scope": "US", "country": "US", "viewCountries": ["US"], "params": { "limit": 50 } },
+        { "scope": "GB", "country": "GB", "viewCountries": ["GB"], "params": { "limit": 50 } },
+        { "scope": "JP", "country": "JP", "viewCountries": ["JP"], "params": { "limit": 50 } }
+      ]
+    },
+    {
+      "key": "wikipedia_in_the_news", "name": "Wikipedia: In the news", "kind": "reference", "enabled": true, "weight": 1, "displayOrder": 50, "visible": true,
+      "attribution": "Wikipedia editors", "termsUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use", "cadenceSeconds": 21600,
+      "note": "Only some language editions publish this section in the feed. Japanese does not, so Japan has no scope here.",
+      "scopes": [
+        { "scope": "en", "language": "en", "viewCountries": ["US", "GB"] }
+      ]
+    },
+    {
+      "key": "wikipedia_most_read", "name": "Wikipedia most read, by language", "kind": "reference", "enabled": true, "weight": 0.5, "displayOrder": 60, "visible": false,
+      "attribution": "Wikimedia featured feed", "termsUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use", "cadenceSeconds": 21600,
+      "scopes": [
+        { "scope": "en", "language": "en", "viewCountries": ["US", "GB"], "params": { "limit": 50 } },
+        { "scope": "ja", "language": "ja", "viewCountries": ["JP"], "params": { "limit": 50 } }
+      ]
+    },
+    {
+      "key": "hackernews", "name": "Hacker News", "kind": "community", "enabled": true, "weight": 0.5, "displayOrder": 70, "visible": true,
+      "attribution": "Hacker News", "termsUrl": "https://github.com/HackerNews/API", "tags": ["technology"], "cadenceSeconds": 10800,
+      "scopes": [{ "scope": "global", "language": "en", "viewCountries": ["US", "GB", "JP"], "params": { "limit": 30 } }]
+    },
+    {
+      "key": "techmeme", "name": "Techmeme", "kind": "aggregator", "enabled": true, "weight": 0.5, "displayOrder": 80, "visible": true,
+      "attribution": "Techmeme", "termsUrl": "https://www.techmeme.com/about", "tags": ["technology"], "cadenceSeconds": 10800,
+      "scopes": [{ "scope": "global", "language": "en", "viewCountries": ["US", "GB", "JP"] }]
+    },
+    {
+      "key": "memeorandum", "name": "Memeorandum", "kind": "aggregator", "enabled": true, "weight": 0.5, "displayOrder": 90, "visible": true,
+      "attribution": "Memeorandum; US politics aggregation", "termsUrl": "https://www.memeorandum.com/about/", "tags": ["politics"], "cadenceSeconds": 10800,
+      "scopes": [{ "scope": "us-politics", "language": "en", "viewCountries": ["US", "GB"] }]
+    },
+    {
+      "key": "lobsters", "name": "Lobsters", "kind": "community", "enabled": true, "weight": 0.5, "displayOrder": 100, "visible": true,
+      "attribution": "Lobsters computing community", "termsUrl": "https://lobste.rs/about", "tags": ["technology"], "cadenceSeconds": 10800,
+      "scopes": [{ "scope": "global", "language": "en", "viewCountries": ["US", "GB", "JP"] }]
+    },
+    {
+      "key": "hatena", "name": "Hatena popular bookmarks", "kind": "community", "enabled": true, "weight": 0.5, "displayOrder": 110, "visible": true,
+      "attribution": "Hatena Bookmark; popular entries in feed order", "termsUrl": "https://b.hatena.ne.jp/help/entry/walking", "cadenceSeconds": 10800,
+      "scopes": [{ "scope": "ja", "language": "ja", "viewCountries": ["JP"] }]
+    }
+  ]
+}

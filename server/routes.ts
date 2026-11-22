@@ -112,7 +112,12 @@ export async function handleApi(req: Request, ctx: ApiContext): Promise<Response
       if (!isCountry(country)) return error(400, 'invalid_country', 'country must be one of US, GB, JP.');
       if (!isCategory(category)) return error(400, 'invalid_category', 'Unknown category.');
       if (!isWindow(window)) return error(400, 'invalid_window', 'window must be one of 24h, 7d, 30d.');
-      const view = await ctx.db.rpc<unknown>('theia_get_view', { p_country: country, p_category: category, p_window: window, ...nowArg });
+      const view = await ctx.db.rpc<{ stories?: { id: string; shortLabel?: string | null }[] } | null>('theia_get_view', { p_country: country, p_category: category, p_window: window, ...nowArg });
+      // Short labels are attached here, not stored in the cached view, so a relabel shows at once.
+      if (view?.stories && view.stories.length > 0) {
+        const labels = await ctx.db.rpc<Record<string, string>>('theia_short_labels', { p_ids: view.stories.map((s) => s.id) });
+        for (const s of view.stories) if (labels[s.id]) s.shortLabel = labels[s.id];
+      }
       return json(view ?? emptyView(country, category, window), 200, VIEW_CACHE);
     }
 
@@ -131,6 +136,14 @@ export async function handleApi(req: Request, ctx: ApiContext): Promise<Response
       }
       const thread = await ctx.db.rpc<unknown>('theia_get_thread', { p_thread: id, p_country: country, ...nowArg });
       return thread ? json(thread, 200, VIEW_CACHE) : error(404, 'not_found', 'No such thread.');
+    }
+
+    if (path === '/api/signals') {
+      const country = q.get('country');
+      const window = q.get('window') ?? '24h';
+      if (!isCountry(country)) return error(400, 'invalid_country', 'country must be one of US, GB, JP.');
+      if (!isWindow(window)) return error(400, 'invalid_window', 'window must be one of 24h, 7d, 30d.');
+      return json(await ctx.db.rpc('theia_get_signals', { p_country: country, p_window: window, ...nowArg }), 200, VIEW_CACHE);
     }
 
     if (path === '/api/coverage') {

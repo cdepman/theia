@@ -1,0 +1,70 @@
+
+> project-theia@0.1.0 group:compare
+> node --import tsx pipeline/jobs/group-compare.ts en scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json --pairs tests/fixtures/review-pairs-2026-11-22.json
+
+A: scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json
+B: scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json
+HEADLINES 1087 (A) / 1087 (B)
+
+A                      events  711  multi-publisher 152  subjects  670  escalated   0  low-confidence 286  calculated cost $0.050119  seconds 398.9
+B                      events  725  multi-publisher 149  subjects  685  escalated  48  low-confidence 259  calculated cost $0.062381  seconds 428.1
+A CALCULATED_COST_USD $0.050119 (input=$0.000006 cachedInput=$0.000000 cacheWrite=$0.022024 output=$0.028089)
+API_ATTEMPTS 19 SUCCESSFUL 19 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"openai:gpt-6-luna":{"input":176249,"output":56179,"cachedInput":0,"cacheWriteInput":176192,"reasoningOutput":10272,"reasoningReportedCalls":19,"calls":19,"estimatedCostUsd":0.05011920000000001}}
+B CALCULATED_COST_USD $0.062381 (input=$0.009080 cachedInput=$0.000000 cacheWrite=$0.022024 output=$0.031277)
+API_ATTEMPTS 20 SUCCESSFUL 20 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"openai:gpt-6-luna":{"input":176249,"output":56179,"cachedInput":0,"cacheWriteInput":176192,"reasoningOutput":10272,"reasoningReportedCalls":19,"calls":19,"estimatedCostUsd":0.05011920000000001},"anthropic:claude-haiku-5-5":{"input":90742,"output":6375,"cachedInput":0,"cacheWriteInput":0,"reasoningOutput":0,"reasoningReportedCalls":0,"calls":1,"estimatedCostUsd":0.0122617}}
+Costs are calculated from reported usage, not provider invoices. Legacy runs exclude unsaved/failed calls.
+PAIR_FIXTURE tests/fixtures/review-pairs-2026-11-22.json
+
+LABELED PAIRS (hand-labeled; 15 "same event" and 11 "different" pairs fall inside this window)
+A  same-event pairs grouped together 9/15 (60.0%)   different pairs kept apart 7/11
+B  same-event pairs grouped together 11/15 (73.3%)   different pairs kept apart 9/11
+Unavailable/ambiguous labeled pairs: 0 (A), 0 (B). Labels were made by the build agent, not the owner.
+ wrong in A only: 4   wrong in B only: 0   wrong in both: 6
+ A   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas execution took over an hour as staff struggled to find v
+ A   split:  Texas execution took over an hour as staff struggled to find v  <>  Texas says an execution went as planned. A witness says scream
+ A   merged: The Volkswagen camper is back! But the £66,000 electric ID.Buz  ==  Watch: Start talks to rejoin EU now, says ex-minister
+ A   merged: First minister 'gobsmacked' by Burnham's devolution calls reje  ==  Burnham's Brexit betrayal: Naive PM walks into EU trap that wi
+
+AGREEMENT (pairs of headlines placed in the same event)
+ pairs A groups together: 1157, of which B also does: 1051 (90.8%)
+ pairs B groups together: 1074, of which A also does: 1051 (97.9%)
+ same, counting only pairs that involve a headline the review model handled in A: A->B 0/0 (n/a), B->A 0/0 (n/a)
+
+FLAGGED SETS (events holding a matching headline: publishers in each)
+ palisades    A: 2, 1                   B: 2, 1
+ datacenters  A: 6, 1                   B: 6, 1
+ conference   A: 4                      B: 4
+ detonation   A: 1                      B: 1
+ summit       A: 11, 6                  B: 11, 1
+
+HEADLINES WHOSE GROUP DIFFERS: 48 of 1087 (0 were handled by the review model in A; 0 of the differing ones were)
+ headline | A: event (articles) | B: event (articles)
+ UK and EU to agree youth mobility scheme, BBC understands              | Scottish island reaches top 100 (2) | Burnham EU youth migration (15)
+ First minister 'gobsmacked' by Burnham's devolution calls rejection    | Burnham backs EU youth migration (16) | Scottish devolution rejection reac (1)
+ Britons' top concern is inflation despite Burnham's 'breathing room' p | Burnham backs EU youth migration (16) | Britons' inflation concerns (1)
+ Google Disrupts Its Search Advertising With Its Embrace of A.I.        | Edible packaging solution (11) | Google search ads and AI (1)
+ Light-filled homes for sale in England – in pictures                   | Edible packaging solution (11) | Light-filled homes for sale (1)
+ Green Kingdom by Ben Dark review – a luscious natural history of plant | Edible packaging solution (11) | Green Kingdom book review (1)
+ The Volkswagen camper is back! But the £66,000 electric ID.Buzz Beach  | Edible packaging solution (11) | Volkswagen ID.Buzz camper (1)
+ Fine Gael leader wants border poll criteria talks with London          | Edible packaging solution (11) | Fine Gael border poll criteria (1)
+ Eat your cup: could edible packaging help solve the world’s plastic pr | Edible packaging solution (11) | Edible packaging (1)
+ What the Brussels summit could mean for the UK-EU Brexit deal          | Edible packaging solution (11) | Brussels summit and Brexit deal (1)
+ Watch: Start talks to rejoin EU now, says ex-minister                  | Edible packaging solution (11) | Calls to rejoin EU talks (1)
+ The month’s best experimental album: Stella Z’s ambient adventures int | Edible packaging solution (11) | Stella Z ambient album (1)
+ Dark Eden author Chris Beckett on how sci-fi needs ‘surface plausibili | Edible packaging solution (11) | Dark Eden author interview (1)
+ When Nazis were held accountable for war crimes                        | Edible packaging solution (11) | Nazi war crimes accountability (1)
+ Justice Department taps new attorney to lead controversial review of T | Cyber director replaced (8) | Justice Department review lead (1)
+ Overton’s nomination withdrawal means no clear end for FDA leadership  | Cyber director replaced (8) | FDA leadership vacuum (1)
+ 17 major federal agencies flagged over cybersecurity gaps as watchdog  | Cyber director replaced (8) | Federal agencies cyber gaps flagge (1)
+ Texas execution took over an hour as staff struggled to find vein      | Missing child found in desert (3) | Texas execution of Reinaldo Dennes (4)
+ Fiona the hippo’s death was tragic. But blaming a ‘bad mom’ is absurd  | Fiona the hippo criticism (1) | Fiona the hippo death (5)
+ Burnham agrees youth migration for 100,000 EU citizens to Britain      | Burnham backs EU youth migration (16) | Burnham EU youth migration (15)
+ White House replaces national cyber director amid widespread tech outa | Cyber director replaced (8) | Cyber director replaced (5)
+ Texas says an execution went as planned. A witness says screams showed | Texas execution causes distress (1) | Texas execution of Reinaldo Dennes (4)
+ 2-year-old who went missing in desert found by volunteer               | Missing child found in desert (3) | Missing 2-year-old found in desert (1)
+ Texas execution took over an hour as staff struggled to find vein; Rei | Reinaldo Dennes execution (2) | Texas execution of Reinaldo Dennes (4)
+ How a teen gamer and his mother helped rescue a missing girl           | Missing child found in desert (3) | Teen gamer helps rescue missing gi (1)
+ This remote Scottish island destination just made Europe's top 100     | Scottish island reaches top 100 (2) | Scottish island ranked in top 100 (1)
+ Senate adopts resolution honoring Fiona the hippo                      | Fiona the hippo resolution (4) | Fiona the hippo death (5)

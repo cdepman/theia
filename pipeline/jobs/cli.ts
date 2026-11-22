@@ -10,6 +10,8 @@ import { readFileSync } from 'node:fs';
 import { dbFromEnv } from '../db';
 import { dispatchTick } from './dispatcher';
 import { type Activation, buildRegistry, type CandidatePublisher } from './registry';
+import { validateOrigins, type OriginConfig } from './signals';
+import { originsWithoutCredentials } from '../providers/signals/providers';
 import { runWorker } from './worker';
 
 function readJson<T>(path: string): T {
@@ -33,11 +35,20 @@ async function main(): Promise<void> {
     const activation = readJson<Activation>('config/source-activation.json');
     const result = await db.rpc('theia_sync_registry', { p_registry: buildRegistry(candidates, activation) });
     console.log('Registry synced:', JSON.stringify(result));
+    if (activation.publisherAttributes) {
+      const n = await db.rpc('theia_set_publisher_attributes', { p_attributes: activation.publisherAttributes });
+      console.log(`Publisher attributes set: ${n}`);
+    }
+    const origins = validateOrigins(readJson<{ origins: OriginConfig[] }>('config/signal-sources.json'));
+    console.log('Origins synced:', JSON.stringify(await db.rpc('theia_sync_origins', { p_config: origins })));
+    const skipped = originsWithoutCredentials(process.env);
+    if (skipped.length > 0) console.log(`Not collected until credentials are set: ${skipped.join(', ')}`);
     return;
   }
 
   if (command === 'status') {
     console.log(JSON.stringify(await db.rpc('theia_data_status'), null, 2));
+    console.log(JSON.stringify(await db.rpc('theia_signal_status'), null, 2));
     return;
   }
 

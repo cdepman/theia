@@ -20,6 +20,8 @@ export interface Activation {
   enabledPublishers: string[];
   excludedFeeds?: { url: string; reason?: string }[];
   cadenceSeconds?: number;
+  /** Optional per-publisher weight and tags, keyed by publisher id. Stored, not yet used in ranking. */
+  publisherAttributes?: Record<string, { weight?: number; tags?: string[] }>;
 }
 
 export interface RegistryPayload {

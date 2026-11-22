@@ -75,6 +75,34 @@ Each story gets a signature of its 8 most distinctive terms. English prefers pro
 
 In order: the feed's section, then feed-provided labels, then keyword rules for English and Japanese, then `other`. Ties resolve to `other`. A story takes the most common non-`other` category of its articles; a thread does the same over its stories.
 
+## Origins and public attention
+
+Every entry names its origin. An origin is any place entries come from, and each has a kind:
+
+| Origin | Kind | What an entry is | Scope |
+| --- | --- | --- | --- |
+| Monitored press | press | A story or thread built from publisher feeds | Publisher country |
+| Google Trending Now | search | A trending search, with the articles Google attaches to it | Country |
+| X trends | social | A trend name on X | Country, plus worldwide |
+| X news stories | social | X's own story for a top trend, summarized by Grok | Country |
+| Wikipedia most viewed | reference | A page among the most viewed from a country, the day before | Country |
+| Wikipedia: In the news | reference | An item chosen by Wikipedia editors | English edition only; the Japanese edition has no such section in the feed |
+| Wikipedia most read | reference | A most-read page of one language edition | Language edition |
+| Hacker News | community | A front-page link | Worldwide, English, technology |
+| Techmeme | aggregator | A lead technology headline | Worldwide, English, technology |
+
+Non-press origins form the public attention lane. They are other services' lists, produced by methods those services do not publish, and they can be gamed or curated. Theia records them as given: a title, a link, a rank, and any count the list states. It never fetches the pages behind them.
+
+**Storage.** One row per item, source and UTC day, holding the best and latest rank that day and that source's own title, link and attached articles. Polling more often does not add rows. When two countries list the same item, each country's view shows its own source's reading.
+
+**Score.** Rank points for a day are `(51 - rank) / 50`, so rank 1 scores 1.0 and rank 50 or lower scores 0.02. Over 24 hours an entry scores its best day; over 7 and 30 days the days add up, so staying on a list outranks a one-day spike. The score is multiplied by the origin's weight. Scores are comparable across origins only through those weights, which are the owner's judgment, not a measurement.
+
+**Attributes.** `config/signal-sources.json` sets each origin's weight, display order, default visibility, and whether it is collected. Publishers carry a weight and tags as well; these are stored and not yet used in ranking.
+
+**Link to the press.** An attention entry is marked "also in the monitored press" when one of the article links it carries was also collected from a monitored publisher. This is an exact URL match. A missing mark means no shared link was found, not that the press ignored the subject. Trend names, Wikipedia pages and X stories carry no article links, so they are never marked.
+
+**Unverified.** The parsers were written from each service's documentation and tested against hand-written fixtures, not recorded responses. The X stories link format, the cost of an X news request, and the Techmeme lead-link rule (the off-site link with the longest path) need checking against live data.
+
 ## Known limitations
 
 - Stories fragment. In the recorded sample one large event was split into two stories. No merge pass exists yet.

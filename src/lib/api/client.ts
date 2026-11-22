@@ -1,6 +1,6 @@
 import { type QueryClient, useQuery } from '@tanstack/react-query';
 import { CATEGORIES, type Category, type CountryCode, WINDOWS, type WindowCode } from '../../../shared/constants';
-import type { DataStatus, MetaPayload, StoryDetail, ThreadDetail, ViewPayload } from '../../../shared/types';
+import type { DataStatus, MetaPayload, SignalsPayload, StoryDetail, ThreadDetail, ViewPayload } from '../../../shared/types';
 
 export class ApiError extends Error {
   constructor(
@@ -131,4 +131,12 @@ export interface AdminStatus {
 
 export function useAdminStatus() {
   return useQuery({ queryKey: ['admin-status'], queryFn: ({ signal }) => getJson<AdminStatus>('/api/admin/status', signal), staleTime: 15_000, refetchInterval: 60_000 });
+}
+
+export function useSignals(country: CountryCode, window: WindowCode) {
+  return useQuery({
+    queryKey: ['signals', country, window],
+    queryFn: ({ signal }) => getJson<SignalsPayload>(`/api/signals?country=${country}&window=${window}`, signal),
+    staleTime: 60_000,
+  });
 }

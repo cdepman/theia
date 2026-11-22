@@ -1,7 +1,9 @@
-import { type KeyboardEvent, useEffect, useMemo, useRef, useState } from 'react';
+import { type KeyboardEvent, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { ViewItem, ViewPayload } from '../../../shared/types';
-import { type CloudLayout, layoutCloud, type Measure, stepFor } from '../../lib/visualization/layout';
+import { type EntryMark, KIND_TEXT, marksText } from '../../lib/marks';
+import { badgeGap, type CloudLayout, layoutCloud, MARK_GAP, type Measure, stepFor } from '../../lib/visualization/layout';
 import { OUTLINES } from '../../lib/visualization/outlines';
+import { OriginGlyph } from '../OriginMark/OriginMark';
 import { itemMeta, RankedList } from './RankedList';
 import { STATUS_TEXT, StatusGlyph } from './StatusMark';
 
@@ -73,26 +75,33 @@ interface Props {
   onSelect: (item: ViewItem) => void;
   /** Show the ranked list even where the cloud would fit. */
   asList: boolean;
+  /** Outside sources that also list an entry, by entry id. Drawn as small marks to its left. */
+  marks?: Map<string, EntryMark[]>;
   /** Reports how the view was drawn, so the page can say when some headlines are only in the list. */
   onLayout?: (info: { mode: 'cloud' | 'list'; shown: number; total: number }) => void;
 }
 
-export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: Props) {
+const NO_MARKS = new Map<string, EntryMark[]>();
+
+export function HeadlineCloud({ view, selectedId, onSelect, asList, marks = NO_MARKS, onLayout }: Props) {
   const [ref, box] = useBox();
   const fontsReady = useFontsReady();
   const narrow = box.width > 0 && box.width < NARROW;
 
   const layout = useMemo(() => {
     if (!fontsReady || narrow || asList || box.width === 0) return null;
-    const key = `${view.country}|${view.category}|${view.window}|${view.observationCutoff}|${box.width}x${box.height}|${view.stories.map((s) => s.id).join(',')}`;
+    const key = `${view.country}|${view.category}|${view.window}|${view.observationCutoff}|${box.width}x${box.height}|${view.stories.map((s) => `${s.id}:${marks.get(s.id)?.length ?? 0}`).join(',')}`;
     const cached = layoutCache.get(key);
     if (cached) return cached;
     const result = layoutCloud(
       view.stories.map((s) => ({
         id: s.id,
-        text: s.headline,
+        text: s.shortLabel ?? s.headline,
         step: stepFor(s.metricValue, view.metricRange.min, view.metricRange.max),
         leadEm: s.unit === 'thread' && s.status && s.status !== 'unknown' ? 0.62 : 0,
+        // The number the size stands for: distinct publishers for stories, publisher-days for subjects.
+        badge: String(s.metricValue),
+        marks: marks.get(s.id)?.length ?? 0,
       })),
       box,
       measure,
@@ -100,9 +109,30 @@ export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: 
     if (layoutCache.size > 60) layoutCache.clear();
     layoutCache.set(key, result);
     return result;
-  }, [fontsReady, narrow, asList, box, view]);
+  }, [fontsReady, narrow, asList, box, view, marks]);
 
   const byId = useMemo(() => new Map(view.stories.map((s) => [s.id, s])), [view]);
+
+  // The layout reserves room for each pill from an estimate of the text width, which runs
+  // a little wide. Once drawn, the real width of each first line is read back so the pill
+  // sits just past the last letter. It only ever moves inward, inside the room reserved.
+  const [firstLine, setFirstLine] = useState<Record<string, number>>({});
+  useLayoutEffect(() => {
+    let live = true;
+    const read = () => {
+      if (!live) return;
+      const widths: Record<string, number> = {};
+      ref.current?.querySelectorAll<SVGTSpanElement>('tspan[data-first-line]').forEach((el) => {
+        widths[el.dataset.firstLine!] = el.getComputedTextLength();
+      });
+      setFirstLine(widths);
+    };
+    read();
+    void document.fonts?.ready.then(read);
+    return () => {
+      live = false;
+    };
+  }, [layout]);
   const outline = OUTLINES[view.country];
   const useList = asList || narrow || (layout?.overflow ?? false);
   const shown = useList ? view.stories.length : (layout?.items.length ?? 0);
@@ -122,7 +152,7 @@ export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: 
     <div ref={ref} className="relative h-full w-full">
       {useList ? (
         <div className="absolute inset-0 overflow-y-auto pr-1">
-          <RankedList view={view} selectedId={selectedId} onSelect={onSelect} />
+          <RankedList view={view} selectedId={selectedId} onSelect={onSelect} marks={marks} />
         </div>
       ) : (
         box.width > 0 && (
@@ -150,7 +180,9 @@ export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: 
               const item = byId.get(p.id);
               if (!item) return null;
               const status = item.unit === 'thread' ? item.status : undefined;
-              const label = `${item.headline}. ${itemMeta(item)}.${status && status !== 'unknown' ? ` ${STATUS_TEXT[status]}.` : ''}`;
+              const sources = marks.get(p.id) ?? [];
+              const textX = p.x + p.markPx;
+              const label = `${item.shortLabel ?? item.headline}. ${itemMeta(item)}.${status && status !== 'unknown' ? ` ${STATUS_TEXT[status]}.` : ''}${sources.length > 0 ? ` Also listed by ${marksText(sources)}.` : ''}`;
               return (
                 <g
                   key={p.id}
@@ -167,7 +199,27 @@ export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: 
                   <rect className="focus-ring" x={p.x - 7} y={p.y - 5} width={p.width + 14} height={p.height + 10} rx={3} />
                   {/* A transparent hit area so the gaps between lines are clickable too. */}
                   <rect x={p.x} y={p.y} width={p.width} height={p.height} fill="transparent" />
-                  {status && p.leadPx > 0 && <StatusGlyph status={status} cx={p.x + p.fontSize * 0.2} cy={p.y + p.fontSize * 0.58} r={p.fontSize * 0.17} />}
+                  {/* Where else the entry is showing up: one mark per kind of outside source, in a column that starts level with the first line. */}
+                  {p.markPx > 0 &&
+                    sources.map((m, i) => (
+                      <svg
+                        key={m.kind}
+                        className="cloud-mark"
+                        data-testid="cloud-mark"
+                        data-kind={m.kind}
+                        x={p.x}
+                        y={p.y + p.markTop + i * (p.markSize + MARK_GAP)}
+                        width={p.markSize}
+                        height={p.markSize}
+                        viewBox="0 0 12 12"
+                        aria-hidden="true"
+                      >
+                        <title>{`${KIND_TEXT[m.kind]}: ${m.names.join(', ')}`}</title>
+                        <rect width={12} height={12} fill="transparent" />
+                        <OriginGlyph kind={m.kind} />
+                      </svg>
+                    ))}
+                  {status && p.leadPx > 0 && <StatusGlyph status={status} cx={textX + p.fontSize * 0.2} cy={p.y + p.fontSize * 0.58} r={p.fontSize * 0.17} />}
                   <text
                     lang={item.language}
                     fontSize={p.fontSize}
@@ -176,11 +228,23 @@ export function HeadlineCloud({ view, selectedId, onSelect, asList, onLayout }: 
                     letterSpacing={p.fontSize >= 28 ? '-0.015em' : p.fontSize >= 20 ? '-0.008em' : undefined}
                   >
                     {p.lines.map((line, i) => (
-                      <tspan key={i} x={p.x + (i === 0 ? p.leadPx : 0)} y={p.y + p.fontSize * 0.86 + i * p.lineHeight}>
+                      <tspan key={i} data-first-line={i === 0 ? p.id : undefined} x={textX + (i === 0 ? p.leadPx : 0)} y={p.y + p.fontSize * 0.86 + i * p.lineHeight}>
                         {line}
                       </tspan>
                     ))}
                   </text>
+                  {p.badge && (
+                    <g
+                      aria-hidden="true"
+                      className="cloud-badge"
+                      transform={`translate(${p.x + (firstLine[p.id] !== undefined ? Math.min(p.badge.dx, p.markPx + p.leadPx + firstLine[p.id]! + badgeGap(p.fontSize)) : p.badge.dx)} ${p.y + p.badge.dy})`}
+                    >
+                      <rect x={0} y={0} width={p.badge.width} height={p.badge.height} rx={p.badge.height / 2} />
+                      <text x={p.badge.width / 2} y={p.badge.height / 2} fontSize={p.badge.fontSize} fontFamily={FONT_FAMILY} textAnchor="middle" dominantBaseline="central">
+                        {p.badge.text}
+                      </text>
+                    </g>
+                  )}
                 </g>
               );
             })}

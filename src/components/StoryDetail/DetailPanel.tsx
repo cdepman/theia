@@ -206,7 +206,7 @@ export function DetailPanel({ selection, country, window, view, onSelect, onClos
 
   const listed = view?.stories.find((s) => s.id === selection.id);
   const headline =
-    selection.kind === 'story' ? (story.data?.headline ?? listed?.headline) : (listed?.headline ?? thread.data?.stories[thread.data.stories.length - 1]?.headline);
+    selection.kind === 'story' ? (listed?.shortLabel ?? story.data?.headline ?? listed?.headline) : (listed?.shortLabel ?? listed?.headline ?? thread.data?.stories[thread.data.stories.length - 1]?.headline);
   const language = (selection.kind === 'story' ? story.data?.language : thread.data?.language) ?? listed?.language;
 
   return (

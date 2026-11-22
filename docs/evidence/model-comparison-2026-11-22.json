@@ -1,0 +1,244 @@
+{
+  "recordedAt": "2026-11-22T09:17:57.020Z",
+  "dataset": {
+    "probe": "scratch/rss-probe-2026-11-22.json",
+    "headlines": 1087,
+    "publishers": 33,
+    "language": "en",
+    "windowHours": 72
+  },
+  "attention": {
+    "file": "scratch/signals-probe-2026-11-22-verified.json",
+    "sources": 14,
+    "items": 399,
+    "results": [
+      {
+        "source": "wikipedia_pageviews:US",
+        "status": "success",
+        "items": 50
+      },
+      {
+        "source": "wikipedia_pageviews:GB",
+        "status": "success",
+        "items": 50
+      },
+      {
+        "source": "wikipedia_pageviews:JP",
+        "status": "success",
+        "items": 50
+      },
+      {
+        "source": "wikipedia_most_read:en",
+        "status": "success",
+        "items": 42
+      },
+      {
+        "source": "wikipedia_in_the_news:en",
+        "status": "success",
+        "items": 4
+      },
+      {
+        "source": "wikipedia_most_read:ja",
+        "status": "success",
+        "items": 48
+      },
+      {
+        "source": "google_trending_now:US",
+        "status": "success",
+        "items": 10
+      },
+      {
+        "source": "techmeme:global",
+        "status": "success",
+        "items": 15
+      },
+      {
+        "source": "memeorandum:us-politics",
+        "status": "success",
+        "items": 15
+      },
+      {
+        "source": "google_trending_now:GB",
+        "status": "success",
+        "items": 10
+      },
+      {
+        "source": "lobsters:global",
+        "status": "success",
+        "items": 25
+      },
+      {
+        "source": "google_trending_now:JP",
+        "status": "success",
+        "items": 10
+      },
+      {
+        "source": "hatena:ja",
+        "status": "success",
+        "items": 40
+      },
+      {
+        "source": "hackernews:global",
+        "status": "success",
+        "items": 30
+      }
+    ],
+    "added": [
+      "memeorandum",
+      "lobsters",
+      "hatena"
+    ]
+  },
+  "runs": [
+    {
+      "path": "scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json",
+      "sha256": "4300b2f70eefc57611406fdc864051a961f624b38617e221aaaaa0f2d9d8792d",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "anthropic",
+          "model": "claude-haiku-5-5"
+        },
+        "review": null,
+        "reasoningEffort": null
+      },
+      "seconds": 764.969,
+      "events": 708,
+      "multiPublisherEvents": 136,
+      "subjects": 672,
+      "eventsWithPlaces": 260,
+      "lowConfidence": 249,
+      "cost": {
+        "calculatedCostUsd": 0.13789939999999998,
+        "knownCostUsd": 0.13789939999999998,
+        "breakdownUsd": {
+          "input": 0.0317119,
+          "cachedInput": 0,
+          "cacheWrite": 0,
+          "output": 0.1061875
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "anthropic:claude-haiku-5-5": {
+            "input": 317119,
+            "output": 212375,
+            "cachedInput": 0,
+            "cacheWriteInput": 0,
+            "reasoningOutput": 0,
+            "reasoningReportedCalls": 0,
+            "calls": 19,
+            "estimatedCostUsd": 0.13789939999999998
+          }
+        }
+      },
+      "labeledPairs": {
+        "sameTotal": 9,
+        "sameHit": 9,
+        "diffTotal": 3,
+        "diffHit": 1,
+        "unavailable": 66,
+        "misses": [
+          "   merged: WATCH: Grand Theft Auto VI is back and shattering records  ==  Burchett says you’re a ‘bad parent’ if you let your child play",
+          "   merged: Burchett says you’re a ‘bad parent’ if you let your child play  ==  Parents: please don’t buy Grand Theft Auto VI for your child"
+        ]
+      }
+    },
+    {
+      "path": "scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-9bec5218d63ec6e0.json",
+      "sha256": "3ab472a0a12d52de589b04587e7ac6e9939589689555afaf2b62ca89dd22414e",
+      "identity": {
+        "accountingVersion": 1,
+        "grouper": "llm-v2",
+        "language": "en",
+        "datasetHash": "02d2b5f53e9373526852043c031c4a7387c19d54493fa2fa6df516f2eae2b055",
+        "articleCount": 1087,
+        "snapshot": "2026-11-22T09:01:12.826802+00:00",
+        "windowHours": 72,
+        "batchSize": 60,
+        "primary": {
+          "provider": "openai",
+          "model": "gpt-6-luna"
+        },
+        "review": null,
+        "reasoningEffort": "low"
+      },
+      "seconds": 398.922,
+      "events": 711,
+      "multiPublisherEvents": 152,
+      "subjects": 670,
+      "eventsWithPlaces": 435,
+      "lowConfidence": 286,
+      "cost": {
+        "calculatedCostUsd": 0.05011920000000001,
+        "knownCostUsd": 0.05011920000000001,
+        "breakdownUsd": {
+          "input": 5.699999999999999e-06,
+          "cachedInput": 0,
+          "cacheWrite": 0.022024,
+          "output": 0.0280895
+        },
+        "attempts": 19,
+        "successful": 19,
+        "failed": 0,
+        "unfinished": 0,
+        "unknownCostAttempts": 0,
+        "usage": {
+          "openai:gpt-6-luna": {
+            "input": 176249,
+            "output": 56179,
+            "cachedInput": 0,
+            "cacheWriteInput": 176192,
+            "reasoningOutput": 10272,
+            "reasoningReportedCalls": 19,
+            "calls": 19,
+            "estimatedCostUsd": 0.05011920000000001
+          }
+        }
+      },
+      "labeledPairs": {
+        "sameTotal": 9,
+        "sameHit": 7,
+        "diffTotal": 3,
+        "diffHit": 3,
+        "unavailable": 66,
+        "misses": [
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  Myanmar guilty of genocide, International Court of Justice rul",
+          "   split:  Rights groups urge sanctions after ICJ finds Myanmar guilty of  <>  World Court Finds Myanmar Committed Genocide Against Rohingya"
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "unitIntegration": {
+      "files": 18,
+      "passed": 181
+    },
+    "browser": {
+      "passed": 23,
+      "skipped": 3
+    },
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "findings": [
+    "Both providers completed the same ordered 1,087-headline corpus with 19 successful calls each, no failures, and no unknown costs.",
+    "OpenAI Luna used low reasoning; Claude Haiku used its provider default. Neither run used escalation. These are configuration comparisons, not equal-compute model tests.",
+    "Only 9 same-event and 3 different-event labeled pairs were present; 66 earlier labeled pairs were absent or ambiguous. The build agent supplied the labels, not the owner.",
+    "OpenAI put 10 unrelated headlines alongside one legitimate headline in an Edible packaging solution event, including Brexit, Google advertising, a vehicle review, music, and housing.",
+    "OpenAI labeled a Burchett headline as Boebert criticizes GTA VI parenting, changing the named person.",
+    "Claude joined all 9 tested same-event pairs but merged 2 of the 3 tested different-event pairs. OpenAI kept all 3 different pairs apart but split 2 Myanmar-ruling reaction pairs.",
+    "The cheaper OpenAI run is not sufficient evidence to switch production grouping. Review event members for unrelated assignments, wrong names, and event splits.",
+    "Costs are calculated from provider-reported usage using saved published standard rates, including cache writes, and are not final invoices. Local trial data and ledgers remain in ignored scratch files."
+  ]
+}

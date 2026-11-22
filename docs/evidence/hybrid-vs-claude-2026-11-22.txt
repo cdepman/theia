@@ -1,0 +1,77 @@
+
+> project-theia@0.1.0 group:compare
+> node --import tsx pipeline/jobs/group-compare.ts en scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json --pairs tests/fixtures/review-pairs-2026-11-22.json
+
+A: scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json
+B: scratch/llm-trials/en-llm-v2-openai-gpt-6-luna-30479c17624df6ce.json
+HEADLINES 1087 (A) / 1087 (B)
+
+A                      events  708  multi-publisher 136  subjects  672  escalated   0  low-confidence 249  calculated cost $0.137899  seconds 765.0
+B                      events  725  multi-publisher 149  subjects  685  escalated  48  low-confidence 259  calculated cost $0.062381  seconds 428.1
+A CALCULATED_COST_USD $0.137899 (input=$0.031712 cachedInput=$0.000000 cacheWrite=$0.000000 output=$0.106188)
+API_ATTEMPTS 19 SUCCESSFUL 19 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"anthropic:claude-haiku-5-5":{"input":317119,"output":212375,"cachedInput":0,"cacheWriteInput":0,"reasoningOutput":0,"reasoningReportedCalls":0,"calls":19,"estimatedCostUsd":0.13789939999999998}}
+B CALCULATED_COST_USD $0.062381 (input=$0.009080 cachedInput=$0.000000 cacheWrite=$0.022024 output=$0.031277)
+API_ATTEMPTS 20 SUCCESSFUL 20 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"openai:gpt-6-luna":{"input":176249,"output":56179,"cachedInput":0,"cacheWriteInput":176192,"reasoningOutput":10272,"reasoningReportedCalls":19,"calls":19,"estimatedCostUsd":0.05011920000000001},"anthropic:claude-haiku-5-5":{"input":90742,"output":6375,"cachedInput":0,"cacheWriteInput":0,"reasoningOutput":0,"reasoningReportedCalls":0,"calls":1,"estimatedCostUsd":0.0122617}}
+Costs are calculated from reported usage, not provider invoices. Legacy runs exclude unsaved/failed calls.
+PAIR_FIXTURE tests/fixtures/review-pairs-2026-11-22.json
+
+LABELED PAIRS (hand-labeled; 15 "same event" and 11 "different" pairs fall inside this window)
+A  same-event pairs grouped together 12/15 (80.0%)   different pairs kept apart 10/11
+B  same-event pairs grouped together 11/15 (73.3%)   different pairs kept apart 9/11
+Unavailable/ambiguous labeled pairs: 0 (A), 0 (B). Labels were made by the build agent, not the owner.
+ wrong in A only: 3   wrong in B only: 5   wrong in both: 1
+ A   merged: Eddie Barnes: If an EU return is simply a nostalgia trip for m  ==  People in Wales overwhelmingly think Brexit has been a failure
+ A   split:  Burnham agrees youth migration for 100,000 EU citizens to Brit  <>  Henry Zeffman: Burnham's first taste of EU deal-making unlikel
+ A   split:  Andy, António and Ursula: the joyful EU throuple break Nigel’s  <>  What the new UK-EU deal could mean for future post-Brexit rela
+ B   split:  Government borrowing rose higher than expected before Budget  <>  Surging taxes could not stop record debt interest and Labour's
+ B   split:  Trump on reported FBI hack: ‘I always like to put things in a   <>  FBI's national crime database targeted in hack, Trump says
+ B   split:  What does the new Brexit deal mean for Northern Ireland?  <>  EU wants ‘closest possible relationship’ with UK after agreein
+ B   merged: The week around the world in 20 pictures  ==  Clarifications and Corrections
+ B   merged: ‘National scandal’: residents in England rally against surge i  ==  Poll opens in village independence referendum vote over asylum
+
+AGREEMENT (pairs of headlines placed in the same event)
+ pairs A groups together: 1373, of which B also does: 713 (51.9%)
+ pairs B groups together: 1074, of which A also does: 713 (66.4%)
+ same, counting only pairs that involve a headline the review model handled in A: A->B 0/0 (n/a), B->A 0/0 (n/a)
+
+FLAGGED SETS (events holding a matching headline: publishers in each)
+ palisades    A: 3                      B: 2, 1
+ datacenters  A: 6, 1                   B: 6, 1
+ conference   A: 12, 3                  B: 4
+ detonation   A: 1                      B: 1
+ summit       A: 12, 7                  B: 11, 1
+
+HEADLINES WHOSE GROUP DIFFERS: 480 of 1087 (0 were handled by the review model in A; 0 of the differing ones were)
+ headline | A: event (articles) | B: event (articles)
+ Trump touts Asia trip, meeting with Putin and Xi at news conference    | Trump Xi Putin summit meeting (21) | Trump holds White House news confe (9)
+ Andy Burnham's £17bn Brexit deal: What it means for Scotland           | UK-EU Brussels summit (14) | Burnham EU youth migration (15)
+ Geography is beating Brexit, and Andy Burnham is the first PM to admit | Brexit debate revival (9) | Burnham EU youth migration (15)
+ Some of the Gulf’s largest investors have put big bets on Anthropic.   | Anthropic stock market debut (22) | Gulf investors back Anthropic (1)
+ 'For us he is a killer': Zelensky rebukes Trump for calling Putin his  | Trump Xi Putin summit meeting (21) | Streeting calls Putin killer (2)
+ Opinion | Nuclear Peace in Our Time. Not                               | Trump Xi Putin summit meeting (21) | Nuclear peace opinion (1)
+ News Analysis: In Shenzhen, Trump treats deference to adversaries as p | Trump Xi Putin summit meeting (21) | Trump diplomacy in Shenzhen (1)
+ Martin Rowson on the summits in Shenzhen and Brussels – cartoon        | Trump Xi Putin summit meeting (21) | Summit cartoon (1)
+ Week in Politics: Trump returns from Asia; hails trip as one of best i | Trump Xi Putin summit meeting (21) | Trump returns from Asia (1)
+ As it happened: FTSE 100 falls as Anthropic rattles global markets     | Anthropic stock market debut (22) | Anthropic rattles technology marke (9)
+ UK to explore even closer ties with EU after agreeing deal, says Burnh | Burnham overtures to EU (14) | EU open to close UK relationship (11)
+ Andy, António and Ursula: the joyful EU throuple break Nigel’s bitter  | Brexit debate revival (9) | EU open to close UK relationship (11)
+ Bessent says Jensen Huang did not come up during China discussions     | Bessent says Huang not discussed (2) | Trump-Xi-Putin summit (17)
+ Rejoining EU ‘on the table’ as UK makes deals on trade and young peopl | UK-EU Brussels summit (14) | Brexit rejoin and leave arguments (5)
+ Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices w | UK-EU Brussels summit (14) | UK government floats Breturn (4)
+ Why Trump’s friendship with war criminal Putin is a warning complacent | Trump friendship with Putin warnin (1) | Trump-Xi-Putin summit (17)
+ DAN HODGES: Four PMs have been defeated in Brexit's unwinnable war - b | Burnham overtures to EU (14) | Brexit debate returns (3)
+ Ranking the top six 'Grand Theft Auto VI' in-game radio stations, from | GTA VI worldwide release (15) | GTA VI album review (2)
+ UK and EU to agree youth mobility scheme, BBC understands              | UK EU youth mobility scheme (5) | Burnham EU youth migration (15)
+ Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand  | GTA VI worldwide release (15) | Boebert criticizes GTA VI parentin (1)
+ The British public-school brothers behind Grand Theft Auto whose Coron | GTA VI worldwide release (15) | Grand Theft Auto creators (1)
+ 'Move on!' Former PMs pile in with advice for Andy Burnham, but will h | Former PMs advise Burnham (1) | Burnham EU youth migration (15)
+ Jason White on Andy Burnham’s overtures to the EU – cartoon            | Burnham overtures to EU (14) | Burnham EU cartoon (1)
+ What the Brussels summit could mean for the UK-EU Brexit deal          | UK-EU Brussels summit (14) | Brussels summit and Brexit deal (1)
+ What does the new Brexit deal mean for Northern Ireland?               | UK-EU Brussels summit (14) | New Brexit deal for Northern Irela (1)
+ Henry Zeffman: Burnham's first taste of EU deal-making unlikely to be  | Burnham overtures to EU (14) | Burnham EU youth migration (15)
+ British PM Burnham’s big worry isn’t Brexit or welfare — it’s Trump an | Burnham overtures to EU (14) | Burnham discusses Trump and Iran (1)
+ What we know about the UK EU food trade deal and when it will start    | UK-EU Brussels summit (14) | UK-EU food trade deal (1)
+ Brexit: Rejoin and leave campaigns can’t win with yesterday’s argument | Brexit debate revival (9) | Brexit rejoin and leave arguments (5)
+ News Wrap: Stocks tumble as worries about AI rattle market             | AI worries weekly roundup (5) | Anthropic rattles technology marke (9)

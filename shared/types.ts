@@ -24,6 +24,8 @@ export interface ViewItem {
   unit: Unit;
   rank: number;
   headline: string;
+  /** Short model-written name for the story or subject, when a grouper has supplied one. Shown in place of the headline. */
+  shortLabel?: string | null;
   language: string;
   category: string;
   metricValue: number;
@@ -178,4 +180,62 @@ export interface DataStatus {
   }[];
   sourcesNeedingAttention: string[];
   problems: { code: string; [k: string]: unknown }[];
+}
+
+export type OriginKind = 'press' | 'search' | 'social' | 'reference' | 'community' | 'aggregator';
+
+/** A place entries come from, with the attributes that control how its entries are shown and weighted. */
+export interface Origin {
+  key: string;
+  name: string;
+  kind: OriginKind;
+  lane: 'press' | 'attention';
+  weight: number;
+  displayOrder: number;
+  visible: boolean;
+  enabled: boolean;
+  attribution: string | null;
+  termsUrl: string | null;
+  tags: string[];
+  sources: { sourceKey: string; scope: string; state: string; lastSuccessAt: string | null; lastError: string | null }[];
+  lastSuccessAt: string | null;
+}
+
+/** One entry from a non-press origin: a trending search, a platform trend, a most-read page, a front-page link. */
+export interface SignalEntry {
+  id: string;
+  origin: string;
+  originKind: OriginKind;
+  scope: string;
+  title: string;
+  url: string | null;
+  language: string | null;
+  summary: string | null;
+  entityId: string | null;
+  related: { title: string; url: string; source?: string }[];
+  /** Latest position on the origin's own list. */
+  rank: number;
+  bestRank: number;
+  /** Position among this origin's entries in this view, by score. */
+  originRank: number;
+  daysSeen: number;
+  metricKind: string | null;
+  metricValue: number | null;
+  /** Origin weight x rank points. Comparable across origins only through the weights. */
+  score: number;
+  firstSeenAt: string;
+  lastSeenAt: string;
+  /** The monitored-press story that shares an article link with this entry, if any. */
+  storyId: string | null;
+  threadId: string | null;
+}
+
+export interface SignalsPayload {
+  schemaVersion: number;
+  country: CountryCode;
+  window: WindowCode;
+  windowStart: string;
+  observationCutoff: string;
+  origins: Origin[];
+  items: SignalEntry[];
 }

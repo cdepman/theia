@@ -1,0 +1,43 @@
+
+> project-theia@0.1.0 group:compare
+> node --import tsx pipeline/jobs/group-compare.ts en scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-9cc66500dbfe3b8d.json --pairs tests/fixtures/review-pairs-2026-11-22.json
+
+A: scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-3e813abc20135d48.json
+B: scratch/llm-trials/en-llm-v2-anthropic-claude-haiku-5-5-9cc66500dbfe3b8d.json
+HEADLINES 1087 (A) / 1087 (B)
+
+A                      events  708  multi-publisher 136  subjects  672  escalated   0  low-confidence 249  calculated cost $0.137899  seconds 765.0
+B                      events  709  multi-publisher 136  subjects  673  escalated   8  low-confidence 246  calculated cost $0.145943  seconds 777.4
+A CALCULATED_COST_USD $0.137899 (input=$0.031712 cachedInput=$0.000000 cacheWrite=$0.000000 output=$0.106188)
+API_ATTEMPTS 19 SUCCESSFUL 19 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"anthropic:claude-haiku-5-5":{"input":317119,"output":212375,"cachedInput":0,"cacheWriteInput":0,"reasoningOutput":0,"reasoningReportedCalls":0,"calls":19,"estimatedCostUsd":0.13789939999999998}}
+B CALCULATED_COST_USD $0.145943 (input=$0.031713 cachedInput=$0.000507 cacheWrite=$0.006336 output=$0.107388)
+API_ATTEMPTS 21 SUCCESSFUL 21 FAILED 0 UNFINISHED 0 UNKNOWN_COST 0
+REPORTED_USAGE {"anthropic:claude-haiku-5-5":{"input":317119,"output":212375,"cachedInput":0,"cacheWriteInput":0,"reasoningOutput":0,"reasoningReportedCalls":0,"calls":19,"estimatedCostUsd":0.13789939999999998},"openai:gpt-6-luna":{"input":101382,"output":2400,"cachedInput":50688,"cacheWriteInput":50688,"reasoningOutput":1683,"reasoningReportedCalls":2,"calls":2,"estimatedCostUsd":0.008043479999999999}}
+Costs are calculated from reported usage, not provider invoices. Legacy runs exclude unsaved/failed calls.
+PAIR_FIXTURE tests/fixtures/review-pairs-2026-11-22.json
+
+LABELED PAIRS (hand-labeled; 15 "same event" and 11 "different" pairs fall inside this window)
+A  same-event pairs grouped together 12/15 (80.0%)   different pairs kept apart 10/11
+B  same-event pairs grouped together 12/15 (80.0%)   different pairs kept apart 10/11
+Unavailable/ambiguous labeled pairs: 0 (A), 0 (B). Labels were made by the build agent, not the owner.
+ wrong in A only: 0   wrong in B only: 0   wrong in both: 4
+
+AGREEMENT (pairs of headlines placed in the same event)
+ pairs A groups together: 1373, of which B also does: 1368 (99.6%)
+ pairs B groups together: 1372, of which A also does: 1368 (99.7%)
+ same, counting only pairs that involve a headline the review model handled in A: A->B 0/0 (n/a), B->A 0/0 (n/a)
+
+FLAGGED SETS (events holding a matching headline: publishers in each)
+ palisades    A: 3                      B: 3
+ datacenters  A: 6, 1                   B: 6, 1
+ conference   A: 12, 3                  B: 12, 3
+ detonation   A: 1                      B: 1
+ summit       A: 12, 7                  B: 12, 7
+
+HEADLINES WHOSE GROUP DIFFERS: 8 of 1087 (0 were handled by the review model in A; 0 of the differing ones were)
+ headline | A: event (articles) | B: event (articles)
+ Trump auditions potential successors as Rubio and Vance join him for W | Rubio and Vance GOP race (4) | Trump news conference (5)
+ Why is Mike ‘Finish the Job in Iran’ Pence attacking ‘America First’ J | Rubio and Vance GOP race (4) | Vance on Iran war (1)
+ Rubio gains buzz while Vance’s fortunes falter in GOP race             | Rubio and Vance GOP race (4) | Rubio and Vance GOP race (2)
+ The Memo: Embattled Trump seeks reset with White House news conference | Trump White House news conference  (4) | Trump news conference (5)

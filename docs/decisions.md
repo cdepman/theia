@@ -50,6 +50,27 @@ Updated 2026-11-21, after the MVP build.
 The follow-up review fixes are in the additive `theia_review_fixes` migration. Consolidation preserves thread identities and snapshots; old detail links resolve to the current thread. Recorded gap days remain unknown, and rolling 30-day totals share exact timestamp boundaries across rankings and details. Equal or older refresh cutoffs are rejected before writes, and unfinished threading is recovered without new feed items. The backoff tests use their fixture clock throughout, including cases in 2000 and 2040. This work is validated locally; the hosted migration remains pending.
 - Phase 0 Python probes are kept as research tooling. They are not part of the app.
 
+## Origins and attention signals (added 2026-11-21)
+
+- The owner asked for Google Trending Now, X trends, X news stories, the Wikipedia featured feed, Wikipedia pageviews, Hacker News and Techmeme as first-class entries beside the press, each attributed so display, position and weight can be changed later. Paying for X was approved "for the time being".
+- Attributes live on the origin, in `config/signal-sources.json`, and reach every API entry. Press is an origin too. Publishers gained `weight` and `tags`, stored but not used in ranking.
+- Signals use their own schedule table, not the press one, so neither registry sync can disable the other's sources.
+- The attention view is computed on read. No cache table until size requires one.
+- The Wikipedia featured feed is split into two origins, "In the news" and "most read", because one is editorial and the other is traffic. "Most read" is hidden by default since per-country pageviews say the same thing more precisely.
+- Hacker News and Techmeme are weighted 0.5 by default: they are English-language technology lists shown in every country view.
+- Linking attention to press is by exact article URL only. Term matching against threads is not built.
+- Not done: attention in the admin page and freshness alert, the in-app methodology page, a cross-country "world" view, and recorded-response fixtures.
+
+## Attention-signal review fixes (2026-11-21)
+
+Five faults found in review, each fixed with a regression test that fails on the earlier code:
+
+- **Readings are per source.** What a source said about an entry (title, link, attached articles) is stored on that source's daily row. A UK poll can no longer replace the links on the US reading of the same trend.
+- **A lost lease writes nothing.** Signal readings replace earlier ones, so a commit is applied only while the caller holds the lease. Readings are timed from when the poll started, and an older reading never replaces a newer one.
+- **Disabling ends polls in flight.** Removing or switching off a source clears its lease, and a disabled source is never moved back to `ok`, `retrying` or `needs_attention` by a late commit. This also stops further paid requests.
+- **The request deadline covers the body.** One deadline spans headers and body and holds even if the transport ignores the abort.
+- **Empty is a failure.** A source that returns no entries, or a Wikipedia feed without the section asked for, is recorded as failing. Japanese "In the news" is removed from the configuration because that edition does not publish the section. X news is the one origin allowed to be empty.
+
 ## Approval record
 
 - Phase 0 to Phase 1: approved by the owner's request to build.

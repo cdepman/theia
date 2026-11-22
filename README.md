@@ -34,6 +34,32 @@ The first pipeline run gives a thin picture: feeds only hold their most recent i
 
 `config/source-candidates.json` lists 57 candidate publishers. `config/source-activation.json` decides which are polled; four are enabled by default (NYT, NPR, The Guardian, The Independent). Japan has none enabled, so it shows no data until you enable some. Review terms in [the source registry](docs/source-registry.md), edit the activation file, and run `npm run registry:sync`.
 
+## Public attention
+
+Beside the press, the explorer shows what other services list as trending: Google Trending Now, X trends and X news stories, Wikipedia most viewed and "In the news", Hacker News and Techmeme. Every entry is attributed to its origin. `config/signal-sources.json` controls which origins are collected and their weight, order and default visibility; run `npm run registry:sync` after editing it.
+
+X needs `X_BEARER_TOKEN` in `.env` and costs money per request; without it the two X origins are skipped and everything else runs. See [operations](docs/operations.md#attention-sources) for the cost at the shipped settings.
+
+## Comparing language models
+
+The grouper supports Anthropic Messages and OpenAI Responses with the same prompt and JSON schema. Add `ANTHROPIC_API_KEY` and/or `OPENAI_API_KEY` to `.env` for the providers you select.
+
+```sh
+# Inspect the dataset, model configuration, and result path without making requests.
+npm run group:trial -- en --provider openai --model gpt-6-luna --reasoning low --dry-run
+# A small live trial; rerunning without --max-batches resumes to completion.
+npm run group:trial -- en --provider openai --model gpt-6-luna --reasoning low --max-batches 1
+npm run group:trial -- en --provider openai --model gpt-6.1-terra --reasoning low
+# Compare complete runs, using the STATE paths printed by those commands.
+npm run group:compare -- en scratch/llm-trials/RUN_A.json scratch/llm-trials/RUN_B.json
+# Apply a separate Claude correction pass to a completed OpenAI run.
+npm run group:review -- scratch/llm-trials/RUN_B.json
+```
+
+Trials use recorded headlines and save results locally; they do not update the hosted database or the app's grouping. Provider calls incur API charges. Each run prints costs calculated from reported token usage and saves a per-call ledger, including failed attempts and the rates used. See [model trial settings](docs/operations.md#language-model-trials) for mixed-provider escalation, reports, resuming, and billing limitations.
+
+For fresh data, capture feeds with `python3 scripts/probe_sources.py --output scratch/rss-fresh.json`, then add `--probe scratch/rss-fresh.json` to both trial commands. `npm run signals:probe -- --output scratch/signals-fresh.json` separately refreshes all attention sources that need no keys, including Memeorandum, Lobsters, and Hatena Bookmark.
+
 ## Tests
 
 ```sh

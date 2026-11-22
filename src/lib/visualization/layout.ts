@@ -9,6 +9,20 @@ export interface CloudInput {
   step: number;
   /** Space reserved before the first line for a status mark, in em. */
   leadEm?: number;
+  /** Short text for a pill set after the first line, raised to its top: the count the size stands for. */
+  badge?: string;
+  /** How many small source marks to stack in a narrow column to the left of the entry. */
+  marks?: number;
+}
+
+export interface PlacedBadge {
+  text: string;
+  /** Top-left corner of the pill, measured from the top-left corner of its entry. */
+  dx: number;
+  dy: number;
+  width: number;
+  height: number;
+  fontSize: number;
 }
 
 export interface PlacedItem {
@@ -22,6 +36,13 @@ export interface PlacedItem {
   width: number;
   height: number;
   leadPx: number;
+  /** Width of the gutter on the left that holds the column of source marks, including the gap before the words. 0 when there are none. */
+  markPx: number;
+  /** Side of one square source mark. */
+  markSize: number;
+  /** Top of the first mark, measured from the top of the entry. The rest follow below it, MARK_GAP apart. */
+  markTop: number;
+  badge?: PlacedBadge;
 }
 
 export interface CloudLayout {
@@ -139,6 +160,33 @@ function overlaps(a: Rect, b: Rect, pad: number): boolean {
   return a.x < b.x + b.width + pad && a.x + a.width + pad > b.x && a.y < b.y + b.height + pad && a.y + a.height + pad > b.y;
 }
 
+/** Clear space between the end of the first line and its pill. */
+export function badgeGap(fontSize: number): number {
+  return Math.max(5, fontSize * 0.2);
+}
+
+/** Side of one source mark: small beside any size of type, never below what stays legible. */
+export function markSizeFor(fontSize: number): number {
+  return Math.min(13, Math.max(9.5, Math.round(fontSize * 0.4 * 2) / 2));
+}
+
+/** Space between two source marks in the column. */
+export const MARK_GAP = 2.5;
+
+/**
+ * Width of the gutter that holds the source marks. They stack in a single column, so the
+ * gutter is one mark wide however many there are, plus the gap that keeps them off the words.
+ */
+export function markGutter(count: number, fontSize: number): number {
+  if (count <= 0) return 0;
+  return Math.ceil(markSizeFor(fontSize) + Math.max(5, fontSize * 0.2));
+}
+
+/** Height of a column of `count` source marks. */
+export function markColumn(count: number, fontSize: number): number {
+  return count <= 0 ? 0 : count * markSizeFor(fontSize) + (count - 1) * MARK_GAP;
+}
+
 function attempt(inputs: CloudInput[], box: { width: number; height: number }, measure: Measure, scale: number, sizes: readonly number[] = STEP_SIZES): PlacedItem[] | null {
   const placed: PlacedItem[] = [];
   const cx = box.width / 2;
@@ -151,10 +199,30 @@ function attempt(inputs: CloudInput[], box: { width: number; height: number }, m
     const fontSize = Math.round(sizes[input.step]! * scale * 10) / 10;
     const lineHeight = Math.round(fontSize * (input.step >= 3 ? 1.1 : 1.22) * 10) / 10;
     const leadPx = (input.leadEm ?? 0) * fontSize;
-    const maxWidth = Math.min(box.width - 8, Math.max(150, fontSize * (input.step >= 3 ? 11 : 13))) - leadPx;
+    // Source marks stack in a one-mark-wide gutter to the left, so every line of the entry keeps
+    // one clean left edge and the marks cost the same little width however many there are.
+    const markCount = input.marks ?? 0;
+    const markSize = markSizeFor(fontSize);
+    const markPx = markGutter(markCount, fontSize);
+    // The first mark sits level with the first line; the column runs down from there.
+    const markTop = Math.max(0, Math.round((fontSize * 0.56 - markSize / 2) * 10) / 10);
+    const maxWidth = Math.min(box.width - 8 - markPx, Math.max(150, fontSize * (input.step >= 3 ? 11 : 13))) - leadPx;
     const lines = wrapText(input.text, fontSize, maxWidth, input.step >= 3 ? 4 : 3, measure);
-    const width = Math.ceil(Math.max(...lines.map((l) => measure(l, fontSize))) + leadPx);
-    const height = Math.ceil(lines.length * lineHeight);
+    let width = Math.ceil(Math.max(...lines.map((l) => measure(l, fontSize))) + leadPx) + markPx;
+    // A tall column beside a short entry makes the block taller, never an overlap.
+    const height = Math.ceil(Math.max(lines.length * lineHeight, markCount > 0 ? markTop + markColumn(markCount, fontSize) : 0));
+    // The pill sits clear of the end of the first line, and the block is widened to hold it,
+    // so it can never touch this entry's words or a neighbour's.
+    let badge: PlacedBadge | null = null;
+    if (input.badge) {
+      const badgeFont = Math.min(15, Math.max(10, Math.round(fontSize * 0.42 * 10) / 10));
+      const badgeHeight = Math.round(badgeFont * 1.5);
+      // Always wider than tall, so a single digit still reads as a pill, not a dot.
+      const badgeWidth = Math.ceil(Math.max(badgeHeight * 1.55, measure(input.badge, badgeFont) + badgeFont * 1.2));
+      const dx = Math.ceil(markPx + leadPx + measure(lines[0] ?? '', fontSize) + badgeGap(fontSize));
+      badge = { text: input.badge, width: badgeWidth, height: badgeHeight, fontSize: badgeFont, dx, dy: Math.max(-3, Math.round(fontSize * 0.24 - badgeHeight / 2)) };
+      width = Math.max(width, dx + badgeWidth);
+    }
     if (width > box.width || height > box.height) return null;
 
     let found: PlacedItem | null = null;
@@ -168,7 +236,8 @@ function attempt(inputs: CloudInput[], box: { width: number; height: number }, m
       if (x < 0 || y < 0 || x + width > box.width || y + height > box.height) continue;
       const rect = { x, y, width, height };
       if (placed.every((p) => !overlaps(rect, p, pad))) {
-        found = { id: input.id, lines, fontSize, lineHeight, x, y, width, height, leadPx };
+        found = { id: input.id, lines, fontSize, lineHeight, x, y, width, height, leadPx, markPx, markSize, markTop };
+        if (badge) found.badge = badge;
       }
     }
     if (!found) return null;

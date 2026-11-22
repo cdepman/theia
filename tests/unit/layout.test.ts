@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { anyOverlap, type CloudInput, layoutCloud, type Measure, STEP_COUNT, stepFor, stepThresholds, wrapText } from '../../src/lib/visualization/layout';
+import { anyOverlap, type CloudInput, layoutCloud, MARK_GAP, markColumn, markGutter, markSizeFor, type Measure, STEP_COUNT, stepFor, stepThresholds, wrapText } from '../../src/lib/visualization/layout';
 
 // A stand-in for canvas text measurement: Latin characters about half an em wide, CJK a full em.
 const measure: Measure = (text, fontSize) => [...text].reduce((w, ch) => w + (/[぀-鿿]/.test(ch) ? 1 : 0.5) * fontSize, 0);
@@ -99,5 +99,85 @@ describe('cloud layout', () => {
 
   it('handles an empty view', () => {
     expect(layoutCloud([], { width: 1000, height: 600 }, measure)).toMatchObject({ items: [], overflow: false, omitted: 0 });
+  });
+});
+
+describe('count pills', () => {
+  const m = (text: string, fontSize: number) => text.length * fontSize * 0.5;
+  const inputs = Array.from({ length: 18 }, (_, i) => ({ id: `s${i}`, text: `Subject number ${i} with a longer name`, step: Math.max(0, 4 - Math.floor(i / 4)), badge: String(20 - i) }));
+
+  it('reserves room for each pill past the end of the first line, inside the entry', () => {
+    const layout = layoutCloud(inputs, { width: 1000, height: 700 }, m);
+    expect(layout.items.length).toBeGreaterThan(10);
+    expect(anyOverlap(layout.items)).toBe(false);
+    for (const p of layout.items) {
+      const b = p.badge!;
+      expect(b.text).toBe(String(20 - Number(p.id.slice(1))));
+      // Clear of the words on its own line, and never outside the block other entries are kept away from.
+      expect(b.dx).toBeGreaterThanOrEqual(p.leadPx + m(p.lines[0]!, p.fontSize) + 5);
+      expect(b.dx + b.width).toBeLessThanOrEqual(p.width);
+      expect(b.width).toBeGreaterThan(b.height);
+      expect(b.dy).toBeGreaterThanOrEqual(-3);
+    }
+  });
+
+  it('leaves entries without a count untouched', () => {
+    const layout = layoutCloud(inputs.map(({ badge: _b, ...rest }) => rest), { width: 1000, height: 700 }, m);
+    expect(layout.items.every((p) => p.badge === undefined)).toBe(true);
+  });
+});
+
+describe('source marks', () => {
+  const m = (text: string, fontSize: number) => text.length * fontSize * 0.5;
+  const base = Array.from({ length: 18 }, (_, i) => ({ id: `s${i}`, text: `Subject number ${i} with a longer name`, step: Math.max(0, 4 - Math.floor(i / 4)), badge: String(20 - i) }));
+  const marked = base.map((b, i) => ({ ...b, marks: i % 4 === 0 ? 3 : i % 4 === 1 ? 1 : 0 }));
+
+  it('stacks the marks in a one-mark-wide column to the left, inside the entry and clear of the words', () => {
+    const layout = layoutCloud(marked, { width: 1000, height: 700 }, m);
+    expect(layout.items.length).toBeGreaterThan(10);
+    expect(anyOverlap(layout.items)).toBe(false);
+    for (const p of layout.items) {
+      const count = marked.find((x) => x.id === p.id)!.marks;
+      if (count === 0) {
+        expect(p.markPx).toBe(0);
+        continue;
+      }
+      // One mark wide however many there are, ending at least 5px before the words begin.
+      expect(p.markPx - p.markSize).toBeGreaterThanOrEqual(5);
+      expect(p.markPx).toBe(markGutter(1, p.fontSize));
+      // The whole column fits inside the block other entries are kept away from.
+      expect(p.markTop).toBeGreaterThanOrEqual(0);
+      expect(p.markTop + count * p.markSize + (count - 1) * MARK_GAP).toBeLessThanOrEqual(p.height);
+      // The words and the pill both start after the gutter and still fit inside the block.
+      const widest = Math.max(...p.lines.map((l) => m(l, p.fontSize)));
+      expect(p.markPx + p.leadPx + widest).toBeLessThanOrEqual(p.width);
+      expect(p.badge!.dx).toBeGreaterThanOrEqual(p.markPx + p.leadPx + m(p.lines[0]!, p.fontSize) + 5);
+      expect(p.badge!.dx + p.badge!.width).toBeLessThanOrEqual(p.width);
+    }
+  });
+
+  it('grows a short entry downward to hold a tall column, and takes no extra width for more marks', () => {
+    const one = layoutCloud([{ id: 'a', text: 'Short label', step: 0, marks: 1 }], { width: 1000, height: 700 }, m).items[0]!;
+    const four = layoutCloud([{ id: 'a', text: 'Short label', step: 0, marks: 4 }], { width: 1000, height: 700 }, m).items[0]!;
+    expect(four.width).toBe(one.width);
+    expect(four.height).toBeGreaterThan(one.height);
+    expect(four.height).toBeGreaterThanOrEqual(four.markTop + markColumn(4, four.fontSize));
+  });
+
+  it('keeps the marks small beside any size of type', () => {
+    for (const size of [12.5, 15, 19, 25, 33, 44, 59]) {
+      expect(markSizeFor(size)).toBeGreaterThanOrEqual(9.5);
+      expect(markSizeFor(size)).toBeLessThanOrEqual(13);
+      expect(markSizeFor(size)).toBeLessThan(size);
+    }
+    expect(markGutter(0, 30)).toBe(0);
+    expect(markGutter(4, 30)).toBe(markGutter(1, 30));
+    expect(markColumn(2, 30)).toBeGreaterThan(markColumn(1, 30));
+  });
+
+  it('changes nothing for entries without marks', () => {
+    const plain = layoutCloud(base, { width: 1000, height: 700 }, m);
+    const zero = layoutCloud(base.map((b) => ({ ...b, marks: 0 })), { width: 1000, height: 700 }, m);
+    expect(zero).toEqual(plain);
   });
 });

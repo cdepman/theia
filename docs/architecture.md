@@ -63,6 +63,18 @@ After polling, per language: `theia_clustering_input` returns unassigned article
 
 Consolidated singleton threads retain their identity and historical snapshots. `merged_into_id` resolves old detail URLs to the current thread, retired threads leave the candidate index, and a `thread_merge` event records the move. Thread snapshot foreign keys restrict deletion. Membership updates serialize per language and resolve stale targets before applying a decision.
 
+## Origins and signals
+
+`theia.origins` lists every place an entry can come from, press included, with kind, lane, weight, display order and visibility. Non-press origins are collected as signals:
+
+- `theia.signal_schedules`: one row per origin and scope (a country, a language edition, or global), with the same lease, backoff and `needs_attention` handling as press feeds, in its own table so registry syncs for press and signals cannot disturb each other.
+- `theia.signal_items`: one row per distinct item per origin. `theia.signal_daily`: one row per item, source and UTC day.
+- `pipeline/providers/signals/providers.ts`: one small fetch-and-parse function per origin. `pipeline/jobs/signals.ts` claims due sources, runs the provider, and commits or fails.
+- An origin whose credentials are missing is left unclaimed. It is not counted as due and never marked as failing.
+- X news has no "top stories" call, so its schedule names a seed source; the claim hands it that source's current top trend names to search for.
+
+The worker polls signals after the press pipeline, inside the same time budget. A failure there cannot block clustering or views. `theia_get_signals` computes the attention view on read; nothing is cached, because the tables are small.
+
 ## Read path
 
 `/api/stories` returns one row of `theia.cached_views`: a JSON payload built at refresh time. Detail routes (`/api/stories/:id`, `/api/threads/:id`) compute a small bounded read. Inputs are checked against allowlists before any database call. Responses use `Cache-Control: private`, so nothing is stored in a shared cache.

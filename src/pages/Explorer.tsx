@@ -1,17 +1,19 @@
 import { useQueryClient } from '@tanstack/react-query';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   CATEGORY_LABELS, type Category, COUNTRY_NAMES, type CountryCode, DEFAULT_CATEGORY, DEFAULT_COUNTRY, DEFAULT_WINDOW, isCategory, isCountry, isWindow,
   WINDOW_LABELS, type WindowCode,
 } from '../../shared/constants';
 import type { ViewItem, ViewPayload } from '../../shared/types';
 import { PageHeader } from '../App';
+import { AttentionColumn, hasAttention } from '../components/Attention/AttentionColumn';
 import { Filters } from '../components/Filters/Filters';
 import { HeadlineCloud } from '../components/HeadlineCloud/HeadlineCloud';
 import { SizeLegend } from '../components/HeadlineCloud/SizeLegend';
 import { DetailPanel, type Selection } from '../components/StoryDetail/DetailPanel';
-import { prefetchAdjacent, useView } from '../lib/api/client';
+import { prefetchAdjacent, useSignals, useView } from '../lib/api/client';
 import { reasonText, relativeTime } from '../lib/format';
+import { entryMarks } from '../lib/marks';
 import { Link, useQueryParams } from '../lib/router';
 
 function parseSelection(value: string | null): Selection | null {
@@ -77,6 +79,15 @@ export function Explorer() {
     document.title = `${COUNTRY_NAMES[country]}, ${WINDOW_LABELS[window]} | Project Theia`;
   }, [country, window]);
 
+  // The attention lane sits beside the press on wide screens and replaces it on narrow ones.
+  const signals = useSignals(country, window).data;
+  const attention = hasAttention(signals);
+  const attentionHidden = params.get('attention') === 'hide';
+  const lane = attention && params.get('lane') === 'attention' ? 'attention' : 'press';
+  const beside = attention && !attentionHidden;
+  // Marks beside press entries that outside sources also list. They stay when the lane is hidden.
+  const marks = useMemo(() => entryMarks(signals, view?.unit ?? 'story'), [signals, view?.unit]);
+
   const asList = params.get('layout') === 'list';
   const [drawn, setDrawn] = useState<{ mode: 'cloud' | 'list'; shown: number; total: number } | null>(null);
 
@@ -101,12 +112,30 @@ export function Explorer() {
           window={window}
           onChange={(c) => setParams({ ...(c.country ? { country: c.country } : {}), ...(c.category ? { category: c.category } : {}), ...(c.window ? { window: c.window } : {}), item: null })}
         />
+        {attention && (
+          <div className="mt-2 flex gap-1.5 md:hidden" role="group" aria-label="Lane">
+            {(['press', 'attention'] as const).map((l) => (
+              <button
+                key={l}
+                type="button"
+                aria-pressed={lane === l}
+                onClick={() => setParams({ lane: l === 'press' ? null : l, item: null })}
+                className={`cursor-pointer rounded-sm border px-2 py-0.5 text-[0.9rem] ${lane === l ? 'border-ink bg-ink text-paper' : 'border-shore text-ink-soft'}`}
+              >
+                {l === 'press' ? 'Monitored press' : 'Public attention'}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <main className="relative flex min-h-0 flex-1">
-        <section className="flex min-w-0 flex-1 flex-col px-5 pb-3 md:px-8" aria-busy={query.isFetching}>
-          <h2 className="sr-only">
-            {view?.unit === 'thread' ? 'Subjects' : 'Stories'} reported by monitored {COUNTRY_NAMES[country]} publishers, last {WINDOW_LABELS[window]}
+        <section className={`min-w-0 flex-1 flex-col px-5 pb-3 md:flex md:px-8 ${lane === 'attention' ? 'hidden' : 'flex'}`} aria-busy={query.isFetching}>
+          <h2 className={beside ? 'm-0 hidden pb-1 text-[1.15rem] font-semibold leading-tight tracking-[-0.01em] md:block' : 'sr-only'}>
+            {beside && <span aria-hidden="true">Monitored press</span>}
+            <span className="sr-only">
+              {view?.unit === 'thread' ? 'Subjects' : 'Stories'} reported by monitored {COUNTRY_NAMES[country]} publishers, last {WINDOW_LABELS[window]}
+            </span>
           </h2>
           {view && showing && <CoverageNote view={view} />}
           <div className={`relative min-h-0 flex-1 ${showing || !view ? '' : 'opacity-50'}`}>
@@ -122,7 +151,7 @@ export function Explorer() {
               </div>
             )}
             {view && view.stories.length === 0 && <EmptyState view={view} />}
-            {view && view.stories.length > 0 && <HeadlineCloud view={view} selectedId={selection?.id ?? null} onSelect={onItem} asList={asList} onLayout={setDrawn} />}
+            {view && view.stories.length > 0 && <HeadlineCloud view={view} selectedId={selection?.id ?? null} onSelect={onItem} asList={asList} marks={marks} onLayout={setDrawn} />}
           </div>
           {view && view.stories.length > 0 && (
             <footer className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-t border-shore pt-2">
@@ -132,6 +161,14 @@ export function Explorer() {
                 <button type="button" className="cursor-pointer underline underline-offset-[3px] hover:text-ink" onClick={() => setParams({ layout: asList ? null : 'list' })}>
                   {asList ? 'Show as a cloud' : `Show all ${view.stories.length} as a ranked list`}
                 </button>
+                {attention && (
+                  <>
+                    {' '}
+                    <button type="button" className="cursor-pointer underline underline-offset-[3px] hover:text-ink" onClick={() => setParams({ attention: attentionHidden ? null : 'hide' })}>
+                      {attentionHidden ? 'Show public attention' : 'Hide public attention'}
+                    </button>
+                  </>
+                )}
               </p>
               <p className="tabular m-0 text-[0.85rem] text-ink-soft">
                 <span className="md:hidden">{view.dataAsOf ? `Sources checked ${relativeTime(view.dataAsOf)}. ` : ''}</span>
@@ -142,6 +179,11 @@ export function Explorer() {
             </footer>
           )}
         </section>
+        {attention && (
+          <aside aria-label="Public attention" data-testid="attention-lane" className={`min-h-0 overflow-y-auto border-shore bg-paper/40 md:w-[22rem] md:shrink-0 md:border-l lg:w-[25rem] ${lane === 'attention' ? 'block flex-1' : 'hidden'} ${attentionHidden ? 'md:hidden' : 'md:block'}`}>
+            <AttentionColumn country={country} window={window} onStory={(id) => select({ kind: 'story', id })} />
+          </aside>
+        )}
         {selection && <DetailPanel selection={selection} country={country} window={window} view={showing ? view : undefined} onSelect={select} onClose={close} />}
       </main>
     </div>
